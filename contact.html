@@ -31,10 +31,10 @@
   <meta property="og:description" content="Connect with the RDC Secretariat, submit online inquiries for statistical consultations, ethics clearance (IERC), Turnitin checks, and research partnerships.">
   <meta property="og:image" content="assets/rdc-logo.png">
 
-  <link rel="stylesheet" href="css/style.min.css?v=804c28a8">
+  <link rel="stylesheet" href="css/style.min.css?v=bcde72bc">
 
 
-  <link rel="stylesheet" href="css/pages/contact.min.css?v=0dfa23fa">
+  <link rel="stylesheet" href="css/pages/contact.min.css?v=0dc1e2b2">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -525,24 +525,24 @@
         <div style="background: #ffffff; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: clamp(1.5rem, 3.5vw, 2.75rem); max-width: 720px; margin: 0 auto;">
           <form id="onlineInquiryForm" onsubmit="handleInquirySubmit(event)">
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
               <div class="form-group">
-                <label class="form-label" style="font-weight: 700; font-size: 0.86rem;">Full Name *</label>
+                <label for="inqName" class="form-label" style="font-weight: 700; font-size: 0.86rem;">Full Name *</label>
                 <input type="text" id="inqName" class="form-control" placeholder="Your Full Name" required>
               </div>
               <div class="form-group">
-                <label class="form-label" style="font-weight: 700; font-size: 0.86rem;">Email Address *</label>
+                <label for="inqEmail" class="form-label" style="font-weight: 700; font-size: 0.86rem;">Email Address *</label>
                 <input type="email" id="inqEmail" class="form-control" placeholder="your.email@example.com" required>
               </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
               <div class="form-group">
-                <label class="form-label" style="font-weight: 700; font-size: 0.86rem;">Contact Number</label>
+                <label for="inqPhone" class="form-label" style="font-weight: 700; font-size: 0.86rem;">Contact Number</label>
                 <input type="tel" id="inqPhone" class="form-control" placeholder="+63 9XX XXX XXXX">
               </div>
               <div class="form-group">
-                <label class="form-label" style="font-weight: 700; font-size: 0.86rem;">Inquiry Topic *</label>
+                <label for="inqTopic" class="form-label" style="font-weight: 700; font-size: 0.86rem;">Inquiry Topic *</label>
                 <select id="inqTopic" class="form-control" style="background: #fff;" required>
                   <option value="General Inquiry">General Inquiry</option>
                   <option value="Statistical Consultation">Statistical Consultation</option>
@@ -555,18 +555,18 @@
             </div>
 
             <div class="form-group" style="margin-bottom: 1.25rem;">
-              <label class="form-label" style="font-weight: 700; font-size: 0.86rem;">Subject *</label>
+              <label for="inqSubject" class="form-label" style="font-weight: 700; font-size: 0.86rem;">Subject *</label>
               <input type="text" id="inqSubject" class="form-control" placeholder="Brief subject or title of your inquiry" required>
             </div>
 
             <div class="form-group" style="margin-bottom: 1.75rem;">
-              <label class="form-label" style="font-weight: 700; font-size: 0.86rem;">Message *</label>
+              <label for="inqMessage" class="form-label" style="font-weight: 700; font-size: 0.86rem;">Message *</label>
               <textarea id="inqMessage" rows="5" class="form-control" placeholder="Type your message or inquiry here..." required></textarea>
             </div>
 
             <div style="text-align: center;">
               <button type="submit" class="btn btn-gold" style="padding: 0.85rem 3rem; font-weight: 700; font-size: 1rem; width: 100%; max-width: 380px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);">
-                 Send Inquiry
+                 Open Email Draft
               </button>
               <p style="margin: 0.85rem auto 0; max-width: 480px; color: #64748b; font-size: 0.85rem;">
                 This opens your email app with the inquiry filled in. Review the message and press Send to deliver it to the RDC Secretariat.

@@ -35,7 +35,7 @@
   <meta name="twitter:title" content="Research Resources &amp; Documentation Archive | MCNP &amp; ISAP RDC">
   <meta name="twitter:description" content="Filter research documentation per course, download institutional ethics clearances, research manuals, and QMS forms for MCNP and ISAP.">
   <meta name="twitter:image" content="https://mcnpisaprdc.github.io/rdc-website/assets/rdc-logo.png">
-  <link rel="stylesheet" href="css/style.min.css?v=804c28a8">
+  <link rel="stylesheet" href="css/style.min.css?v=bcde72bc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap">
@@ -262,7 +262,7 @@
       </div>
       <h1>Research Resources &amp; Documentation</h1>
       <p>
-        Official photographic documentation, video accomplishment reports, and institutional research forms for the Medical Colleges of Northern Philippines and International School of Asia and the Pacific. Filter per course and click any title to view media.
+        Browse four downloadable ISAP research forms. The video documentary and course-specific media archives are not yet available; no publication date is confirmed. Filters show matching forms and clearly labeled forthcoming content.
       </p>
     </div>
   </section>
@@ -283,9 +283,9 @@
       <div class="course-filter-card">
         <div class="course-filter-header">
           <span class="course-filter-label">Filter Per Course</span>
-          <span class="course-filter-count" id="visibleDocCount">Loading topics...</span>
+          <span class="course-filter-count" id="visibleDocCount" role="status" aria-live="polite" aria-atomic="true">Loading topics...</span>
         </div>
-        <div class="course-pills-wrap" role="toolbar" aria-label="Course Filter Options">
+        <div class="course-pills-wrap" role="group" aria-label="Course Filter Options">
           <button class="course-pill active" data-course="all" type="button">
             <span>All Courses (Twin Institutions)</span>
           </button>
@@ -345,53 +345,53 @@
       </div>
 
       <!-- ACCORDION LIST: ONLY TITLES VISIBLE INITIALLY -->
-            <!-- MCNP Documentation Topics - Content Coming Soon Card -->
+            <!-- MCNP Documentation Topics - Media Archive Not Yet Available Card -->
       <div id="mcnpNoticeBanner" style="display: none; background: #ffffff; border: 1.5px solid #bfdbfe; border-radius: 16px; padding: 3.5rem 2rem; margin-bottom: 2.5rem; text-align: center; box-shadow: 0 4px 20px rgba(30, 94, 168, 0.06);">
         <div style="width: 64px; height: 64px; margin: 0 auto 1.25rem; border-radius: 50%; background: #eff6ff; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; color: #1e5ea8; box-shadow: 0 4px 14px rgba(30,94,168,0.12);">
 
         </div>
         <span class="section-tag" style="background: rgba(30,94,168,0.08); color: #1e5ea8; border: 1px solid rgba(30,94,168,0.25); margin-bottom: 0.75rem;">MCNP Documentation Topics</span>
         <h3 style="font-family: 'Oswald', sans-serif; font-size: 1.9rem; color: #0f172a; margin: 0.4rem 0 0.6rem;">
-          Content Coming Soon
+          Media Archive Not Yet Available
         </h3>
         <p style="color: #64748b; font-size: 1rem; line-height: 1.7; max-width: 620px; margin: 0 auto 1.75rem;">
-          The official research documentation, oral defense recordings, and laboratory photo archives for <strong>Medical Colleges of Northern Philippines (MCNP)</strong> Allied Health programs (Nursing, Radiologic Technology, Medical Laboratory Science, Pharmacy, and Physical Therapy) are currently in curation and will be published here soon.
+          The official research documentation, oral defense recordings, and laboratory photo archives for <strong>Medical Colleges of Northern Philippines (MCNP)</strong> Allied Health programs (Nursing, Radiologic Technology, Medical Laboratory Science, Pharmacy, and Physical Therapy) are not yet available on this site. No publication date is confirmed.
         </p>
         <div style="display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap;">
           <a href="resources-mcnp.html" class="btn btn-sm btn-primary" style="background: #1e5ea8; border-color: #1e5ea8; color: #fff; font-weight: 700; padding: 0.5rem 1.25rem;">
             View Dedicated MCNP Portal
           </a>
           <button type="button" class="btn btn-sm btn-outline-white" onclick="resetDocFilters()" style="color: #475569; border-color: #cbd5e1; padding: 0.5rem 1.25rem;">
-            View All Available Archives
+            View All Resources
           </button>
         </div>
       </div>
 
-      <!-- ISAP Documentation Topics - Content Coming Soon Card -->
+      <!-- ISAP Documentation Topics - Media Archive Not Yet Available Card -->
       <div id="isapNoticeBanner" style="display: none; background: #ffffff; border: 1.5px solid #fecdd3; border-radius: 16px; padding: 3rem 2rem; margin-bottom: 2rem; text-align: center; box-shadow: 0 4px 20px rgba(122, 31, 45, 0.06);">
         <div style="width: 60px; height: 60px; margin: 0 auto 1.25rem; border-radius: 50%; background: #fdf2f4; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #7a1f2d; box-shadow: 0 4px 14px rgba(122,31,45,0.12);">
 
         </div>
         <span class="section-tag" style="background: rgba(122,31,45,0.08); color: #7a1f2d; border: 1px solid rgba(122,31,45,0.25); margin-bottom: 0.75rem;">ISAP Documentation Topics</span>
         <h3 style="font-family: 'Oswald', sans-serif; font-size: 1.85rem; color: #0f172a; margin: 0.4rem 0 0.6rem;">
-          Content Coming Soon
+          Media Archive Not Yet Available
         </h3>
         <p style="color: #64748b; font-size: 0.98rem; line-height: 1.7; max-width: 600px; margin: 0 auto 1.5rem;">
-          The official research documentation, symposium media, and department defense photo archives for the <strong>International School of Asia and the Pacific (ISAP)</strong> multidisciplinary programs (Criminology, Information Technology, Tourism, Hospitality, Education, Business, Customs, and Social Work) are currently in curation and will be published here soon.
+          The official research documentation, symposium media, and department defense photo archives for the <strong>International School of Asia and the Pacific (ISAP)</strong> multidisciplinary programs (Criminology, Information Technology, Tourism, Hospitality, Education, Business, Customs, and Social Work) are not yet available on this site. No publication date is confirmed.
         </p>
         <div style="display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap;">
           <a href="resources-isap.html" class="btn btn-sm btn-primary" style="background: #7a1f2d; border-color: #7a1f2d; color: #fff; font-weight: 700; padding: 0.5rem 1.25rem;">
             View Dedicated ISAP Portal
           </a>
           <button type="button" class="btn btn-sm btn-outline-white" onclick="resetDocFilters()" style="color: #475569; border-color: #cbd5e1; padding: 0.5rem 1.25rem;">
-            View All Archives
+            View All Resources
           </button>
         </div>
       </div>
 
 <div class="doc-accordion-container" id="docAccordionContainer">
         
-          <div class="doc-item" id="uni-item-3" data-category="video" data-courses="all">
+          <div class="doc-item" id="uni-item-3" data-category="video" data-available="false" data-courses="all">
             <button class="doc-title-trigger" type="button" aria-expanded="false">
               <div class="doc-title-left">
 
@@ -404,12 +404,12 @@
                 </div>
               </div>
               <div class="doc-title-right">
-                <span class="doc-count-pill">Official Video</span>
+                <span class="doc-count-pill">Coming Soon</span>
 
               </div>
             </button>
             <div class="doc-media-body">
-              <p class="doc-desc">Watch the full institutional video documentary highlighting collaborative research breakthroughs, state-of-the-art laboratory facilities, faculty publications, and community extensions.</p>
+              <p class="doc-desc">The institutional video documentary is not yet available. This entry is a preview, not a playable video.</p>
               <div class="doc-video-card">
     <div style="display:flex; align-items:center; justify-content:center; min-height: 220px; border-radius: 16px; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border: 1px solid #dfe7f3; text-align:center; padding: 1.5rem; color:#475569;">
       <div>
@@ -427,15 +427,15 @@
               <div class="doc-title-left">
 
                 <div>
-                  <h3 class="doc-title-heading">ISAP Official Institutional Research Forms & Guidelines (Forms 001–016)</h3>
+                  <h3 class="doc-title-heading">ISAP Institutional Research Forms (4 Downloads)</h3>
                   <div class="doc-title-meta">ISAP Knowledge Management • Direct File Downloads</div>
                   <div class="doc-course-badges">
-                    <span class="doc-course-badge" style="color:#7a1f2d; border-color:rgba(122,31,45,0.25);"> ISAP • Forms 001–016</span>
+                    <span class="doc-course-badge" style="color:#7a1f2d; border-color:rgba(122,31,45,0.25);"> ISAP • Forms 002, 003, 011 &amp; 013</span>
                   </div>
                 </div>
               </div>
               <div class="doc-title-right">
-                <span class="doc-count-pill">16 Forms</span>
+                <span class="doc-count-pill">4 Forms</span>
 
               </div>
             </button>
@@ -539,7 +539,7 @@
 
   <script src="js/main.min.js?v=25b1e5bf" defer></script>
   
-  <script src="js/pages/resources.min.js?v=6ee66ddb"></script>
+  <script src="js/pages/resources.min.js?v=a1925a67"></script>
 
 </body>
 </html>

@@ -2954,7 +2954,11 @@
                  (a.partner && a.partner.toLowerCase().indexOf(q) !== -1) ||
                  (a.status && a.status.toLowerCase().indexOf(q) !== -1) ||
                  (a.impact && a.impact.toLowerCase().indexOf(q) !== -1) ||
-                 (a.pillarName && a.pillarName.toLowerCase().indexOf(q) !== -1);
+                 (a.pillarName && a.pillarName.toLowerCase().indexOf(q) !== -1) ||
+                 (a.facilitator && a.facilitator.toLowerCase().indexOf(q) !== -1) ||
+                 (a.paragraphs || []).some(function(paragraph) {
+                   return paragraph.replace(/<[^>]*>/g, ' ').toLowerCase().indexOf(q) !== -1;
+                 });
         });
       }
 
@@ -3033,11 +3037,11 @@
           '<p style="font-size: 0.88rem; color: #64748b; margin-bottom: 1.15rem;">' +
             'Official photographic documentation of the workshop activities, speaker presentations, and student interaction at ISAP AVR 1:' +
           '</p>' +
-          '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">' +
+          '<div class="util-photo-gallery">' +
           a.gallery.map(function(g) {
             return '<figure style="margin: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display: flex; flex-direction: column;">' +
-              '<div style="width: 100%; height: 210px; overflow: hidden; background: #0f172a;">' +
-                '<img src="' + g.src + '" alt="' + g.caption.replace(/"/g, '&quot;') + '" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;" loading="lazy" decoding="async">' +
+              '<div style="width: 100%; background: #0f172a;">' +
+                '<img src="' + g.src + '" alt="' + g.caption.replace(/"/g, '&quot;') + '" loading="lazy" decoding="async">' +
               '</div>' +
               '<figcaption style="padding: 0.75rem 0.95rem; font-size: 0.8rem; color: #475569; background: #f8fafc; border-top: 1px solid #e2e8f0; line-height: 1.5; flex: 1; text-align: justify; text-justify: inter-word;">' +
                 g.caption +
@@ -3133,6 +3137,7 @@
       if (total === 0) {
         var cInfo = (currentSelectedCourse !== 'all' && coursesMap[currentSelectedCourse]) ? coursesMap[currentSelectedCourse] : null;
         var isSearch = (currentSearchQuery && currentSearchQuery.trim().length > 0);
+        var isFiltered = isSearch || currentPillarFilter !== 'all';
 
         var emptyHeading = '';
         var emptyMessage = '';
@@ -3140,6 +3145,9 @@
         if (isSearch) {
           emptyHeading = 'No Utilization Articles Matching Search';
           emptyMessage = 'No research utilization articles match "' + escapeUtilHtml(currentSearchQuery) + '". Try searching with different keywords or clearing your search.';
+        } else if (isFiltered) {
+          emptyHeading = 'No Utilization Articles Matching Filters';
+          emptyMessage = 'No articles match the selected INNOVATES agenda and course. Clear your filters to view available articles.';
         } else if (cInfo) {
           emptyHeading = 'No Published Utilization Articles for ' + cInfo.name + ' Yet';
           emptyMessage = 'The official research utilization articles and field adoption portfolios for <strong>' + cInfo.name + '</strong> are currently undergoing institutional review, documentation, and stakeholder certification ("Another Process"). Certified articles will appear here once officially verified.';
@@ -3157,7 +3165,7 @@
               ${isSearch ? '🔍' : '📂'}
             </div>
             <div style="display: inline-block; background: #fffbeb; color: #92400e; border: 1px solid #fde047; padding: 0.3rem 0.95rem; border-radius: 20px; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.85rem;">
-              ⏳ Documentation In-Process
+              ${isFiltered ? 'No Matching Articles' : '⏳ Documentation In-Process'}
             </div>
             <h4 style="font-size: 1.35rem; color: #0f172a; margin: 0 0 0.65rem; font-weight: 800; font-family: 'Oswald', sans-serif; letter-spacing: 0.02em;">
               ${emptyHeading}
@@ -3167,7 +3175,7 @@
             </p>
             <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; align-items: center;">
               ${(currentSelectedCourse !== 'criminology') ? `
-                <button type="button" class="btn btn-sm btn-gold" onclick="setMainCourseFilter('criminology')" style="font-weight: 700; padding: 0.55rem 1.35rem;">
+                <button type="button" class="btn btn-sm btn-gold" onclick="resetUtilFilters(); setMainCourseFilter('criminology')" style="font-weight: 700; padding: 0.55rem 1.35rem;">
                   ⚖️ View Published BS Criminology Articles &rarr;
                 </button>
               ` : ''}
@@ -3209,7 +3217,7 @@
             <div class="article-accordion-header" onclick="openUtilArticleModal('${a.id}');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openUtilArticleModal('${a.id}');}" id="header-${cardId}" title="Click to open full article reader card">
               <!-- Side Thumbnail -->
               <div class="article-card-thumb-wrap">
-                <img src="${thumbCover}" alt="${a.title}" loading="lazy" decoding="async" style="${isPub ? 'object-fit: cover; object-position: top center;' : ''}">
+                <img src="${thumbCover}" alt="${a.title}" loading="lazy" decoding="async">
               </div>
 
               <!-- Title & Meta Area -->
@@ -4389,6 +4397,12 @@
       var found = findUtilizationArticle(cleanTarget);
 
       if (found) {
+        currentSearchQuery = '';
+        currentPillarFilter = 'all';
+        var searchInput = document.getElementById('utilSearchInput');
+        var pillarSelect = document.getElementById('utilPillarFilterSelect');
+        if (searchInput) searchInput.value = '';
+        if (pillarSelect) pillarSelect.value = 'all';
         if (found.wing !== currentSelectedWing) {
           filterUtilizationWing(found.wing, document.getElementById('btn-tab-' + found.wing));
         }

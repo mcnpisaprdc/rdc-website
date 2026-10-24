@@ -21,15 +21,26 @@
     function applyResourceFilters() {
       const items = document.querySelectorAll('.doc-item');
       let visibleCount = 0;
+      let downloadCount = 0;
       const mcnpCourses = ['pharmacy', 'nursing', 'mls', 'radtech', 'pt'];
       const isapCourses = ['criminology', 'it', 'computer-eng', 'tourism', 'hospitality', 'social-work', 'psychology', 'bsed', 'bped', 'accountancy', 'customs', 'business'];
 
       const isMcnpCourse = mcnpCourses.includes(currentCourseFilter);
       const isIsapCourse = isapCourses.includes(currentCourseFilter);
 
-      const isAll = (currentCategoryFilter === 'all' && currentCourseFilter === 'all');
-      const showMcnp = (currentCategoryFilter === 'mcnp') || isMcnpCourse || isAll;
-      const showIsap = (currentCategoryFilter === 'isap') || isIsapCourse || isAll;
+      const showMcnp = (currentCategoryFilter === 'mcnp' || currentCategoryFilter === 'all') && !isIsapCourse;
+      const showIsap = (currentCategoryFilter === 'isap' || currentCategoryFilter === 'all') && !isMcnpCourse;
+      let forthcomingCount = 0;
+      document.querySelectorAll('.course-pill').forEach(pill => {
+        const selected = pill.dataset.course === currentCourseFilter;
+        pill.classList.toggle('active', selected);
+        pill.setAttribute('aria-pressed', String(selected));
+      });
+      document.querySelectorAll('.doc-filter-btn').forEach(btn => {
+        const selected = btn.dataset.filter === currentCategoryFilter;
+        btn.classList.toggle('active', selected);
+        btn.setAttribute('aria-pressed', String(selected));
+      });
 
       const mcnpNotice = document.getElementById('mcnpNoticeBanner');
       const isapNotice = document.getElementById('isapNoticeBanner');
@@ -52,9 +63,14 @@
         const matchesCat = (currentCategoryFilter === 'all') || 
                             (itemCat === currentCategoryFilter);
 
-        if (matchesCourse && matchesCat && !isMcnpCourse && !isIsapCourse && currentCategoryFilter !== 'mcnp' && currentCategoryFilter !== 'isap') {
+        const matchesInstitution = !(itemCat === 'isap' && isMcnpCourse) && !(itemCat === 'mcnp' && isIsapCourse);
+        if (matchesCourse && matchesCat && matchesInstitution) {
           item.style.display = 'block';
-          visibleCount++;
+          if (item.dataset.available === 'false') forthcomingCount++;
+          else {
+            visibleCount++;
+            downloadCount += item.querySelectorAll('a[download]').length;
+          }
         } else {
           item.style.display = 'none';
           item.classList.remove('open');
@@ -65,20 +81,15 @@
 
       const countEl = document.getElementById('visibleDocCount');
       if (countEl) {
-        if (currentCategoryFilter === 'mcnp' || isMcnpCourse) {
-          countEl.textContent = 'MCNP Documentation in curation (Coming Soon)';
-        } else if (currentCategoryFilter === 'isap' || isIsapCourse) {
-          countEl.textContent = 'ISAP Documentation in curation (Coming Soon)';
-        } else if (isAll) {
-          countEl.textContent = 'Institutional archives in curation • 2 featured resources available';
-        } else {
-          countEl.textContent = visibleCount + ' resource' + (visibleCount === 1 ? '' : 's') + ' available';
-        }
+        countEl.textContent = visibleCount + ' available resource group' + (visibleCount === 1 ? '' : 's') +
+          (downloadCount ? ' (' + downloadCount + ' form downloads)' : '') +
+          (forthcomingCount ? ' • ' + forthcomingCount + ' video preview — not yet available' : '') +
+          (showMcnp || showIsap ? ' • Course media archives not yet available' : '');
       }
 
       const emptyMsg = document.getElementById('docEmptyState');
       if (emptyMsg) {
-        emptyMsg.style.display = (visibleCount === 0 && !showMcnp && !showIsap) ? 'block' : 'none';
+        emptyMsg.style.display = (visibleCount === 0 && forthcomingCount === 0 && !showMcnp && !showIsap) ? 'block' : 'none';
       }
     }
 

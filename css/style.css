@@ -879,7 +879,7 @@ body.nav-open::after {
 .hero-section {
   position: relative;
   background: linear-gradient(135deg, rgba(13, 59, 115, 0.90) 0%, rgba(13, 59, 115, 0.82) 48%, rgba(122, 31, 45, 0.85) 100%),
-              url('../assets/hero-campus-bg.jpg') center/cover no-repeat;
+              url('../assets/hero-campus-bg.webp') center/cover no-repeat;
   color: var(--white);
   padding: 5.5rem 0 5rem;
   overflow: hidden;
@@ -892,7 +892,7 @@ body.nav-open::after {
   align-items: center;
 }
 
-.hero-content h2 {
+.hero-content :is(h1, h2) {
   font-size: clamp(1.75rem, 5vw, 2.75rem);
   font-weight: 800;
   line-height: 1.15;
@@ -900,7 +900,7 @@ body.nav-open::after {
   letter-spacing: -0.02em;
 }
 
-.hero-content h2 span {
+.hero-content :is(h1, h2) span {
   color: var(--gold);
 }
 
@@ -5505,7 +5505,7 @@ textarea.form-control {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .hero-content h2 {
+  .hero-content :is(h1, h2) {
     font-size: 2.1rem;
   }
 }
@@ -6775,6 +6775,11 @@ textarea.form-control {
 /* ==========================================================================
    Unified About RDC Portal Styles
    ========================================================================== */
+.about-layout-grid > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .about-layout-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -6902,7 +6907,7 @@ textarea.form-control {
 
 .about-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -7223,7 +7228,13 @@ textarea.form-control {
   text-align: center;
 }
 
+.cal-nav-header > div {
+  max-width: 100%;
+  min-width: 0;
+}
+
 .cal-month-select {
+  max-width: 100%;
   background: #ffffff;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
@@ -7973,6 +7984,8 @@ textarea.form-control {
   }
 
   .calendar-filters {
+    max-width: 100%;
+    min-width: 0;
     display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -9255,4 +9268,9 @@ body {
 .event-search-clear {
   font-size: 0.7rem;
   padding: 0.25rem 0.4rem;
+}
+
+@media (max-width: 480px) {
+  .rdc-sop-stage-badge { white-space: normal; }
+  .rdc-sop-downloads-bar, .rdc-sop-downloads-bar * { min-width: 0; overflow-wrap: anywhere; }
 }
