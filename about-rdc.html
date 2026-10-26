@@ -1047,7 +1047,8 @@
                 <button type="button" class="qms-tab-btn" onclick="filterQmsForms('phase5', this)">Phase 5: Publication (014–016)</button>
               </div>
               <div style="flex-grow: 1; max-width: 320px;">
-                <input type="text" id="qmsSearchInput" onkeyup="searchQmsForms()" placeholder=" Quick search form title or number..." style="width: 100%; padding: 0.5rem 0.85rem; font-size: 0.82rem; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #0f172a; outline: none;">
+                <label for="qmsSearchInput" style="display:block;font-weight:600;">Search RDC forms</label>
+              <input type="text" id="qmsSearchInput" onkeyup="searchQmsForms()" placeholder=" Quick search form title or number..." style="width: 100%; padding: 0.5rem 0.85rem; font-size: 0.82rem; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; color: #0f172a; outline: none;">
               </div>
             </div>
 
@@ -2275,7 +2276,8 @@
         <div class="faq-controls-bar">
           <div class="faq-search-input">
             <span></span>
-            <input type="text" id="faqSearchInput" placeholder="Search questions by topic, keyword, or requirement...">
+            <label for="faqSearchInput" style="display:block;font-weight:600;">Search RDC service questions</label>
+              <input type="text" id="faqSearchInput" placeholder="Search questions by topic, keyword, or requirement...">
           </div>
           <div class="faq-toggle-all-btns">
             <button type="button" class="faq-btn-toggle" onclick="toggleAllFaqs(true)">Expand All</button>
@@ -2293,6 +2295,16 @@
         </div>
 
         <div class="faq-container">
+          <aside aria-labelledby="service-checklist-title" style="padding:1rem;margin-bottom:1rem;border:1px solid #cbd5e1;border-radius:8px;">
+            <h3 id="service-checklist-title">Before requesting a research service</h3>
+            <ul>
+              <li><strong>Ethics review:</strong> Form 012, informed consent / assent documents, survey instruments, and a signed data privacy pledge.</li>
+              <li><strong>Statistical consultation:</strong> Form 011, statement of the problem, operational variables, proposed analytical tests, and a clean electronic dataset.</li>
+              <li><strong>Defense forms:</strong> Use the <a href="about-rdc-mcnp.html#rdc-sop">MCNP</a> or <a href="about-rdc-isap.html#rdc-sop">ISAP procedures and forms</a> for your institution.</li>
+              <li><strong>Journal submissions:</strong> See the <a href="journal.html">journals portal</a> and the publishing requirements below.</li>
+            </ul>
+            <p><a href="contact.html">Contact RDC</a> to confirm which requirements apply to your request, or email <a href="mailto:researchoffice@mcnp.edu.ph">researchoffice@mcnp.edu.ph</a>. Detailed procedures remain below.</p>
+          </aside>
           <!-- Q1 -->
           <details class="faq-card" data-category="ethics" open>
             <summary class="faq-question-btn">
@@ -2546,7 +2558,7 @@
     </div>
   </footer>
 
-  <script src="js/main.min.js?v=25b1e5bf" defer></script>
+  <script src="js/main.min.js?v=6c2e98c5" defer></script>
 
   <!-- Lightbox Modal for Personnel Calling Card -->
   <div id="aboutCardLightboxModal" class="sr-modal-overlay" onclick="closeAboutCardModal(event)">

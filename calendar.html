@@ -397,7 +397,8 @@
           </p>
         </div>
 
-        <!-- Filter Bar & Real-Time Search directly atop the Table -->
+        <p id="schedule-review-status"><strong>Schedule review status:</strong> An institutional review date has not been confirmed. <a href="contact.html">Contact RDC to confirm schedule details before attending.</a></p>
+          <!-- Filter Bar & Real-Time Search directly atop the Table -->
         <div class="calendar-topbar" style="margin-bottom: 1.5rem;">
           <div class="calendar-filters">
             <button type="button" class="cal-filter-btn active" data-filter="all" onclick="filterCalendar('all', this)">All Events &amp; Defenses</button>
@@ -410,7 +411,8 @@
 
           <div class="calendar-search-box">
             <span></span>
-            <input type="text" id="calendarSearchInput" placeholder="Search workshops, speakers, venues...">
+            <label for="calendarSearchInput" style="display:block;font-weight:600;">Search research schedules</label>
+              <input type="text" id="calendarSearchInput" placeholder="Search workshops, speakers, venues...">
           </div>
         </div>
 
@@ -829,7 +831,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/main.min.js?v=25b1e5bf" defer></script>
+  <script src="js/main.min.js?v=6c2e98c5" defer></script>
   <script src="js/calendar-counts.js" defer></script>
   <script>
     // Link handler for clicking articles/news from inspector on this standalone landing page

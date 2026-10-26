@@ -2192,6 +2192,9 @@ window.openAgendaModal = function (pillarKey, tabName = 'focus') {
   const data = window.agendaData[validKey];
 
   currentAgendaKey = validKey;
+  if (document.querySelector('.innovates-showcase-card') && window.location.hash !== '#pillar-' + validKey) {
+    history.pushState(null, '', '#pillar-' + validKey);
+  }
   const modal = ensureAgendaModalExists();
 
   // Emblem
@@ -2354,6 +2357,9 @@ window.switchAgendaTab = function (tabName) {
 };
 
 window.closeAgendaModal = function () {
+  if (document.querySelector('.innovates-showcase-card') && /^#pillar-[a-z]+$/.test(location.hash)) {
+    history.replaceState(null, '', location.pathname + location.search);
+  }
   const modal = document.getElementById('agendaModal');
   if (modal) {
     modal.classList.remove('active');
@@ -2370,15 +2376,19 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const params = new URLSearchParams(window.location.search);
-  const pillarParam = params.get('pillar');
-  if (pillarParam && window.agendaData[pillarParam.toLowerCase()]) {
-    setTimeout(() => {
-      openAgendaModal(pillarParam);
-    }, 300);
+function openAgendaFromUrl() {
+  if (!document.querySelector('.innovates-showcase-card')) return;
+  const hashKey = window.location.hash.match(/^#pillar-([a-z]+)$/);
+  const key = hashKey ? hashKey[1] : new URLSearchParams(window.location.search).get('pillar');
+  if (key && Object.prototype.hasOwnProperty.call(window.agendaData, key.toLowerCase())) {
+    openAgendaModal(key.toLowerCase());
+  } else {
+    closeAgendaModal();
   }
-});
+}
+document.addEventListener('DOMContentLoaded', openAgendaFromUrl);
+window.addEventListener('hashchange', openAgendaFromUrl);
+window.addEventListener('popstate', openAgendaFromUrl);
 
 /* ==========================================================================
    12. RESEARCH TRAINING CALENDAR & FAQ ACCORDION INTERACTIVITY
