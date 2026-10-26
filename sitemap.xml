@@ -56,14 +56,6 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Call for Proposals -->
-  <url>
-    <loc>https://mcnpisaprdc.github.io/rdc-website/call-for-proposals.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
   <!-- Journals & Publications -->
   <url>
     <loc>https://mcnpisaprdc.github.io/rdc-website/journal.html</loc>

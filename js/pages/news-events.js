@@ -513,6 +513,45 @@
       }
     };
 
+    function updateArticleOgMeta(articleId, data, imageSrc) {
+      var image = imageSrc || 'https://mcnpisaprdc.github.io/rdc-website/upload/rdc-website-platform.png';
+      var title = (data && data.title) ? data.title : 'News & Events | MCNP & ISAP RDC';
+      var description = (data && data.title)
+        ? data.title + ' by MCNP & ISAP Research and Development Center.'
+        : 'Explore research colloquiums, scholarly defenses, student statistics achievements, health trainings, and SDG initiatives from MCNP & ISAP RDC.';
+      var url = 'https://mcnpisaprdc.github.io/rdc-website/news-events.html?article=' + encodeURIComponent(articleId);
+
+      var setters = [
+        { selector: 'meta[property="og:url"]', attr: 'content', value: url },
+        { selector: 'meta[property="og:title"]', attr: 'content', value: title },
+        { selector: 'meta[property="og:description"]', attr: 'content', value: description },
+        { selector: 'meta[property="og:image"]', attr: 'content', value: image },
+        { selector: 'meta[property="og:image:alt"]', attr: 'content', value: title },
+        { selector: 'meta[name="twitter:title"]', attr: 'content', value: title },
+        { selector: 'meta[name="twitter:description"]', attr: 'content', value: description },
+        { selector: 'meta[name="twitter:image"]', attr: 'content', value: image },
+        { selector: 'meta[name="twitter:card"]', attr: 'content', value: 'summary_large_image' }
+      ];
+
+      setters.forEach(function(item) {
+        var tag = document.head.querySelector(item.selector);
+        if (!tag) {
+          tag = document.createElement('meta');
+          if (item.selector.indexOf('property=') !== -1) {
+            tag.setAttribute('property', item.selector.match(/property="([^"]+)"/)[1]);
+          } else if (item.selector.indexOf('name=') !== -1) {
+            tag.setAttribute('name', item.selector.match(/name="([^"]+)"/)[1]);
+          }
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute(item.attr, item.value);
+      });
+
+      var canonical = document.head.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.setAttribute('href', url);
+      document.title = title;
+    }
+
     function openArticleModal(articleId) {
       if (!articleOverlay) articleOverlay = document.getElementById('articleModalOverlay');
       if (overlay && overlay.classList.contains('open')) {
@@ -522,6 +561,14 @@
       currentActiveArticleId = id;
       var data = ARTICLES_METADATA[id] || ARTICLES_METADATA['article-rdc-digital-platform'];
       if (!data) return;
+
+      var featuredImage = null;
+      var sourceBody = document.getElementById(data.bodyId);
+      if (sourceBody) {
+        var firstBodyImage = sourceBody.querySelector('img');
+        if (firstBodyImage) featuredImage = firstBodyImage.getAttribute('src');
+      }
+      updateArticleOgMeta(id, data, featuredImage);
 
       if (window.trackEvent) {
         window.trackEvent('select_content', {

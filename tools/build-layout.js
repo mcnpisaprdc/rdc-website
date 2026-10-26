@@ -35,7 +35,6 @@ const ACTIVE = {
   'resources-isap.html': 'resources-mcnp.html',
   'news-events.html': 'news-events.html',
   'calendar.html': 'news-events.html',
-  'call-for-proposals.html': 'news-events.html',
   'adg-advocacy.html': 'adg-advocacy.html',
   'sdg-overview.html': 'adg-advocacy.html',
   'contact.html': 'contact.html'

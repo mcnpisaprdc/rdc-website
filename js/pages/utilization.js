@@ -3351,6 +3351,44 @@
       window.scrollTo(0, scrollY);
     }
 
+    function updateUtilArticleOgMeta(article) {
+      if (!article) return;
+      var image = article.heroImage || 'https://mcnpisaprdc.github.io/rdc-website/assets/rdc-logo.png';
+      var title = article.title || 'Research Utilization & Community Impact';
+      var description = article.summary || article.impact || 'Research utilization story from MCNP & ISAP Research and Development Center.';
+      var url = 'https://mcnpisaprdc.github.io/rdc-website/utilization.html?article=' + encodeURIComponent(article.id || article.status || title);
+
+      var setters = [
+        { selector: 'meta[property="og:url"]', attr: 'content', value: url },
+        { selector: 'meta[property="og:title"]', attr: 'content', value: title },
+        { selector: 'meta[property="og:description"]', attr: 'content', value: description },
+        { selector: 'meta[property="og:image"]', attr: 'content', value: image },
+        { selector: 'meta[property="og:image:alt"]', attr: 'content', value: title },
+        { selector: 'meta[name="twitter:title"]', attr: 'content', value: title },
+        { selector: 'meta[name="twitter:description"]', attr: 'content', value: description },
+        { selector: 'meta[name="twitter:image"]', attr: 'content', value: image },
+        { selector: 'meta[name="twitter:card"]', attr: 'content', value: 'summary_large_image' }
+      ];
+
+      setters.forEach(function(item) {
+        var tag = document.head.querySelector(item.selector);
+        if (!tag) {
+          tag = document.createElement('meta');
+          if (item.selector.indexOf('property=') !== -1) {
+            tag.setAttribute('property', item.selector.match(/property="([^"]+)"/)[1]);
+          } else if (item.selector.indexOf('name=') !== -1) {
+            tag.setAttribute('name', item.selector.match(/name="([^"]+)"/)[1]);
+          }
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute(item.attr, item.value);
+      });
+
+      var canonical = document.head.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.setAttribute('href', url);
+      document.title = title + ' | MCNP & ISAP RDC';
+    }
+
     window.openUtilArticleModal = function(statusOrId) {
       if (!statusOrId) return;
       var a = findUtilizationArticle(statusOrId);
@@ -3365,6 +3403,7 @@
       }
 
       currentActiveUtilArticle = a;
+      updateUtilArticleOgMeta(a);
       var overlay = document.getElementById('utilArticleModalOverlay');
       if (!overlay) return;
 
