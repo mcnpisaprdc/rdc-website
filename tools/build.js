@@ -28,6 +28,7 @@ const list = (dir, ext) => {
 
 // Generate cross-page metadata from the existing editorial sources first.
 require('./build-content').buildContent();
+execFileSync(process.execPath, [path.join(__dirname, 'build-social.js')], { stdio: 'inherit' });
 
 // 1. Layout
 execFileSync(process.execPath, [path.join(__dirname, 'build-layout.js')], { stdio: 'inherit' });

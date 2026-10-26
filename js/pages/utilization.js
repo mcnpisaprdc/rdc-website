@@ -3353,6 +3353,7 @@
 
     function updateUtilArticleOgMeta(article) {
       if (!article) return;
+      if (window.applyArticleSocialMeta && window.applyArticleSocialMeta(article.id)) return;
       var image = article.heroImage || 'https://mcnpisaprdc.github.io/rdc-website/assets/rdc-logo.png';
       var title = article.title || 'Research Utilization & Community Impact';
       var description = article.summary || article.impact || 'Research utilization story from MCNP & ISAP Research and Development Center.';
@@ -3570,6 +3571,7 @@
     };
 
     window.closeUtilArticleModal = function() {
+      if (window.restoreArticleSocialMeta) window.restoreArticleSocialMeta();
       var overlay = document.getElementById('utilArticleModalOverlay');
       if (overlay) {
         overlay.classList.remove('open');
@@ -3727,7 +3729,8 @@
 
     function copyUtilArticleLink(targetId, btn) {
       var cleanTarget = (targetId || '').replace(/^#/, '');
-      var url = window.location.origin + window.location.pathname + '#' + cleanTarget;
+      var article = findUtilizationArticle(cleanTarget);
+      var url = article ? new URL('share/' + encodeURIComponent(article.id) + '.html', window.location.href).href : window.location.origin + window.location.pathname + '#' + cleanTarget;
       if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(function() {
           showCopyFeedback(btn, '✓ Link Copied!');

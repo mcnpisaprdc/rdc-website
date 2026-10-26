@@ -514,6 +514,7 @@
     };
 
     function updateArticleOgMeta(articleId, data, imageSrc) {
+      if (window.applyArticleSocialMeta && window.applyArticleSocialMeta(articleId)) return;
       var image = imageSrc || 'https://mcnpisaprdc.github.io/rdc-website/upload/rdc-website-platform.png';
       var title = (data && data.title) ? data.title : 'News & Events | MCNP & ISAP RDC';
       var description = (data && data.title)
@@ -664,6 +665,7 @@
     }
 
     function closeArticleModal() {
+      if (window.restoreArticleSocialMeta) window.restoreArticleSocialMeta();
       if (!articleOverlay) articleOverlay = document.getElementById('articleModalOverlay');
       if (articleOverlay) {
         articleOverlay.classList.remove('open');
@@ -884,7 +886,7 @@
 
     window.copyArticleLink = function (articleId, btn) {
       var id = articleId || currentActiveArticleId || 'article-rdc-digital-platform';
-      var url = window.location.origin + window.location.pathname + '?article=' + encodeURIComponent(id) + '#' + encodeURIComponent(id);
+      var url = new URL('share/' + encodeURIComponent(id) + '.html', window.location.href).href;
       if (window.trackEvent) {
         window.trackEvent('share', {
           method: 'copy_link',

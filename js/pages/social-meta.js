@@ -1,0 +1,27 @@
+(function () {
+  var originalTitle = document.title;
+  var originals = Array.from(document.head.querySelectorAll('meta[name="description"], meta[property^="og:"], meta[name^="twitter:"], link[rel="canonical"]')).map(function (tag) { return { tag: tag, value: tag.getAttribute(tag.tagName === 'LINK' ? 'href' : 'content') }; });
+  var added = [];
+  window.restoreArticleSocialMeta = function () {
+    originals.forEach(function (entry) { entry.tag.setAttribute(entry.tag.tagName === 'LINK' ? 'href' : 'content', entry.value); });
+    added.forEach(function (tag) { tag.remove(); });
+    added = [];
+    document.title = originalTitle;
+  };
+  window.applyArticleSocialMeta = function (id) {
+    var article = (window.RDC_SOCIAL || {})[id];
+    if (!article) return false;
+    window.restoreArticleSocialMeta();
+    var tags = {'description':article.description,'og:type':'article','og:url':article.url,'og:title':article.title,'og:description':article.description,'og:image':article.image,'og:image:secure_url':article.image,'og:image:type':'image/jpeg','og:image:width':'1200','og:image:height':'630','og:image:alt':article.title,'twitter:card':'summary_large_image','twitter:title':article.title,'twitter:description':article.description,'twitter:image':article.image,'twitter:image:alt':article.title};
+    Object.keys(tags).forEach(function (key) {
+      var attr = key.indexOf('og:') === 0 ? 'property' : 'name';
+      var tag = document.head.querySelector('meta[' + attr + '="' + key + '"]');
+      if (!tag) { tag = document.createElement('meta'); tag.setAttribute(attr,key); document.head.appendChild(tag); added.push(tag); }
+      tag.content = tags[key];
+    });
+    var canonical = document.head.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.href = article.url;
+    document.title = article.title;
+    return true;
+  };
+})();

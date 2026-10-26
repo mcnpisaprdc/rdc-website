@@ -2,9 +2,10 @@
 // Run through npm run build; do not edit js/pages/content-index.js by hand.
 // Edit news card titles, dates, badges and SDG links/data-sdgs in news-events.html.
 // Edit published project metadata in OFFICIAL_UTILIZATION_ARTICLES in utilization.js.
-// Share preview titles and NewsArticle headlines follow news titles automatically;
-// share descriptions come from each preview's meta[name=description]. Publication
-// timestamps are intentionally never replaced by build/edit dates.
+// NewsArticle headlines follow news titles automatically. build-social.js then
+// generates share pages/images from NewsArticle data and published utilization data.
+// Publication timestamps are intentionally never replaced by build/edit dates.
+// Social regression checks: node tools/test-social.js.
 // legacy-sdg-listings.json preserves an older entry with no matching source card:
 // replace its fallback URL only after its dedicated story has been verified.
 // Regression checks: node tools/test-content.js and node tools/test-responsive.js.
