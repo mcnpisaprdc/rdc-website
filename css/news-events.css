@@ -1,3 +1,39 @@
+.post-share {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  flex: 0 0 auto;
+  padding: 4px 0;
+}
+.post-share-label {
+  font: 700 14px/1.4 Arial, sans-serif;
+  color: #0f172a;
+}
+.post-share-facebook {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #1877f2;
+  color: #fff !important;
+  text-decoration: none;
+}
+.post-share-facebook[hidden] { display: none; }
+.post-share-facebook svg { width: 18px; height: 18px; }
+.post-share-facebook:hover { background: #0866d9; }
+.post-share-facebook:focus-visible { outline: 3px solid #0f172a; outline-offset: 4px; }
+
+@media (max-width: 600px) {
+  .article-modal-actions-btns { flex-wrap: wrap; }
+  .article-modal-actions-btns .post-share { flex-basis: 100%; }
+}
+
 /* ===== View Switcher (Articles vs Events vs All) ===== */
     .news-view-tabs-wrap {
       display: flex;

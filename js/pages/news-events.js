@@ -249,6 +249,7 @@
     function openModal(index) {
       var ev = events[index];
       if (!ev) return;
+      if (window.applyArticleSocialMeta) window.applyArticleSocialMeta(ev.id);
 
       if (window.trackEvent) {
         window.trackEvent('select_content', {
@@ -370,6 +371,7 @@
     }
 
     function closeModal() {
+      if (window.restoreArticleSocialMeta) window.restoreArticleSocialMeta();
       if (!overlay) overlay = document.getElementById('eventModalOverlay');
       if (overlay) {
         overlay.classList.remove('open');
@@ -393,6 +395,38 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-annual-health-research-forum-2026": {
+  "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; Annual Health Research Forum 2026",
+  "badge": " OFFICIAL ARTICLE",
+  "topic": "Health Research &bull; Knowledge Exchange",
+  "date": " October 26–27, 2026",
+  "readTime": "3 min read",
+  "title": "MCNP–ISAP Engages in Annual Health Research Forum 2026, Advancing Research and Knowledge Exchange",
+  "bodyId": "body-article-annual-health-research-forum-2026",
+  "sdgs": [
+    {
+      "goal": "3",
+      "title": "SDG 3: Good Health and Well-Being",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp"
+    },
+    {
+      "goal": "4",
+      "title": "SDG 4: Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "9",
+      "title": "SDG 9: Industry, Innovation and Infrastructure",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp"
+    },
+    {
+      "goal": "17",
+      "title": "SDG 17: Partnerships for the Goals",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"
+    }
+  ],
+  "agendas": []
+},
       'article-rdc-digital-platform': {
         breadcrumb: 'News &amp; Events &gt; Articles &amp; Editorials &gt; RDC Digital Platform',
         badge: ' OFFICIAL ARTICLE',
@@ -612,6 +646,8 @@
 
       var agendaContainer = document.getElementById('articleModalAgendas');
       if (agendaContainer && data.agendas) {
+        var agendaItem = agendaContainer.closest('.article-modal-align-item');
+        if (agendaItem) agendaItem.style.display = data.agendas.length ? '' : 'none';
         agendaContainer.innerHTML = data.agendas.map(function(a) {
           return '<a href="rdc-agenda.html#pillar-' + a.pillar + '" target="_blank" rel="noopener" title="' + a.title + '" class="article-agenda-icon-link" style="width: 26px; height: 26px; display: inline-block;">' +
             '<img src="' + a.icon + '" alt="' + a.title + '" class="article-agenda-icon-img" loading="lazy" decoding="async"></a>';
@@ -752,7 +788,7 @@
       var curr = parseInt(overlay.dataset.currentIndex || '0', 10);
       var ev = events[curr];
       if (ev) {
-        var url = window.location.origin + window.location.pathname + '?event=' + encodeURIComponent(ev.id) + '#' + encodeURIComponent(ev.id);
+        var url = new URL('share/' + encodeURIComponent(ev.id) + '.html', window.location.href).href;
         if (window.trackEvent) {
           window.trackEvent('share', {
             method: 'copy_link',

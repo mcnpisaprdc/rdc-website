@@ -34,17 +34,23 @@ async function main() {
       await page.setJavaScriptEnabled(true);
       await page.reload({waitUntil:'networkidle0'});
       const live=await get();
+      const facebook = await page.$eval('[data-facebook-share]', link => ({url:link.href, hidden:link.hidden, target:link.target, rel:link.rel}));
+      assert.equal(new URL(facebook.url).searchParams.get('u'), m.url);
+      assert.equal(new URL(facebook.url).hostname, 'www.facebook.com');
+      assert.equal(facebook.hidden, false);
+      assert.equal(facebook.target, '_blank');
+      assert.ok(facebook.rel.includes('noopener'));
       for(const key of ['description','og:title','og:description','og:image','og:url','og:type','og:image:width','og:image:height','twitter:title','twitter:description','twitter:image','twitter:image:alt']) assert.equal(live[key],raw[key],id+': '+key);
       const route=page.url().includes('utilization.html')?'utilization.html':'news-events.html';
-      await page.goto(origin+'/'+route+'?article='+id,{waitUntil:'networkidle0'});
+      await page.goto(origin+'/'+route+'?'+(id.startsWith('event-') ? 'event' : 'article')+'='+id,{waitUntil:'networkidle0'});
       assert.equal((await get())['og:image'],m.image);
-      await page.evaluate((util)=>util?window.closeUtilArticleModal():window.closeArticleModal(),route==='utilization.html');
+      await page.evaluate(({util,event})=>util?window.closeUtilArticleModal():event?window.closeEventModal():window.closeArticleModal(),{util:route==='utilization.html',event:id.startsWith('event-')});
       assert.equal((await get())['og:type'],'website');
       await page.goto(origin+'/'+route+'#'+id,{waitUntil:'networkidle0'});
       assert.equal((await get())['og:title'],m.title);
       console.log('PASS static/share redirect/query/hash/close: '+id);
     }
-    console.log('All 11 article previews passed in headless Chromium.');
+    console.log('All '+Object.keys(ctx.window.RDC_SOCIAL).length+' article and event previews passed in headless Chromium.');
   } finally { if(browser) await browser.close(); await new Promise(r=>server.close(r)); }
 }
 main().catch(e=>{console.error(e);process.exitCode=1;});

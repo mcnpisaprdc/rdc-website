@@ -7,6 +7,10 @@
     added.forEach(function (tag) { tag.remove(); });
     added = [];
     document.title = originalTitle;
+    document.querySelectorAll('[data-facebook-share]').forEach(function (link) {
+      link.removeAttribute('href');
+      link.hidden = true;
+    });
   };
   window.applyArticleSocialMeta = function (id) {
     var article = (window.RDC_SOCIAL || {})[id];
@@ -22,6 +26,11 @@
     var canonical = document.head.querySelector('link[rel="canonical"]');
     if (canonical) canonical.href = article.url;
     document.title = article.title;
+    document.querySelectorAll('[data-facebook-share]').forEach(function (link) {
+      link.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(article.url);
+      link.setAttribute('aria-label', 'Share on Facebook: ' + article.title);
+      link.hidden = false;
+    });
     return true;
   };
 })();
