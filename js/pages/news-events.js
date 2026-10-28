@@ -1193,7 +1193,7 @@
           if (window.switchContentView) window.switchContentView('articles', true);
         } else if (h === '#events' || h === '#eventssection') {
           if (window.switchContentView) window.switchContentView('events', true);
-        } else if (h === '#all') {
+        } else if (h === '#all' || h === '#newseventshighlights') {
           if (window.switchContentView) window.switchContentView('all', true);
         } else {
           var target = document.querySelector(window.location.hash);

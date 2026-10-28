@@ -312,6 +312,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (link) {
       link.setAttribute('aria-haspopup', 'true');
       link.setAttribute('aria-expanded', 'false');
+      if (item.classList.contains('nav-item-news')) {
+        const updateExpanded = () => {
+          if (!isTouchInput()) {
+            link.setAttribute('aria-expanded', String(item.matches(':hover') || item.contains(document.activeElement)));
+          }
+        };
+        item.addEventListener('mouseenter', updateExpanded);
+        item.addEventListener('mouseleave', updateExpanded);
+        item.addEventListener('focusin', updateExpanded);
+        item.addEventListener('focusout', () => requestAnimationFrame(updateExpanded));
+      }
       link.addEventListener('click', (e) => {
         if (isTouchInput()) {
           // On touch/mobile: first tap opens dropdown; second tap on an already-open desktop touch item navigates
@@ -362,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link, .dropdown-link');
 
   navLinks.forEach((link) => {
-    const href = link.getAttribute('href');
+    const href = link.getAttribute('data-nav-page') || link.getAttribute('href');
     if (
       href &&
       (href === currentPath ||

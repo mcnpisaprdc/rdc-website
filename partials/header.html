@@ -162,18 +162,14 @@
             </li>
 
             <!-- Dropdown: NEWS & EVENTS -->
-            <li class="nav-item dropdown">
-              <a href="news-events.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown nav-item-news">
+              <a href="news-events.html" class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="news-events-dropdown">
                 NEWS &amp; EVENTS
               </a>
-              <div class="dropdown-menu">
-                <a href="news-events.html#articles" class="dropdown-link">
-                  <span>Research Articles &amp; Stories</span>
-                  <span class="dropdown-badge badge-mcnp">ARTICLES</span>
-                </a>
-                <a href="news-events.html#events" class="dropdown-link">
-                  <span>Events &amp; Colloquiums</span>
-                  <span class="dropdown-badge badge-isap">EVENTS</span>
+              <div class="dropdown-menu" id="news-events-dropdown">
+                <a href="news-events.html#newsEventsHighlights" data-nav-page="news-events.html" class="dropdown-link">
+                  <span>Articles &amp; Event Highlights</span>
+                  <span class="dropdown-badge badge-mcnp">UPDATES</span>
                 </a>
                 <a href="calendar.html" class="dropdown-link">
                   <span>Research Schedule Calendar</span>

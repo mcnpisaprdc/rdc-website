@@ -34,6 +34,37 @@
   .article-modal-actions-btns .post-share { flex-basis: 100%; }
 }
 
+#newsEventsHighlights {
+  scroll-margin-top: 100px;
+}
+
+.article-sdg-goal {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0.5rem 0 0.85rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.article-sdg-goal img {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.article-sdg-goal:hover strong {
+  text-decoration: underline;
+}
+
+.article-sdg-goal:focus-visible {
+  outline: 3px solid #1e5ea8;
+  outline-offset: 3px;
+}
+
 /* ===== View Switcher (Articles vs Events vs All) ===== */
     .news-view-tabs-wrap {
       display: flex;

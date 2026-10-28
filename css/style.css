@@ -506,6 +506,28 @@ img {
   transform: rotate(45deg);
 }
 
+@media (min-width: 1151px) {
+  .nav-item-news .dropdown-menu {
+    left: auto;
+    right: 0;
+    width: min(360px, calc(100vw - 2rem));
+  }
+
+  .nav-item-news .dropdown-menu::before {
+    left: auto;
+    right: 1.35rem;
+  }
+}
+
+.nav-item-news .dropdown-link {
+  white-space: normal;
+}
+
+.nav-item-news .dropdown-link > span:first-child {
+  min-width: 0;
+  flex: 1;
+}
+
 .nav-item:hover .dropdown-menu,
 .nav-item:focus-within .dropdown-menu,
 .nav-item.open .dropdown-menu {
