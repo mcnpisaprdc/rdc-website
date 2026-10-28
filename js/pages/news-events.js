@@ -398,10 +398,10 @@
 "article-annual-health-research-forum-2026": {
   "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; Annual Health Research Forum 2026",
   "badge": " OFFICIAL ARTICLE",
-  "topic": "Health Research &bull; Knowledge Exchange",
+  "topic": "Health Research &bull; Student Recognition",
   "date": " October 26–27, 2026",
-  "readTime": "3 min read",
-  "title": "MCNP–ISAP Engages in Annual Health Research Forum 2026, Advancing Research and Knowledge Exchange",
+  "readTime": "6 min read",
+  "title": "MCNP–ISAP Showcases Health Research at Annual Health Research Forum 2026, Earns Student Recognition",
   "bodyId": "body-article-annual-health-research-forum-2026",
   "sdgs": [
     {

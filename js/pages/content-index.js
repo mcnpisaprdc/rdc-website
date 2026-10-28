@@ -2,11 +2,11 @@
 window.RDC_CONTENT = [
   {
     "id": "article-annual-health-research-forum-2026",
-    "t": "MCNP–ISAP Engages in Annual Health Research Forum 2026, Advancing Research and Knowledge Exchange",
+    "t": "MCNP–ISAP Showcases Health Research at Annual Health Research Forum 2026, Earns Student Recognition",
     "r": "October 26–27, 2026",
     "d": "—",
     "m": "October 26–27, 2026",
-    "topic": "Health Research &bull; Knowledge Exchange",
+    "topic": "Health Research &bull; Student Recognition",
     "g": [
       3,
       4,
@@ -562,20 +562,6 @@ window.RDC_CONTENT = [
       4
     ],
     "url": "utilization.html#article-project-relief-session3-2026"
-  },
-  {
-    "id": "article-project-case-criminology",
-    "t": "PROJECT CASE: Where Evidence Meets Law and Research Drives Justice",
-    "r": "August 13, 2026",
-    "d": "—",
-    "m": "Research utilization",
-    "topic": "Project CASE — Crime Scene Investigation & Forensic Integrity",
-    "g": [
-      16,
-      4,
-      9
-    ],
-    "url": "utilization.html#article-project-case-criminology"
   },
   {
     "d": "—",

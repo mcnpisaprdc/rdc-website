@@ -37,8 +37,8 @@ window.RDC_SOCIAL = {
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-cpd-cohabitation-research-meeting.html"
   },
   "article-annual-health-research-forum-2026": {
-    "title": "MCNP–ISAP Engages in Annual Health Research Forum 2026, Advancing Research and Knowledge Exchange",
-    "description": "MCNP–ISAP participated in the Annual Health Research Forum 2026 on October 26–27 at Highlander Hotel and Resort in Solano, Nueva Vizcaya, supporting health research engagement and knowledge exchange.",
+    "title": "MCNP–ISAP Showcases Health Research at Annual Health Research Forum 2026, Earns Student Recognition",
+    "description": "MCNP–ISAP presented one 3-Minute Pitch to Policymakers and three digital poster entries at the Annual Health Research Forum 2026. Irish Ann Almida earned 2nd Best Paper, Student Category recognition.",
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-annual-health-research-forum-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-annual-health-research-forum-2026.html"
   },
@@ -65,12 +65,6 @@ window.RDC_SOCIAL = {
     "description": "The College of Criminal Justice Education (CoCJE) concluded the three-session Project RELIEF: Let It Out, Lift It Up! with a final session focused on self-care, resilience, and emotional well-being among Level 3 and Level 4 BS Criminology students.",
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-project-relief-session3-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-project-relief-session3-2026.html"
-  },
-  "article-project-case-criminology": {
-    "title": "PROJECT CASE: Where Evidence Meets Law and Research Drives Justice",
-    "description": "The pursuit of justice begins with the careful examination of evidence, the systematic investigation of crime scenes, and the responsible handling of information. Recognizing the importance of these practices, Project CASE highlights the fundamental principles of crime scene investigation and proper evidence management.",
-    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-project-case-criminology.jpg",
-    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-project-case-criminology.html"
   },
   "event-project-relief-wellness": {
     "title": "PROJECT RELIEF: Let It Out, Lift It Up! — Student Resilience & Mental Wellness Program",
