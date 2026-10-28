@@ -80,7 +80,7 @@
       };
     }
 
-    var cards = Array.prototype.slice.call(document.querySelectorAll('#eventsGrid .news-card'));
+    var cards = Array.prototype.slice.call(document.querySelectorAll('#articlesGrid > .news-card[data-content-type="event"]'));
     var events = cards.map(parseEvent);
 
     var catCounts = { all: cards.length, research: 0, sdg: 0, training: 0, student: 0 };
@@ -425,7 +425,28 @@
       "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"
     }
   ],
-  "agendas": []
+  "agendas": [
+  {
+    "pillar": "inspire",
+    "title": "INSPIRE: Culture, Capability, and Engagement",
+    "icon": "assets/agenda/agenda-1-inspire.webp"
+  },
+  {
+    "pillar": "value",
+    "title": "VALUE: Health, Safety, and Well-Being",
+    "icon": "assets/agenda/agenda-5-value.webp"
+  },
+  {
+    "pillar": "advance",
+    "title": "ADVANCE: Sustainability and Climate Resilience",
+    "icon": "assets/agenda/agenda-6-advance.webp"
+  },
+  {
+    "pillar": "expand",
+    "title": "EXPAND: Partnerships, Networks, and Global Engagement",
+    "icon": "assets/agenda/agenda-8-expand.webp"
+  }
+]
 },
       'article-rdc-digital-platform': {
         breadcrumb: 'News &amp; Events &gt; Articles &amp; Editorials &gt; RDC Digital Platform',
@@ -720,13 +741,27 @@
     window.openArticleModal = openArticleModal;
     window.closeArticleModal = closeArticleModal;
 
-    function printArticle(articleId) {
+    var printDetails = [];
+
+    function prepareArticlePrint() {
+      var content = document.getElementById('articleModalContent');
+      if (!content) return [];
+      content.querySelectorAll('details:not([open])').forEach(function (details) {
+        printDetails.push(details);
+        details.open = true;
+      });
+      return Array.from(content.querySelectorAll('img')).map(function (img) {
+        img.loading = 'eager';
+        return img.decode ? img.decode().catch(function () {}) : Promise.resolve();
+      });
+    }
+
+    async function printArticle(articleId) {
       var id = articleId || currentActiveArticleId || 'article-rdc-digital-platform';
       openArticleModal(id);
       document.body.classList.add('print-article-mode');
-      setTimeout(function () {
-        window.print();
-      }, 50);
+      await Promise.all(prepareArticlePrint());
+      window.print();
     }
 
     function printSchedule() {
@@ -742,6 +777,7 @@
     window.addEventListener('beforeprint', function () {
       if (articleOverlay && articleOverlay.classList.contains('open')) {
         document.body.classList.add('print-article-mode');
+        prepareArticlePrint();
       } else if (overlay && overlay.classList.contains('open')) {
         document.body.classList.add('print-event-mode');
       }
@@ -749,6 +785,8 @@
 
     window.addEventListener('afterprint', function () {
       document.body.classList.remove('print-article-mode', 'print-event-mode', 'print-schedule-mode');
+      printDetails.forEach(function (details) { details.open = false; });
+      printDetails = [];
     });
 
     if (articleCloseBtn) articleCloseBtn.addEventListener('click', closeArticleModal);
@@ -961,7 +999,7 @@
     var searchInput = document.getElementById('eventSearchInput');
     var searchClearBtn = document.getElementById('eventSearchClear');
     var countTotal = document.getElementById('eventCountTotal');
-    var eventsGrid = document.getElementById('eventsGrid');
+    var eventsGrid = document.getElementById('articlesGrid');
     var loadMoreEventsBtn = document.getElementById('loadMoreEventsBtn');
     var eventCards = eventsGrid ? Array.prototype.slice.call(eventsGrid.querySelectorAll('.news-card')) : [];
     var eventPageSize = 9;
@@ -988,12 +1026,21 @@
       if (eventsGrid) eventsGrid.appendChild(card);
     });
 
+    eventCards.forEach(function (card) {
+      card.dataset.searchText = card.textContent.toLowerCase();
+    });
+    Object.keys(catCounts).forEach(function (category) {
+      catCounts[category] = eventCards.filter(function (card) {
+        return category === 'all' || (card.dataset.categories || '').split(' ').indexOf(category) !== -1;
+      }).length;
+    });
+
     // Populate dynamic counts on filter buttons
     filterBtns.forEach(function (btn) {
       var f = btn.dataset.filter;
       if (f && catCounts[f] !== undefined) {
         var labelMap = {
-          all: 'All News & Events',
+          all: 'All Updates',
           research: 'Research & Colloquiums',
           sdg: 'SDG Initiatives',
           training: 'Capability Building',
@@ -1007,7 +1054,7 @@
     var activeCategory = 'all';
     var searchQuery = '';
 
-    window.currentContentView = 'articles';
+    window.currentContentView = 'all';
 
     function resetEventPagination() {
       eventCardsToShow = eventPageSize;
@@ -1025,78 +1072,33 @@
       });
     }
 
+    // Legacy article/event anchors now lead to the same combined listing.
     window.switchContentView = function(view, smoothScroll) {
-      window.currentContentView = view;
-      var articlesSec = document.getElementById('articlesSection');
-      var eventsSec = document.getElementById('eventsSection');
-      var tabBtns = document.querySelectorAll('.news-view-tab-btn');
-
-      tabBtns.forEach(function(b) {
-        var isThis = (b.dataset.view === view);
-        b.classList.toggle('active', isThis);
-        b.setAttribute('aria-selected', isThis ? 'true' : 'false');
-      });
-
-      if (view === 'articles') {
-        if (articlesSec) articlesSec.style.display = 'block';
-        if (eventsSec) eventsSec.style.display = 'none';
-      } else if (view === 'events') {
-        if (articlesSec) articlesSec.style.display = 'none';
-        if (eventsSec) eventsSec.style.display = 'block';
-      } else {
-        if (articlesSec) articlesSec.style.display = 'block';
-        if (eventsSec) eventsSec.style.display = 'block';
-      }
-
+      window.currentContentView = 'all';
       applyFilterAndSearch();
-
-      if (smoothScroll) {
-        var scrollTarget = (view === 'events') ? eventsSec : articlesSec;
-        if (scrollTarget) {
-          scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
+      if (smoothScroll) document.getElementById('newsEventsHighlights').scrollIntoView({behavior:'smooth',block:'start'});
     };
 
     function applyFilterAndSearch() {
-      var matchingEvents = [];
-      var currentView = window.currentContentView || 'all';
-
-      cards.forEach(function (card) {
-        var isArt = card.closest('#articlesGrid') || card.dataset.contentType === 'article';
-        var inView = (currentView === 'all') || (currentView === 'articles' && isArt) || (currentView === 'events' && !isArt);
-
-        if (!inView) {
-          card.classList.add('event-card-hidden');
-          return;
-        }
-
-        var cardCats = (card.dataset.categories || '').split(' ');
-        var matchesCategory = activeCategory === 'all' || cardCats.indexOf(activeCategory) > -1;
-        var matchesSearch = !searchQuery || (card.dataset.searchText || '').indexOf(searchQuery) > -1;
-
-        if (!matchesCategory || !matchesSearch) {
-          card.classList.add('event-card-hidden');
-        } else if (!isArt) {
-          matchingEvents.push(card);
-          card.classList.add('event-card-hidden');
-        } else {
-          card.classList.remove('event-card-hidden');
-        }
+      var matching = eventCards.filter(function (card) {
+        var categories = (card.dataset.categories || '').split(' ');
+        var matchesCategory = activeCategory === 'all' || categories.indexOf(activeCategory) !== -1;
+        var matchesSearch = !searchQuery || (card.dataset.searchText || '').indexOf(searchQuery) !== -1;
+        card.classList.add('event-card-hidden');
+        return matchesCategory && matchesSearch;
       });
-
-      var countEl = document.getElementById('eventCountTotal');
-      if (countEl) countEl.textContent = matchingEvents.length;
-
-      matchingEvents.sort(compareEventDates);
-      matchingEvents.slice(0, eventCardsToShow).forEach(function (card) {
+      matching.slice(0, eventCardsToShow).forEach(function (card) {
         card.classList.remove('event-card-hidden');
       });
-
+      var visible = Math.min(eventCardsToShow, matching.length);
+      var result = document.getElementById('highlightResultCount');
+      if (result) result.textContent = 'Showing ' + visible + ' of ' + matching.length + ' updates';
+      var empty = document.getElementById('highlightsEmptyState');
+      if (empty) empty.hidden = matching.length !== 0;
       if (loadMoreEventsBtn) {
-        var remainingEvents = matchingEvents.length - eventCardsToShow;
-        loadMoreEventsBtn.style.display = currentView !== 'articles' && remainingEvents > 0 ? 'inline-flex' : 'none';
-        loadMoreEventsBtn.textContent = 'Load more events (' + Math.max(remainingEvents, 0) + ' remaining)';
+        var remaining = Math.max(matching.length - eventCardsToShow, 0);
+        loadMoreEventsBtn.style.display = remaining ? 'inline-flex' : 'none';
+        loadMoreEventsBtn.textContent = 'Load more updates (' + remaining + ' remaining)';
       }
     }
 
@@ -1132,7 +1134,7 @@
 
     cards.forEach(function (card, index) {
       card.addEventListener('click', function (e) {
-        if (card.classList.contains('article-accordion-card') || card.closest('#articlesGrid')) return;
+        if (card.dataset.contentType === 'article') return;
         if (e.target.closest('summary')) return;
         if (e.target.closest('.event-gallery-slider')) return;
         if (e.target.closest('.event-gallery-thumbstrip')) return;
@@ -1159,6 +1161,8 @@
       var isArticleTarget = !!(candidateArticleId && ARTICLES_METADATA[candidateArticleId]);
 
       if (isArticleTarget) {
+        var articleCard = document.getElementById(candidateArticleId);
+        if (articleCard) revealEventCard(articleCard);
         if (window.switchContentView) window.switchContentView('all', false);
         if (typeof window.openArticleModal === 'function') {
           window.openArticleModal(candidateArticleId);
@@ -1171,7 +1175,7 @@
       if (targetCardId) {
         var targetCard = document.getElementById(targetCardId);
         if (targetCard) {
-          var isArt = targetCard.closest('#articlesGrid') || targetCard.dataset.contentType === 'article';
+          var isArt = targetCard.dataset.contentType === 'article';
           if (!isArt) revealEventCard(targetCard);
           if (window.switchContentView) window.switchContentView(isArt ? 'articles' : 'events', false);
           if (targetCardId === 'article-37th-statistics-month-celebration' && window.toggleArticleAccordion) {
@@ -1194,7 +1198,7 @@
         } else {
           var target = document.querySelector(window.location.hash);
           if (target) {
-            var isArt = target.closest('#articlesGrid') || target.dataset.contentType === 'article';
+            var isArt = target.dataset.contentType === 'article';
             if (!isArt) revealEventCard(target);
             if (window.switchContentView) window.switchContentView(isArt ? 'articles' : 'events', false);
             setTimeout(function () {

@@ -299,7 +299,7 @@
       scroll-margin-top: 100px;
     }
 
-    /* Keep utilization article text spacing consistent across line widths */
+    /* Justify utilization article prose on desktop, mobile, and print. */
     .article-narrative-p,
     .article-accordion-snippet,
     .article-content-body p,
@@ -317,7 +317,10 @@
     .article-featured-hero figcaption span,
     .util-card-summary,
     .empty-filter-box p {
-      text-align: left !important;
+      text-align: justify !important;
+      text-justify: inter-word;
+      text-align-last: left;
+      hyphens: auto;
     }
 
     /* Stack list instead of multiple small columns */
@@ -636,31 +639,61 @@
     }
 
     @media print {
-      body.print-util-article-mode * {
-        visibility: hidden;
+      body:has(#utilArticleModalOverlay.open) > *:not(#utilArticleModalOverlay) {
+        display: none !important;
       }
-      body.print-util-article-mode #utilArticleModalOverlay,
-      body.print-util-article-mode #utilArticleModalOverlay * {
-        visibility: visible;
-      }
-      body.print-util-article-mode #utilArticleModalOverlay {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
+      #utilArticleModalOverlay.open {
+        position: static !important;
+        inset: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
         display: block !important;
         background: transparent !important;
         padding: 0 !important;
+        margin: 0 !important;
+        backdrop-filter: none !important;
       }
-      body.print-util-article-mode .article-modal-body-scroll {
+      #utilArticleModalOverlay.open .article-modal-card {
+        position: static !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        height: auto !important;
+        overflow: visible !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      #utilArticleModalOverlay.open .article-modal-body-scroll {
+        height: auto !important;
         max-height: none !important;
         overflow: visible !important;
+        padding: 0 !important;
       }
-      body.print-util-article-mode .article-modal-sticky-bar,
-      body.print-util-article-mode .article-modal-actions-btns,
-      body.print-util-article-mode .event-modal-close,
-      body.print-util-article-mode .event-modal-actions-bar {
+      #utilArticleModalOverlay .article-modal-sticky-bar,
+      #utilArticleModalOverlay .article-modal-actions-btns,
+      #utilArticleModalOverlay .event-modal-close,
+      #utilArticleModalOverlay .event-modal-actions-bar,
+      #utilArticleModalOverlay .article-editorial-footer {
         display: none !important;
+      }
+      #utilArticleModalOverlay .event-modal-head {
+        background: #fff !important;
+        color: #111 !important;
+        break-inside: avoid;
+      }
+      #utilArticleModalOverlay .event-modal-head :is(h2, span, div) {
+        color: #111 !important;
+      }
+      #utilArticleModalOverlay .article-frameworks-grid,
+      #utilArticleModalOverlay .innovates-points-grid {
+        display: block !important;
+      }
+      #utilArticleModalOverlay :is(figure, .framework-card, .innovates-point-card) {
+        break-inside: avoid;
       }
     }
     @media (max-width: 768px) {
@@ -675,6 +708,9 @@
       .sub-card-content p,
       figure figcaption,
       .util-card-summary {
-        text-align: left !important;
+        text-align: justify !important;
+        text-justify: inter-word;
+        text-align-last: left;
+        hyphens: auto;
       }
     }

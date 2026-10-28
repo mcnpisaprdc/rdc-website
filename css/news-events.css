@@ -2060,9 +2060,13 @@
       *, *::before, *::after {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
+        animation: none !important;
+        transition: none !important;
       }
 
       html, body {
+        position: static !important;
+        inset: auto !important;
         background: #ffffff !important;
         color: #0f172a !important;
         font-size: 11pt !important;
@@ -2097,6 +2101,26 @@
         display: none !important;
       }
 
+      #articleModalOverlay .article-modal-actions-btns,
+      #articleModalOverlay .article-editorial-footer,
+      #articleModalOverlay .article-modal-sticky-bar,
+      #articleModalOverlay .event-modal-close,
+      #articleModalOverlay summary,
+      .article-header-actions,
+      .post-share,
+      .rdc-lightbox {
+        display: none !important;
+      }
+
+      #articleModalOverlay figure,
+      #articleModalOverlay .article-sub-card {
+        break-inside: avoid;
+      }
+
+      #articleModalOverlay .article-competitions-cards {
+        display: block !important;
+      }
+
       /* Default overlay behavior when not active */
       .event-modal-overlay:not(.open) {
         display: none !important;
@@ -2128,14 +2152,15 @@
         z-index: auto !important;
       }
 
-      body.print-article-mode .event-modal-container,
-      #articleModalOverlay.open .event-modal-container {
+      body.print-article-mode .event-modal,
+      #articleModalOverlay.open .event-modal {
         display: block !important;
         position: static !important;
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
         max-height: none !important;
+        min-height: 0 !important;
         overflow: visible !important;
         box-shadow: none !important;
         border: none !important;
@@ -2145,10 +2170,10 @@
         padding: 0 !important;
       }
 
-      body.print-article-mode .event-modal-header,
-      #articleModalOverlay.open .event-modal-header {
-        background: #0d5c3a !important;
-        color: #ffffff !important;
+      body.print-article-mode .event-modal-head,
+      #articleModalOverlay.open .event-modal-head {
+        background: #ffffff !important;
+        color: #0f172a !important;
         padding: 1.25rem 1.5rem !important;
         border-radius: 4px !important;
         margin-bottom: 0.75rem !important;
@@ -2156,9 +2181,9 @@
         break-after: avoid !important;
       }
 
-      body.print-article-mode .event-modal-header .event-modal-breadcrumb,
-      #articleModalOverlay.open .event-modal-header .event-modal-breadcrumb {
-        color: #ffdf70 !important;
+      body.print-article-mode .event-modal-head .event-modal-breadcrumb,
+      #articleModalOverlay.open .event-modal-head .event-modal-breadcrumb {
+        color: #475569 !important;
         font-size: 0.8rem !important;
         font-weight: 700 !important;
         text-transform: uppercase !important;
@@ -2167,7 +2192,7 @@
 
       body.print-article-mode .event-modal-title,
       #articleModalOverlay.open .event-modal-title {
-        color: #ffffff !important;
+        color: #0f172a !important;
         font-size: 1.35rem !important;
         line-height: 1.35 !important;
         font-weight: 800 !important;
@@ -2179,8 +2204,14 @@
       }
 
       /* Quick Action Bar (Alignments) */
-      body.print-article-mode .event-modal-container > div:nth-child(2),
-      #articleModalOverlay.open .event-modal-container > div:nth-child(2) {
+      #articleModalOverlay .event-modal-meta,
+      #articleModalOverlay .event-modal-meta span,
+      #articleModalOverlay .event-modal-share .badge-pill {
+        color: #334155 !important;
+      }
+
+      body.print-article-mode .article-modal-quick-actions,
+      #articleModalOverlay.open .article-modal-quick-actions {
         background: #f8fafc !important;
         border: 1px solid #e2e8f0 !important;
         border-radius: 4px !important;
@@ -2190,10 +2221,10 @@
         break-after: avoid !important;
       }
 
-      body.print-article-mode .event-modal-container > div:nth-child(2) button,
-      #articleModalOverlay.open .event-modal-container > div:nth-child(2) button,
-      body.print-article-mode .event-modal-container > div:nth-child(2) .btn,
-      #articleModalOverlay.open .event-modal-container > div:nth-child(2) .btn {
+      body.print-article-mode .article-modal-quick-actions button,
+      #articleModalOverlay.open .article-modal-quick-actions button,
+      body.print-article-mode .article-modal-quick-actions .btn,
+      #articleModalOverlay.open .article-modal-quick-actions .btn {
         display: none !important;
       }
 
@@ -2316,7 +2347,7 @@
         box-shadow: none !important;
       }
 
-      body.print-event-mode .event-modal-container {
+      body.print-event-mode .event-modal {
         display: block !important;
         position: static !important;
         max-width: 100% !important;

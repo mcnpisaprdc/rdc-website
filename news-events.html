@@ -42,7 +42,7 @@
   <meta name="twitter:image" content="https://mcnpisaprdc.github.io/rdc-website/upload/rdc-website-platform.png">
 
   <link rel="stylesheet" href="css/style.min.css?v=bcde72bc">
-  <link rel="stylesheet" href="css/news-events.min.css?v=84d538bd">
+  <link rel="stylesheet" href="css/news-events.min.css?v=3e2e528a">
   <!-- Structured Data: NewsArticles -->
   <script type="application/ld+json">
 {
@@ -456,39 +456,25 @@
           <p class="section-desc" style="max-width: 720px; margin: 0 auto;">Browse published research articles, proposal defenses, student competition breakthroughs, and institutional event schedules across MCNP &amp; ISAP.</p>
         </div>
 
-        <!-- Master View Switcher: Articles vs All vs Events -->
-        <div class="news-view-tabs-wrap">
-          <div class="news-view-tabs" role="tablist" aria-label="News and Events Content Switcher">
-            <button type="button" class="news-view-tab-btn" data-view="articles" id="viewTabArticles" role="tab" aria-selected="false" onclick="switchContentView('articles');">
-              <span>Articles</span>
-              <span class="tab-count" id="countArticlesTab">6</span>
-            </button>
-            <button type="button" class="news-view-tab-btn active" data-view="all" id="viewTabAll" role="tab" aria-selected="true" onclick="switchContentView('all');">
-              <span>View All Content</span>
-              <span class="tab-count" id="countAllTab">35</span>
-            </button>
-            <button type="button" class="news-view-tab-btn" data-view="events" id="viewTabEvents" role="tab" aria-selected="false" onclick="switchContentView('events');">
-              <span>Events &amp; Highlights</span>
-              <span class="tab-count" id="countEventsTab">29</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- ========================================================
-             SECTION 1: ARTICLES & FEATURE STORIES
-             ======================================================== -->
-        <section id="articlesSection" class="content-sub-section" style="margin-bottom: 3.5rem;" aria-label="Articles and Feature Stories">
-          <div id="articlesHeaderBanner" class="news-sub-header article-header">
-            <div>
-              <span class="section-tag" style="background: rgba(13, 92, 58, 0.1); color: var(--mcnp-green); border-color: rgba(13, 92, 58, 0.25);">Published Articles</span>
-              <h3 style="font-size: 1.55rem; font-weight: 800; color: #0f172a; margin: 0.35rem 0 0.25rem;">Research Articles &amp; Feature Stories</h3>
-              <p style="color: #64748b; font-size: 0.9rem; margin: 0;">In-depth journalistic narratives, research milestone stories, and institutional coverage across MCNP &amp; ISAP.</p>
+        <div class="event-filter-toolbar" style="margin-bottom: 2rem;">
+            <div class="event-filter-pills">
+              <button type="button" class="event-pill-btn active" data-filter="all">All Updates (<span id="eventCountTotal">30</span>)</button>
+              <button type="button" class="event-pill-btn" data-filter="research">Research &amp; Colloquiums</button>
+              <button type="button" class="event-pill-btn" data-filter="sdg">SDG Initiatives</button>
+              <button type="button" class="event-pill-btn" data-filter="training">Capability Building</button>
+              <button type="button" class="event-pill-btn" data-filter="student">Student Competitions</button>
             </div>
-            <span style="font-size: 0.8rem; font-weight: 700; color: var(--mcnp-green); background: rgba(13, 92, 58, 0.08); padding: 0.25rem 0.8rem; border-radius: 999px;">6 Published Articles</span>
+            <div class="event-search-wrap">
+
+              <input type="text" id="eventSearchInput" class="event-search-input" placeholder="Search articles, events, or keywords..." aria-label="Search articles and event highlights">
+              <button type="button" id="eventSearchClear" class="event-search-clear" aria-label="Clear search">Clear</button>
+            </div>
           </div>
 
-          <div class="news-grid articles-portrait-grid" id="articlesGrid" style="margin-bottom: 2.5rem;" aria-label="Published research articles">
-<article class="news-card article-accordion-card" data-content-type="article" data-categories="all research sdg" id="article-annual-health-research-forum-2026">
+
+        <p id="highlightResultCount" role="status" aria-live="polite" style="margin-bottom:1rem;color:#64748b;"></p>
+        <div class="news-grid articles-portrait-grid" id="articlesGrid" style="margin-bottom:2.5rem;" aria-label="Articles and event highlights">
+<article class="news-card article-accordion-card" data-content-type="article" data-date="2026-10-26" data-categories="all research sdg" id="article-annual-health-research-forum-2026">
           <!-- Clickable Header: CARD PREVIEW (Click to open full article modal or expand inline) -->
           <div class="article-accordion-header" onclick="openArticleModal('article-annual-health-research-forum-2026');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openArticleModal('article-annual-health-research-forum-2026');}" aria-expanded="false" id="header-article-annual-health-research-forum-2026">
             <!-- Side Thumbnail (Before the title) -->
@@ -512,6 +498,10 @@
                   <span class="featured-align-label">Aligned SDGs:</span>
                   <div class="featured-align-icons"><a href="sdg-overview.html?goal=3" target="_blank" rel="noopener" title="SDG 3: Good Health and Well-Being" onclick="event.stopPropagation();"><img src="assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp" alt="SDG 3: Good Health and Well-Being" width="1500" height="1500" loading="lazy" decoding="async"></a><a href="sdg-overview.html?goal=4" target="_blank" rel="noopener" title="SDG 4: Quality Education" onclick="event.stopPropagation();"><img src="assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp" alt="SDG 4: Quality Education" width="1500" height="1500" loading="lazy" decoding="async"></a><a href="sdg-overview.html?goal=9" target="_blank" rel="noopener" title="SDG 9: Industry, Innovation and Infrastructure" onclick="event.stopPropagation();"><img src="assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp" alt="SDG 9: Industry, Innovation and Infrastructure" width="1500" height="1500" loading="lazy" decoding="async"></a><a href="sdg-overview.html?goal=17" target="_blank" rel="noopener" title="SDG 17: Partnerships for the Goals" onclick="event.stopPropagation();"><img src="assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp" alt="SDG 17: Partnerships for the Goals" width="1500" height="1500" loading="lazy" decoding="async"></a></div>
                 </div>
+<div class="featured-align-group"><span class="featured-align-label">RDC Agenda:</span><div class="featured-align-icons"><a href="rdc-agenda.html#pillar-inspire" target="_blank" rel="noopener" title="INSPIRE: Culture, Capability, and Engagement" onclick="event.stopPropagation();"><img src="assets/agenda/agenda-1-inspire.webp" alt="INSPIRE: Culture, Capability, and Engagement" width="278" height="222" loading="lazy" decoding="async"></a>
+<a href="rdc-agenda.html#pillar-value" target="_blank" rel="noopener" title="VALUE: Health, Safety, and Well-Being" onclick="event.stopPropagation();"><img src="assets/agenda/agenda-5-value.webp" alt="VALUE: Health, Safety, and Well-Being" width="242" height="205" loading="lazy" decoding="async"></a>
+<a href="rdc-agenda.html#pillar-advance" target="_blank" rel="noopener" title="ADVANCE: Sustainability and Climate Resilience" onclick="event.stopPropagation();"><img src="assets/agenda/agenda-6-advance.webp" alt="ADVANCE: Sustainability and Climate Resilience" width="242" height="202" loading="lazy" decoding="async"></a>
+<a href="rdc-agenda.html#pillar-expand" target="_blank" rel="noopener" title="EXPAND: Partnerships, Networks, and Global Engagement" onclick="event.stopPropagation();"><img src="assets/agenda/agenda-8-expand.webp" alt="EXPAND: Partnerships, Networks, and Global Engagement" width="242" height="217" loading="lazy" decoding="async"></a></div></div>
               </div>
             </div>
             <div class="article-header-actions">
@@ -554,7 +544,38 @@
 <li><img src="assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp" alt="SDG 9" style="width:18px;height:18px;border-radius:3px;vertical-align:text-bottom;margin-right:0.35rem;display:inline-block;" loading="lazy" decoding="async" width="18" height="18"><strong>SDG 9 (Industry, Innovation and Infrastructure):</strong> The forum’s theme emphasizes research innovation.</li>
 <li><img src="assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp" alt="SDG 17" style="width:18px;height:18px;border-radius:3px;vertical-align:text-bottom;margin-right:0.35rem;display:inline-block;" loading="lazy" decoding="async" width="18" height="18"><strong>SDG 17 (Partnerships for the Goals):</strong> Relevant to the collaborative forum setting; no specific formal partnership involving MCNP–ISAP is claimed.</li></ul></div>
   <div class="framework-card"><h5>WURI Best Practices</h5><p>From a <strong>WURI perspective</strong>, the forum demonstrates potential relevance through its emphasis on research innovation, indigenous knowledge, and sustainability. However, the available documentation does not establish a specific innovation developed by MCNP–ISAP, research translated into practice, or measurable outcomes resulting from its participation. These would require additional evidence before stronger WURI claims could be made.</p></div>
-  <div class="framework-card" style="grid-column:1 / -1;"><h5>RDC Agenda Alignment</h5><p>Institutionally, participation in the Annual Health Research Forum 2026 supports the Research and Development Center’s commitment to promoting research engagement and connecting institutional research activities with broader discussions on health, innovation, culture, and sustainable development.</p></div>
+  <div class="framework-card" style="grid-column:1 / -1;">
+  <h5>RDC Agenda Alignment</h5>
+  <p>Institutionally, participation in the Annual Health Research Forum 2026 supports the Research and Development Center’s commitment to promoting research engagement and connecting institutional research activities with broader discussions on health, innovation, culture, and sustainable development.</p>
+  <div class="innovates-points-grid"><div class="innovates-point-card">
+  <div class="innovates-point-header">
+    <a href="rdc-agenda.html#pillar-inspire" target="_blank" rel="noopener" title="View INSPIRE: Culture, Capability, and Engagement"><img src="assets/agenda/agenda-1-inspire.webp" alt="INSPIRE: Culture, Capability, and Engagement" class="innovates-point-thumb" width="278" height="222" loading="lazy" decoding="async"></a>
+    <div class="innovates-point-title"><span>Pillar 1</span><strong>INSPIRE: Culture, Capability, and Engagement</strong></div>
+  </div>
+  <p class="innovates-point-desc">Participation supports research engagement and learning by exposing MCNP–ISAP to contemporary health research discussions, indigenous knowledge, and opportunities for knowledge exchange.</p>
+</div>
+<div class="innovates-point-card">
+  <div class="innovates-point-header">
+    <a href="rdc-agenda.html#pillar-value" target="_blank" rel="noopener" title="View VALUE: Health, Safety, and Well-Being"><img src="assets/agenda/agenda-5-value.webp" alt="VALUE: Health, Safety, and Well-Being" class="innovates-point-thumb" width="242" height="205" loading="lazy" decoding="async"></a>
+    <div class="innovates-point-title"><span>Pillar 5</span><strong>VALUE: Health, Safety, and Well-Being</strong></div>
+  </div>
+  <p class="innovates-point-desc">The forum’s health research focus connects institutional research engagement with discussions on good health and well-being. Participation alone does not establish a resulting health intervention or measurable health outcome.</p>
+</div>
+<div class="innovates-point-card">
+  <div class="innovates-point-header">
+    <a href="rdc-agenda.html#pillar-advance" target="_blank" rel="noopener" title="View ADVANCE: Sustainability and Climate Resilience"><img src="assets/agenda/agenda-6-advance.webp" alt="ADVANCE: Sustainability and Climate Resilience" class="innovates-point-thumb" width="242" height="202" loading="lazy" decoding="async"></a>
+    <div class="innovates-point-title"><span>Pillar 6</span><strong>ADVANCE: Sustainability and Climate Resilience</strong></div>
+  </div>
+  <p class="innovates-point-desc">The theme connects research innovation with indigenous knowledge, culture, and resources for sustainable futures. This alignment reflects the forum’s sustainability focus; no specific MCNP–ISAP climate initiative is claimed.</p>
+</div>
+<div class="innovates-point-card">
+  <div class="innovates-point-header">
+    <a href="rdc-agenda.html#pillar-expand" target="_blank" rel="noopener" title="View EXPAND: Partnerships, Networks, and Global Engagement"><img src="assets/agenda/agenda-8-expand.webp" alt="EXPAND: Partnerships, Networks, and Global Engagement" class="innovates-point-thumb" width="242" height="217" loading="lazy" decoding="async"></a>
+    <div class="innovates-point-title"><span>Pillar 8</span><strong>EXPAND: Partnerships, Networks, and Global Engagement</strong></div>
+  </div>
+  <p class="innovates-point-desc">The regional forum provides a setting for knowledge exchange and engagement with the wider research community. The available documentation does not establish a formal partnership involving MCNP–ISAP.</p>
+</div></div>
+</div>
 </div>
 </section>
               <section class="article-narrative-section" style="border-bottom:none;margin-bottom:0;padding-bottom:0;"><h4 class="article-section-heading"><span>Photographic Documentation · Annual Health Research Forum 2026</span></h4><p class="article-narrative-p">30 photographs document the activity. Select a photograph to view it at full size.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0.85rem;margin-top:1rem;"><figure style="margin:0; min-width:0; border:1px solid #e2e8f0; border-radius:8px; overflow:hidden; background:#f8fafc;"><a href="upload/annual-health-research-forum-2026/forum-01.webp" target="_blank" rel="noopener" aria-label="Open Annual Health Research Forum 2026 photo 1"><img src="upload/annual-health-research-forum-2026/forum-01.webp" alt="Photographic documentation of the Annual Health Research Forum 2026 in Solano, Nueva Vizcaya — photo 1" width="1200" height="1600" loading="lazy" decoding="async" style="width:100%;height:220px;object-fit:contain;display:block;"></a><figcaption style="padding:0.5rem 0.75rem;font-size:0.8rem;color:#475569;">Annual Health Research Forum 2026 · Photo 1</figcaption></figure>
@@ -607,7 +628,7 @@
           </div>
         </article>
 
-          <article class="news-card article-accordion-card" data-content-type="article" data-categories="all research sdg" id="article-rdc-digital-platform">
+<article class="news-card article-accordion-card" data-content-type="article" data-date="2026-10-14" data-categories="all research sdg" id="article-rdc-digital-platform">
             <!-- Clickable Header: CARD PREVIEW (Click to open full article modal or expand inline) -->
             <div class="article-accordion-header" onclick="openArticleModal('article-rdc-digital-platform');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openArticleModal('article-rdc-digital-platform');}" aria-expanded="false" id="header-article-rdc-digital-platform">
               <!-- Side Thumbnail (Before the title) -->
@@ -839,7 +860,7 @@
             </div>
           </article>
 
-<article class="news-card article-accordion-card" data-content-type="article" data-categories="all research sdg" id="article-37th-statistics-month-celebration">
+<article class="news-card article-accordion-card" data-content-type="article" data-date="2026-10-05" data-categories="all research sdg" id="article-37th-statistics-month-celebration">
           <!-- Clickable Header: CARD PREVIEW (Click to open full article modal or expand inline) -->
           <div class="article-accordion-header" onclick="openArticleModal('article-37th-statistics-month-celebration');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openArticleModal('article-37th-statistics-month-celebration');}" aria-expanded="false" id="header-article-37th-statistics-month-celebration">
             <!-- Side Thumbnail (Before the title) -->
@@ -1174,8 +1195,7 @@
           </div>
         </article>
 
-<!-- Article 3: ISAP High School Research Defense -->
-<article class="news-card article-accordion-card" data-content-type="article" data-categories="all research sdg" id="article-isap-high-school-research-defense">
+<article class="news-card article-accordion-card" data-content-type="article" data-date="2026-10-16" data-categories="all research sdg" id="article-isap-high-school-research-defense">
   <!-- Clickable Header: CARD PREVIEW (Click to open full article modal or expand inline) -->
   <div class="article-accordion-header" onclick="openArticleModal('article-isap-high-school-research-defense');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openArticleModal('article-isap-high-school-research-defense');}" aria-expanded="false" id="header-article-isap-high-school-research-defense">
     <!-- Side Thumbnail (Before the title) -->
@@ -1425,8 +1445,7 @@
   </div>
 </article>
 
-<!-- Article 4: BS Tourism Management Proposal Defense -->
-<article class="news-card article-accordion-card" data-content-type="article" data-categories="all research sdg" id="article-bs-tourism-proposal-defense">
+<article class="news-card article-accordion-card" data-content-type="article" data-date="2026-10-13" data-categories="all research sdg" id="article-bs-tourism-proposal-defense">
   <!-- Clickable Header: CARD PREVIEW (Click to open full article modal or expand inline) -->
   <div class="article-accordion-header" onclick="openArticleModal('article-bs-tourism-proposal-defense');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openArticleModal('article-bs-tourism-proposal-defense');}" aria-expanded="false" id="header-article-bs-tourism-proposal-defense">
     <!-- Side Thumbnail (Before the title) -->
@@ -1709,8 +1728,7 @@
   </div>
 </article>
 
-<!-- Article 5: BSEd and BPEd Proposal Defense -->
-<article class="news-card article-accordion-card" data-content-type="article" data-categories="all research sdg" id="article-bsed-bped-proposal-defense">
+<article class="news-card article-accordion-card" data-content-type="article" data-date="2026-10-14" data-categories="all research sdg" id="article-bsed-bped-proposal-defense">
   <!-- Clickable Header: CARD PREVIEW (Click to open full article modal or expand inline) -->
   <div class="article-accordion-header" onclick="openArticleModal('article-bsed-bped-proposal-defense');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openArticleModal('article-bsed-bped-proposal-defense');}" aria-expanded="false" id="header-article-bsed-bped-proposal-defense">
     <!-- Side Thumbnail (Before the title) -->
@@ -1969,8 +1987,7 @@
   </div>
 </article>
 
-<!-- Article 6: CPD Research Institutions Meeting on 2027 Youth Cohabitation Proposal -->
-<article class="news-card article-accordion-card" data-content-type="article" data-categories="all research sdg" id="article-cpd-cohabitation-research-meeting">
+<article class="news-card article-accordion-card" data-content-type="article" data-date="2026-10-20" data-categories="all research sdg" id="article-cpd-cohabitation-research-meeting">
   <!-- Clickable Header: CARD PREVIEW (Click to open full article modal or expand inline) -->
   <div class="article-accordion-header" onclick="openArticleModal('article-cpd-cohabitation-research-meeting');" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openArticleModal('article-cpd-cohabitation-research-meeting');}" aria-expanded="false" id="header-article-cpd-cohabitation-research-meeting">
     <!-- Side Thumbnail (Before the title) -->
@@ -2231,42 +2248,6 @@
   </div>
 </article>
 
-
-        </div>
-      </section>
-
-        <!-- ========================================================
-             SECTION 2: EVENTS & COLLOQUIUMS
-             ======================================================== -->
-        <section id="eventsSection" class="content-sub-section" style="margin-bottom: 3.5rem;" aria-label="Events and Workshops">
-          <div id="eventsHeaderBanner" class="news-sub-header event-header">
-            <div>
-              <span class="section-tag" style="background: rgba(30, 94, 168, 0.1); color: var(--isap-blue); border-color: rgba(30, 94, 168, 0.25);">Campus Calendar &amp; Activities</span>
-              <h3 style="font-size: 1.55rem; font-weight: 800; color: #0f172a; margin: 0.35rem 0 0.25rem;">News &amp; Event Highlights</h3>
-              <p style="color: #64748b; font-size: 0.9rem; margin: 0;">Scheduled research conferences, capability-building seminars, faculty workshops, and institutional assemblies.</p>
-            </div>
-            <span style="font-size: 0.8rem; font-weight: 700; color: var(--isap-blue); background: rgba(30, 94, 168, 0.08); padding: 0.25rem 0.8rem; border-radius: 999px;">29 Events Documented</span>
-          </div>
-
-          <!-- Interactive Event Filter & Search Bar -->
-          <div class="event-filter-toolbar" style="margin-bottom: 2rem;">
-            <div class="event-filter-pills">
-              <button type="button" class="event-pill-btn active" data-filter="all">All Events (<span id="eventCountTotal">30</span>)</button>
-              <button type="button" class="event-pill-btn" data-filter="research">Research &amp; Colloquiums</button>
-              <button type="button" class="event-pill-btn" data-filter="sdg">SDG Initiatives</button>
-              <button type="button" class="event-pill-btn" data-filter="training">Capability Building</button>
-              <button type="button" class="event-pill-btn" data-filter="student">Student Competitions</button>
-            </div>
-            <div class="event-search-wrap">
-
-              <input type="text" id="eventSearchInput" class="event-search-input" placeholder="Search events, topics, or keywords..." aria-label="Search events and highlights">
-              <button type="button" id="eventSearchClear" class="event-search-clear" aria-label="Clear search">Clear</button>
-            </div>
-          </div>
-
-          <div class="news-grid" id="eventsGrid" style="margin-bottom: 2.5rem;" aria-label="Events and workshops">
-
-<!-- Event Card: Project RELIEF: Let It Out, Lift It Up! (Oct 03, 2026) -->
 <article class="news-card" data-content-type="event" id="event-project-relief-wellness" data-categories="all sdg training research" data-sdgs="3 4 16" data-date="2026-10-03">
   <div class="news-thumbnail news-thumb-photo" style="position: relative; height: 210px; overflow: hidden; background: #0f172a;">
     <img src="upload/project-relief-session2-group-photo.webp" alt="Project RELIEF: Let It Out, Lift It Up! Flagship Research Utilization Program" class="news-thumb-bg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block;" loading="lazy" decoding="async" width="1607" height="1071">
@@ -3293,13 +3274,11 @@
             </div>
           </div>
         </article>
-          </div>
-          <div style="text-align: center; margin: 0 0 2.5rem;">
-            <button type="button" class="btn btn-outline-white" id="loadMoreEventsBtn" aria-controls="eventsGrid" style="display: none; color: var(--isap-blue); border-color: var(--isap-blue);">
-              Load more events
-            </button>
-          </div>
-        </section>
+        </div>
+        <p id="highlightsEmptyState" hidden style="text-align:center;padding:2rem;">No articles or events match your search. Try another keyword or category.</p>
+        <div style="text-align:center;margin-bottom:2.5rem;">
+          <button type="button" class="btn btn-outline-white" id="loadMoreEventsBtn" aria-controls="articlesGrid" style="color:var(--isap-blue);border-color:var(--isap-blue);">Load more updates</button>
+        </div>
 
       </section>
 
@@ -3517,7 +3496,7 @@
 
   <script src="js/pages/social-data.min.js?v=3d1504ba"></script>
   <script src="js/pages/social-meta.min.js?v=efd31d11"></script>
-  <script src="js/pages/news-events.min.js?v=af3f8725"></script>
+  <script src="js/pages/news-events.min.js?v=27217918"></script>
 
   <script src="js/news-events-fixes.js" defer></script>
   <script src="js/main.min.js?v=6c2e98c5" defer></script>

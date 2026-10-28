@@ -1851,7 +1851,8 @@
         selectEl.innerHTML = courses.map(function(c) {
           var isSelected = (currentSelectedCourse === c.id) ? ' selected' : '';
           var count = countStudiesForCourse(c.id, currentSelectedWing);
-          return '<option value="' + c.id + '"' + isSelected + '>' + c.label + ' (' + count + ')</option>';
+          var courseLabel = c.label.replace(/\s*\(\d+\)$/, '');
+          return '<option value="' + c.id + '"' + isSelected + '>' + courseLabel + ' — ' + count + ' article' + (count === 1 ? '' : 's') + '</option>';
         }).join('');
         selectEl.value = currentSelectedCourse;
       }
@@ -3592,6 +3593,26 @@
       window.__utilArtReturnFocus = null;
     };
 
+    function prepareUtilArticlePrint() {
+      var overlay = document.getElementById('utilArticleModalOverlay');
+      if (!overlay || !overlay.classList.contains('open')) return [];
+      document.body.classList.add('print-util-article-mode');
+      return Array.from(overlay.querySelectorAll('img')).map(function (img) {
+        img.loading = 'eager';
+        return img.decode ? img.decode().catch(function () {}) : Promise.resolve();
+      });
+    }
+
+    window.printUtilArticle = async function () {
+      await Promise.all(prepareUtilArticlePrint());
+      window.print();
+    };
+
+    window.addEventListener('beforeprint', prepareUtilArticlePrint);
+    window.addEventListener('afterprint', function () {
+      document.body.classList.remove('print-util-article-mode');
+    });
+
     window.toggleUtilRegistryPreview = function() {
       var wrap = document.getElementById('utilRegistryPreviewWrap');
       var btn = document.getElementById('btnToggleUtilRegistry');
@@ -4416,6 +4437,25 @@
     };
 
     document.addEventListener('keydown', function(e) {
+      if (e.key === 'Tab') {
+        var reader = document.getElementById('utilArticleModalOverlay');
+        if (reader && reader.classList.contains('open')) {
+          var focusable = Array.from(reader.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter(function (el) {
+            return el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden';
+          });
+          var first = focusable[0];
+          var last = focusable[focusable.length - 1];
+          if (!first) {
+            e.preventDefault();
+          } else if (e.shiftKey && (document.activeElement === first || focusable.indexOf(document.activeElement) === -1)) {
+            e.preventDefault();
+            last.focus();
+          } else if (!e.shiftKey && (document.activeElement === last || focusable.indexOf(document.activeElement) === -1)) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
       if (e.key === 'Escape') {
         var artOverlay = document.getElementById('utilArticleModalOverlay');
         if (artOverlay && artOverlay.classList.contains('open')) {

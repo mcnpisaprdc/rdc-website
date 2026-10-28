@@ -6,25 +6,8 @@
   'use strict';
 
   function updateCounts() {
-    var articles = document.querySelectorAll('#articlesGrid > .article-accordion-card').length;
-    var events = document.querySelectorAll('#eventsGrid > .news-card').length;
-    var all = articles + events;
-
-    function setText(id, value) {
-      var el = document.getElementById(id);
-      if (el) el.textContent = value;
-    }
-
-    setText('countAllTab', all);
-    setText('countArticlesTab', articles);
-    setText('countEventsTab', events);
-    setText('eventCountTotal', events);
-
-    var evBadge = document.querySelector('#eventsHeaderBanner > span');
-    if (evBadge) evBadge.textContent = events + ' Events Documented';
-
-    var artBadge = document.querySelector('#articlesHeaderBanner > span');
-    if (artBadge) artBadge.textContent = articles + ' Published Article' + (articles === 1 ? '' : 's');
+    var count = document.getElementById('eventCountTotal');
+    if (count) count.textContent = document.querySelectorAll('#articlesGrid > .news-card').length;
   }
 
   var FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
