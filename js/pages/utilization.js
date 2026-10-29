@@ -3351,10 +3351,15 @@
 
       var pillarWrap = document.getElementById('utilArticleModalPillarWrap');
       if (pillarWrap) {
-        pillarWrap.innerHTML = '<a href="rdc-agenda.html#pillar-' + a.pillarKey + '" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; text-decoration:none; color:#0f172a; font-weight:700; font-size:0.82rem;" title="Explore ' + a.pillarFullName + ' in RDC Agenda">' +
-          '<img src="' + pillarEmblem + '" alt="' + a.pillarName + '" style="width:24px; height:24px; border-radius:4px; object-fit:contain;" />' +
-          '<span>' + a.pillarName + ' (' + a.pillarFullName + ')</span>' +
-          '</a>';
+        var alignedPillars = a.innovates && a.innovates.length ? a.innovates : [{ pillar: a.pillarKey, name: a.pillarFullName, thumb: pillarEmblem }];
+        pillarWrap.style.display = 'flex';
+        pillarWrap.style.flexWrap = 'wrap';
+        pillarWrap.style.gap = '0.35rem';
+        pillarWrap.innerHTML = alignedPillars.map(function(inv) {
+          return '<a href="rdc-agenda.html#pillar-' + inv.pillar + '" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; text-decoration:none;" title="Explore ' + inv.name + ' in RDC Agenda" aria-label="Explore ' + inv.name + ' in RDC Agenda">' +
+            '<img src="' + inv.thumb + '" alt="' + inv.name + '" style="width:24px; height:24px; border-radius:4px; object-fit:contain;" />' +
+            '</a>';
+        }).join('');
       }
 
       var pathwayWrap = document.getElementById('utilArticleModalPathwayWrap');

@@ -86,7 +86,7 @@
 
       $("un-events").innerHTML = list.length ? list.map(function(item){
         return '<a class="un-ev" href="' + eventUrl(item) + '"><div class="un-day">' + item.d + '</div><div class="un-mon">' + item.m + '</div>' + (item.topic ? '<div class="un-ev-topic">' + item.topic + '</div>' : '') + '<h3>' + item.t + '</h3><div class="un-range">' + item.r + (item.sourceNote ? '<br>' + item.sourceNote : '') + '</div><div class="un-ev-link">View source </div><div class="un-ev-goals"><small>Related Goals</small><div class="un-ev-goals-strip">' + item.g.map(badge).join("") + '</div></div></a>';
-      }).join("") : '<p class="un-empty">No events are listed for this goal yet. <a href="news-events.html">Browse all events </a></p>';
+      }).join("") : '<p class="un-empty">No items are documented on this website for this goal yet. <a href="news-events.html">Browse all news &amp; events </a></p>';
 
       // Update Active state in goalbar
       Array.prototype.forEach.call($("un-goalbar").querySelectorAll("a"), function(link){

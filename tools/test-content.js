@@ -51,8 +51,22 @@ async function main() {
     assert.equal(await page.$('#agendaModal.active'), null);
     for (let goal = 1; goal <= 17; goal++) {
       await page.goto(origin + '/sdg-overview.html?goal=' + goal, {waitUntil:'domcontentloaded'});
-      assert.equal(await page.$$eval('.un-ev', els => els.length), records.filter(r => r.g.includes(goal)).length);
+      const expected = records.filter(r => r.g.includes(goal)).length;
+      assert.equal(await page.$$eval('.un-ev', els => els.length), expected);
+      assert.equal(await page.$eval('#un-ev-count-badge', el => el.textContent), expected + (expected === 1 ? ' Item' : ' Items'));
     }
+    await page.goto(origin + '/adg-advocacy.html', {waitUntil:'domcontentloaded'});
+    assert.equal(await page.$$eval('.sdg-pure-card', els => els.length), 17);
+    for (let goal = 1; goal <= 17; goal++) {
+      const expected = records.filter(r => r.g.includes(goal)).length;
+      const selector = '.sdg-pure-card[href="sdg-overview.html?goal=' + goal + '"]';
+      assert.equal(await page.$eval(selector + ' .sdg-count-badge', el => el.textContent), expected === 0 ? 'No items yet' : expected + (expected === 1 ? ' Item' : ' Items'));
+      assert.ok((await page.$eval(selector, el => el.getAttribute('aria-label'))).includes(expected + ' documented item'));
+    }
+    const summary = await page.$eval('.sdg-total-note', el => el.textContent);
+    assert.ok(summary.includes(records.length + ' distinct documented items'));
+    assert.ok(summary.includes('across ' + new Set(records.flatMap(r => Array.from(r.g))).size + ' of the 17 goals'));
+    assert.ok(summary.includes('One activity may support multiple SDGs'));
     for (const record of records.filter(r => r.url.startsWith('utilization.html'))) {
       await page.goto(origin + '/' + record.url, {waitUntil:'networkidle0'});
       assert.ok(await page.$eval('#utilArticleModalOverlay', el => el.classList.contains('active') || getComputedStyle(el).display !== 'none'));
