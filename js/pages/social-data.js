@@ -48,6 +48,12 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-eoms-launch-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-eoms-launch-2026.html"
   },
+  "article-zero-plastic-initiative-2026": {
+    "title": "RDC Supports MCNP–ISAP Zero-Plastic Initiative, Calls for Shared Responsibility and Sustained Action",
+    "description": "Beginning November 2026, the RDC calls on the MCNP–ISAP community to reduce single-use plastics, choose reusable alternatives, and make sustainability a daily institutional practice.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-zero-plastic-initiative-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-zero-plastic-initiative-2026.html"
+  },
   "article-project-relief-flagship-2026": {
     "title": "PROJECT RELIEF: Let It Out, Lift It Up! — Project RELIEF Turns Research into Action, Strengthens Student Resilience Through Three-Session Mental Wellness Program",
     "description": "The College of Criminal Justice Education (CoCJE), in collaboration with the Research and Development Center (RDC), concluded Project RELIEF: Let It Out, Lift It Up!, a three-session research-utilization initiative that transformed student wellness concerns into a structured program for emotional awareness, stress management, self-care, and psychological resilience.",

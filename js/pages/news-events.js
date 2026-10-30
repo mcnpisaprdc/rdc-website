@@ -395,6 +395,34 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-zero-plastic-initiative-2026": {
+  "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; Zero-Plastic Initiative",
+  "badge": " OFFICIAL ARTICLE",
+  "topic": "Sustainability &bull; Environmental Responsibility",
+  "date": " October 30, 2026",
+  "readTime": "2 min read",
+  "title": "RDC Supports MCNP–ISAP Zero-Plastic Initiative, Calls for Shared Responsibility and Sustained Action",
+  "bodyId": "body-article-zero-plastic-initiative-2026",
+  "sdgs": [
+    {
+      "goal": "12",
+      "title": "SDG 12: Responsible Consumption and Production",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-12.webp"
+    },
+    {
+      "goal": "13",
+      "title": "SDG 13: Climate Action",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-13.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "advance",
+      "title": "ADVANCE: Sustainability and Climate Resilience",
+      "icon": "assets/agenda/agenda-6-advance.webp"
+    }
+  ]
+},
 "article-eoms-launch-2026": {
   "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; EOMS Launch 2026",
   "badge": " OFFICIAL ARTICLE",
