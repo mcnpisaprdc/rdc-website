@@ -395,6 +395,54 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-eoms-launch-2026": {
+  "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; EOMS Launch 2026",
+  "badge": " OFFICIAL ARTICLE",
+  "topic": "Quality Assurance &bull; Institutional Development",
+  "date": " October 30, 2026",
+  "readTime": "4 min read",
+  "title": "RDC Affirms Strong Support for MCNP–ISAP EOMS Launch, Reinforces Commitment to Quality Excellence",
+  "bodyId": "body-article-eoms-launch-2026",
+  "sdgs": [
+    {
+      "goal": "4",
+      "title": "SDG 4: Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "16",
+      "title": "SDG 16: Peace, Justice and Strong Institutions",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-16.webp"
+    },
+    {
+      "goal": "17",
+      "title": "SDG 17: Partnerships for the Goals",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "nurture",
+      "title": "NURTURE: Ethics, Quality, and Accountability",
+      "icon": "assets/agenda/agenda-2-nurture.webp"
+    },
+    {
+      "pillar": "operationalize",
+      "title": "OPERATIONALIZE: Knowledge Utilization, Innovation, and Improvement",
+      "icon": "assets/agenda/agenda-4-operationalize.webp"
+    },
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE: Culture, Capability, and Engagement",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "strengthen",
+      "title": "STRENGTHEN: Education and Institutional Performance",
+      "icon": "assets/agenda/agenda-9-strengthen.webp"
+    }
+  ]
+},
 "article-annual-health-research-forum-2026": {
   "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; Annual Health Research Forum 2026",
   "badge": " OFFICIAL ARTICLE",

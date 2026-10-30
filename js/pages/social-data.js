@@ -42,6 +42,12 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-annual-health-research-forum-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-annual-health-research-forum-2026.html"
   },
+  "article-eoms-launch-2026": {
+    "title": "RDC Affirms Strong Support for MCNP–ISAP EOMS Launch, Reinforces Commitment to Quality Excellence",
+    "description": "The RDC affirms its support for the MCNP–ISAP EOMS journey, advancing evidence-informed decision-making, quality assurance, and continuous improvement.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-eoms-launch-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-eoms-launch-2026.html"
+  },
   "article-project-relief-flagship-2026": {
     "title": "PROJECT RELIEF: Let It Out, Lift It Up! — Project RELIEF Turns Research into Action, Strengthens Student Resilience Through Three-Session Mental Wellness Program",
     "description": "The College of Criminal Justice Education (CoCJE), in collaboration with the Research and Development Center (RDC), concluded Project RELIEF: Let It Out, Lift It Up!, a three-session research-utilization initiative that transformed student wellness concerns into a structured program for emotional awareness, stress management, self-care, and psychological resilience.",
