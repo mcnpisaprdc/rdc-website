@@ -43,6 +43,19 @@ window.RDC_CONTENT = [
     "url": "news-events.html#article-annual-health-research-forum-2026"
   },
   {
+    "id": "article-it-final-defense-2026",
+    "t": "IT Students Showcase Digital Innovation During Final Defense",
+    "r": "October 23, 2026",
+    "d": "—",
+    "m": "October 23, 2026",
+    "topic": "Student Innovation &bull; Digital Solutions",
+    "g": [
+      4,
+      9
+    ],
+    "url": "news-events.html#article-it-final-defense-2026"
+  },
+  {
     "id": "article-rdc-digital-platform",
     "t": "MCNP–ISAP Research and Development Center Develops Digital Platform to Improve Access to Research Information",
     "r": "October 14, 2026",

@@ -54,6 +54,12 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-zero-plastic-initiative-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-zero-plastic-initiative-2026.html"
   },
+  "article-it-final-defense-2026": {
+    "title": "IT Students Showcase Digital Innovation During Final Defense",
+    "description": "Information Technology students showcased research, technical competencies, and a developed digital system during their Final Defense on October 23, 2026.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-it-final-defense-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-it-final-defense-2026.html"
+  },
   "article-project-relief-flagship-2026": {
     "title": "PROJECT RELIEF: Let It Out, Lift It Up! — Project RELIEF Turns Research into Action, Strengthens Student Resilience Through Three-Session Mental Wellness Program",
     "description": "The College of Criminal Justice Education (CoCJE), in collaboration with the Research and Development Center (RDC), concluded Project RELIEF: Let It Out, Lift It Up!, a three-session research-utilization initiative that transformed student wellness concerns into a structured program for emotional awareness, stress management, self-care, and psychological resilience.",

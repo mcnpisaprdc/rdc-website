@@ -395,6 +395,49 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-it-final-defense-2026": {
+  "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; IT Final Defense",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Student Innovation &bull; Digital Solutions",
+  "date": "October 23, 2026",
+  "readTime": "6 min read",
+  "title": "IT Students Showcase Digital Innovation During Final Defense",
+  "bodyId": "body-article-it-final-defense-2026",
+  "sdgs": [
+    {
+      "goal": "4",
+      "title": "SDG 4: Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "9",
+      "title": "SDG 9: Industry, Innovation and Infrastructure",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp"
+    }
+  ],
+  "agendas": [
+  {
+    "pillar": "inspire",
+    "title": "INSPIRE: Culture, Capability, and Engagement",
+    "icon": "assets/agenda/agenda-1-inspire.webp"
+  },
+  {
+    "pillar": "navigate",
+    "title": "NAVIGATE: Digital Transformation and Infrastructure",
+    "icon": "assets/agenda/agenda-3-navigate.webp"
+  },
+  {
+    "pillar": "operationalize",
+    "title": "OPERATIONALIZE: Knowledge Utilization, Innovation, and Improvement",
+    "icon": "assets/agenda/agenda-4-operationalize.webp"
+  },
+  {
+    "pillar": "strengthen",
+    "title": "STRENGTHEN: Education and Institutional Performance",
+    "icon": "assets/agenda/agenda-9-strengthen.webp"
+  }
+]
+},
 "article-zero-plastic-initiative-2026": {
   "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; Zero-Plastic Initiative",
   "badge": " OFFICIAL ARTICLE",
