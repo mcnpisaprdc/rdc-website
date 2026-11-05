@@ -395,6 +395,23 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+      'article-earthquake-drill-2026': {
+        breadcrumb: 'News &amp; Events &gt; Articles &amp; Editorials &gt; Earthquake Drill',
+        badge: 'OFFICIAL ARTICLE',
+        topic: 'Disaster Preparedness &amp; Campus Safety',
+        date: 'November 05, 2026',
+        readTime: '5 min read',
+        title: 'MCNP–ISAP Strengthens Disaster Preparedness Through Earthquake Drill and Emergency Preparedness Exercise',
+        bodyId: 'body-article-earthquake-drill-2026',
+        sdgs: [
+          { goal: '11', title: 'SDG 11: Sustainable Cities and Communities (primary)', icon: 'assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-11.webp' },
+          { goal: '3', title: 'SDG 3: Good Health and Well-Being', icon: 'assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp' },
+          { goal: '4', title: 'SDG 4: Quality Education', icon: 'assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp' }
+        ],
+        agendas: [
+          { pillar: 'strengthen', title: 'STRENGTHEN: Education and Institutional Performance', icon: 'assets/agenda/agenda-9-strengthen.webp' }
+        ]
+      },
 "article-it-final-defense-2026": {
   "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; IT Final Defense",
   "badge": "OFFICIAL ARTICLE",
