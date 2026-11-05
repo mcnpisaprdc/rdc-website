@@ -323,14 +323,92 @@
       hyphens: auto;
     }
 
-    /* Stack list instead of multiple small columns */
+    /* Portrait previews match the News & Events article cards. */
     .util-articles-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.75rem;
       margin-bottom: 2.5rem;
       width: 100%;
       box-sizing: border-box;
+      align-items: stretch;
+    }
+
+    #utilizationArticlesGrid > .article-accordion-card {
+      min-width: 0;
+      margin-bottom: 0;
+    }
+
+    #utilizationArticlesGrid .article-accordion-header {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      padding: 0 !important;
+      gap: 0 !important;
+      height: auto;
+    }
+
+    #utilizationArticlesGrid .article-card-thumb-wrap {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9;
+      border-radius: 0;
+    }
+
+    #utilizationArticlesGrid .article-card-thumb-wrap img {
+      width: 100% !important;
+      height: 100% !important;
+      max-height: none;
+      object-fit: contain !important;
+    }
+
+    #utilizationArticlesGrid .featured-article-alignments {
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+    }
+
+    #utilizationArticlesGrid .featured-align-group {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+
+    #utilizationArticlesGrid .featured-align-icons {
+      flex-wrap: wrap;
+    }
+
+    #utilizationArticlesGrid .article-header-actions {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 0.5rem !important;
+    }
+
+    #utilizationArticlesGrid .article-header-actions :is(button, a) {
+      width: 100%;
+      min-width: 0;
+      justify-content: center;
+      white-space: normal !important;
+    }
+
+    #utilizationArticlesGrid > .article-accordion-card.open,
+    #utilizationArticlesGrid > .empty-filter-box {
+      grid-column: 1 / -1;
+    }
+
+    #utilizationArticlesGrid > .article-accordion-card.open .article-card-thumb-wrap {
+      max-height: 320px;
+    }
+
+    @media (max-width: 991px) {
+      .util-articles-stack {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .util-articles-stack {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+      }
     }
 
     @media (max-width: 768px) {
