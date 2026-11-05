@@ -2,7 +2,7 @@
 window.RDC_CONTENT = [
   {
     "id": "article-earthquake-drill-2026",
-    "t": "MCNP–ISAP Strengthens Disaster Preparedness Through Earthquake Drill and Emergency Preparedness Exercise",
+    "t": "RDC Participates in Institutional Earthquake Drill to Strengthen Disaster Preparedness and Safety Awareness",
     "r": "November 05, 2026",
     "d": "—",
     "m": "November 05, 2026",

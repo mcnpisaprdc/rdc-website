@@ -401,7 +401,7 @@
         topic: 'Disaster Preparedness &amp; Campus Safety',
         date: 'November 05, 2026',
         readTime: '5 min read',
-        title: 'MCNP–ISAP Strengthens Disaster Preparedness Through Earthquake Drill and Emergency Preparedness Exercise',
+        title: 'RDC Participates in Institutional Earthquake Drill to Strengthen Disaster Preparedness and Safety Awareness',
         bodyId: 'body-article-earthquake-drill-2026',
         sdgs: [
           { goal: '11', title: 'SDG 11: Sustainable Cities and Communities (primary)', icon: 'assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-11.webp' },
