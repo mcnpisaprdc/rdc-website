@@ -395,6 +395,54 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+      "article-criminology-profession-week-2026": {
+  "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; 3rd Criminology Profession Week",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "3rd Criminology Profession Week",
+  "date": "November 05, 2026",
+  "readTime": "4 min read",
+  "title": "RDC Research Director Highlights Research Engagement at ISAP’s 3rd Criminology Profession Week",
+  "bodyId": "body-article-criminology-profession-week-2026",
+  "sdgs": [
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "16",
+      "title": "SDG 16 – Peace, Justice and Strong Institutions",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-16.webp"
+    },
+    {
+      "goal": "17",
+      "title": "SDG 17 – Partnerships for the Goals (Potential)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE – Research Culture and Capability",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "operationalize",
+      "title": "OPERATIONALIZE – Knowledge Utilization and Innovation",
+      "icon": "assets/agenda/agenda-4-operationalize.webp"
+    },
+    {
+      "pillar": "expand",
+      "title": "EXPAND – Partnerships and Global Research",
+      "icon": "assets/agenda/agenda-8-expand.webp"
+    },
+    {
+      "pillar": "strengthen",
+      "title": "STRENGTHEN – Education and Institutional Performance",
+      "icon": "assets/agenda/agenda-9-strengthen.webp"
+    }
+  ]
+},
       'article-earthquake-drill-2026': {
         breadcrumb: 'News &amp; Events &gt; Articles &amp; Editorials &gt; Earthquake Drill',
         badge: 'OFFICIAL ARTICLE',
