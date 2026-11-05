@@ -401,7 +401,7 @@
   "topic": "3rd Criminology Profession Week",
   "date": "November 05, 2026",
   "readTime": "4 min read",
-  "title": "RDC Research Director Highlights Research Engagement at ISAP’s 3rd Criminology Profession Week",
+  "title": "CoCJE–ISAP, ISU–Cabagan, and RDC Forge Research Collaboration at 3rd Criminology Profession Week",
   "bodyId": "body-article-criminology-profession-week-2026",
   "sdgs": [
     {

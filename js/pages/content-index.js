@@ -2,7 +2,7 @@
 window.RDC_CONTENT = [
   {
     "id": "article-criminology-profession-week-2026",
-    "t": "RDC Research Director Highlights Research Engagement at ISAP’s 3rd Criminology Profession Week",
+    "t": "CoCJE–ISAP, ISU–Cabagan, and RDC Forge Research Collaboration at 3rd Criminology Profession Week",
     "r": "November 05, 2026",
     "d": "—",
     "m": "November 05, 2026",
