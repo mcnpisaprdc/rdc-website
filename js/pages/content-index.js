@@ -12,7 +12,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#article-criminology-profession-week-2026"
+    "url": "news-events.html#article-criminology-profession-week-2026",
+    "image": "upload/criminology-profession-week-2026/intro-banner.webp",
+    "imageAlt": "3rd Criminology Profession Week banner with the theme Strengthening the Criminology Profession in Addressing Contemporary Social Challenges",
+    "imageFit": "contain"
   },
   {
     "id": "article-earthquake-drill-2026",
@@ -26,7 +29,10 @@ window.RDC_CONTENT = [
       4,
       11
     ],
-    "url": "news-events.html#article-earthquake-drill-2026"
+    "url": "news-events.html#article-earthquake-drill-2026",
+    "image": "upload/earthquake-drill-2026/IMG_20261105_090458.webp",
+    "imageAlt": "Wide view of the MCNP–ISAP community gathered outdoors during the earthquake drill",
+    "imageFit": "cover"
   },
   {
     "id": "article-zero-plastic-initiative-2026",
@@ -39,7 +45,10 @@ window.RDC_CONTENT = [
       12,
       13
     ],
-    "url": "news-events.html#article-zero-plastic-initiative-2026"
+    "url": "news-events.html#article-zero-plastic-initiative-2026",
+    "image": "upload/zero-plastic-initiative-2026/campus-advisory.webp",
+    "imageAlt": "MCNP–ISAP campus advisory on zero single-use plastic and plastic packaging, with reusable alternatives and prohibited items",
+    "imageFit": "contain"
   },
   {
     "id": "article-eoms-launch-2026",
@@ -53,7 +62,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#article-eoms-launch-2026"
+    "url": "news-events.html#article-eoms-launch-2026",
+    "image": "upload/eoms-launch-2026/rdc-eoms-support.webp",
+    "imageAlt": "Research and Development Center statement of support for the implementation of EOMS",
+    "imageFit": "contain"
   },
   {
     "id": "article-annual-health-research-forum-2026",
@@ -68,7 +80,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#article-annual-health-research-forum-2026"
+    "url": "news-events.html#article-annual-health-research-forum-2026",
+    "image": "upload/annual-health-research-forum-2026/forum-04.webp",
+    "imageAlt": "Group photograph at the Annual Health Research Forum 2026",
+    "imageFit": "cover"
   },
   {
     "id": "article-it-final-defense-2026",
@@ -81,7 +96,10 @@ window.RDC_CONTENT = [
       4,
       9
     ],
-    "url": "news-events.html#article-it-final-defense-2026"
+    "url": "news-events.html#article-it-final-defense-2026",
+    "image": "upload/it-final-defense-2026/it-final-defense-01.webp",
+    "imageAlt": "IT students presenting digital systems during the Final Defense, October 23, 2026 - photo 1",
+    "imageFit": "contain"
   },
   {
     "id": "article-rdc-digital-platform",
@@ -95,7 +113,10 @@ window.RDC_CONTENT = [
       9,
       16
     ],
-    "url": "news-events.html#article-rdc-digital-platform"
+    "url": "news-events.html#article-rdc-digital-platform",
+    "image": "upload/rdc-website-platform.webp",
+    "imageAlt": "MCNP–ISAP RDC Digital Platform Website",
+    "imageFit": "cover"
   },
   {
     "id": "article-37th-statistics-month-celebration",
@@ -109,7 +130,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#article-37th-statistics-month-celebration"
+    "url": "news-events.html#article-37th-statistics-month-celebration",
+    "image": "upload/stats-month-provincial-winners.webp",
+    "imageAlt": "MCNP–ISAP 37th Statistics Month Provincial Delegation",
+    "imageFit": "cover"
   },
   {
     "id": "article-isap-high-school-research-defense",
@@ -121,7 +145,10 @@ window.RDC_CONTENT = [
     "g": [
       4
     ],
-    "url": "news-events.html#article-isap-high-school-research-defense"
+    "url": "news-events.html#article-isap-high-school-research-defense",
+    "image": "upload/isap-hs-defense-1.webp",
+    "imageAlt": "ISAP High School Students Strengthen Research Skills Through Research Defense",
+    "imageFit": "cover"
   },
   {
     "id": "article-bs-tourism-proposal-defense",
@@ -135,7 +162,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#article-bs-tourism-proposal-defense"
+    "url": "news-events.html#article-bs-tourism-proposal-defense",
+    "image": "upload/tourism-proposal-defense-1.webp",
+    "imageAlt": "BS Tourism Management Students Strengthen Research Skills Through Proposal Defense",
+    "imageFit": "cover"
   },
   {
     "id": "article-bsed-bped-proposal-defense",
@@ -147,7 +177,10 @@ window.RDC_CONTENT = [
     "g": [
       4
     ],
-    "url": "news-events.html#article-bsed-bped-proposal-defense"
+    "url": "news-events.html#article-bsed-bped-proposal-defense",
+    "image": "upload/bsed-bped-defense-1.webp",
+    "imageAlt": "BSEd and BPEd Students Strengthen Research Skills Through Proposal Defense",
+    "imageFit": "cover"
   },
   {
     "id": "article-cpd-cohabitation-research-meeting",
@@ -160,7 +193,10 @@ window.RDC_CONTENT = [
       3,
       17
     ],
-    "url": "news-events.html#article-cpd-cohabitation-research-meeting"
+    "url": "news-events.html#article-cpd-cohabitation-research-meeting",
+    "image": "upload/cpd-cohabitation-meeting-1.webp",
+    "imageAlt": "MCNP–ISAP Joins Research Institutions’ Meeting on 2027 Cohabitation Research Proposal for Cagayan Valley",
+    "imageFit": "cover"
   },
   {
     "id": "event-project-relief-wellness",
@@ -174,7 +210,10 @@ window.RDC_CONTENT = [
       4,
       16
     ],
-    "url": "news-events.html#event-project-relief-wellness"
+    "url": "news-events.html#event-project-relief-wellness",
+    "image": "upload/project-relief-session2-group-photo.webp",
+    "imageAlt": "Project RELIEF: Let It Out, Lift It Up! Flagship Research Utilization Program",
+    "imageFit": "cover"
   },
   {
     "id": "event-data-infographics",
@@ -189,7 +228,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-data-infographics"
+    "url": "news-events.html#event-data-infographics",
+    "image": "upload/data-interpretation-5.webp",
+    "imageAlt": "Statistical Month 2026: Data Interpretation and Infographics Activity Winners and Participants - Sep 25, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-poster-art-showcase",
@@ -202,7 +244,10 @@ window.RDC_CONTENT = [
       4,
       9
     ],
-    "url": "news-events.html#event-poster-art-showcase"
+    "url": "news-events.html#event-poster-art-showcase",
+    "image": "upload/poster-activity-1.webp",
+    "imageAlt": "Winning Entries Showcase: MCNP-ISAP Statistical Month Poster-Making Contest - Sep 24, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-poster-making-activity",
@@ -216,7 +261,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-poster-making-activity"
+    "url": "news-events.html#event-poster-making-activity",
+    "image": "upload/poster-art-3.webp",
+    "imageAlt": "Contestants collaborating and drafting poster designs - Sep 23, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-tourism-defense",
@@ -231,7 +279,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-tourism-defense"
+    "url": "news-events.html#event-tourism-defense",
+    "image": "upload/tourism-defense-1.webp",
+    "imageAlt": "BS Tourism Management Research Proposal Defense and SDG Research Snap - Sep 22–23, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-statistical-quiz-bee",
@@ -245,7 +296,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-statistical-quiz-bee"
+    "url": "news-events.html#event-statistical-quiz-bee",
+    "image": "upload/quiz-bee-13.webp",
+    "imageAlt": "MCNP-ISAP Statistical Month Institutional Quiz Bee - Sep 21, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-pharmacy-research",
@@ -260,7 +314,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-pharmacy-research"
+    "url": "news-events.html#event-pharmacy-research",
+    "image": "upload/pharmacy-defense-1.webp",
+    "imageAlt": "BS Pharmacy Research Proposal Defense and SDG Research Snap - Sep 17–18, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-sdg-spot-launch",
@@ -275,7 +332,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-sdg-spot-launch"
+    "url": "news-events.html#event-sdg-spot-launch",
+    "image": "upload/sdg-spot-1.webp",
+    "imageAlt": "SDG SPOT @ RDC: Research for the Goals - Pick a Goal. Raise Your Flag. Make Your Impact.",
+    "imageFit": "cover"
   },
   {
     "id": "event-cbcp-ust-collab",
@@ -289,7 +349,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-cbcp-ust-collab"
+    "url": "news-events.html#event-cbcp-ust-collab",
+    "image": "upload/1.webp",
+    "imageAlt": "CBCP-UST Collaborative Project",
+    "imageFit": "cover"
   },
   {
     "id": "event-student-stats-28th",
@@ -303,7 +366,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-student-stats-28th"
+    "url": "news-events.html#event-student-stats-28th",
+    "image": "upload/stats-awards-2.webp",
+    "imageAlt": "28th Philippine Statistics Quiz Bee",
+    "imageFit": "cover"
   },
   {
     "id": "event-inst-quiz-bee",
@@ -317,7 +383,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-inst-quiz-bee"
+    "url": "news-events.html#event-inst-quiz-bee",
+    "image": "upload/inst-quizbee-1.webp",
+    "imageAlt": "Institutional Statistics Quiz Bee Winners",
+    "imageFit": "cover"
   },
   {
     "id": "event-fontanilla-tejada-collab",
@@ -331,7 +400,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-fontanilla-tejada-collab"
+    "url": "news-events.html#event-fontanilla-tejada-collab",
+    "image": "upload/fontanilla-tejada-1.webp",
+    "imageAlt": "Research Director Ryan C. Fontanilla and IT Dean Engr. Myke Albert Tejada Participate in Collaborative Study",
+    "imageFit": "cover"
   },
   {
     "id": "event-rdafest-champion-2024",
@@ -345,7 +417,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-rdafest-champion-2024"
+    "url": "news-events.html#event-rdafest-champion-2024",
+    "image": "upload/rdafest-champion-1.webp",
+    "imageAlt": "Region 2 Emerges as Overall Champion - 2024 Regional Data Festival",
+    "imageFit": "cover"
   },
   {
     "id": "event-student-stats-awards",
@@ -359,7 +434,8 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-student-stats-awards"
+    "url": "news-events.html#event-student-stats-awards",
+    "imageFit": "cover"
   },
   {
     "id": "event-lapus-rdafest-2024",
@@ -374,7 +450,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-lapus-rdafest-2024"
+    "url": "news-events.html#event-lapus-rdafest-2024",
+    "image": "upload/lapus-rdafest-1.webp",
+    "imageAlt": "Wendy Mae G. Lapus Represents ISAP at Regional Data Festival",
+    "imageFit": "cover"
   },
   {
     "id": "event-infographics-contest",
@@ -388,7 +467,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-infographics-contest"
+    "url": "news-events.html#event-infographics-contest",
+    "image": "upload/infographics-4.webp",
+    "imageAlt": "MCNP and ISAP Digital Infographics Making Contest",
+    "imageFit": "cover"
   },
   {
     "id": "event-data-skills",
@@ -403,7 +485,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-data-skills"
+    "url": "news-events.html#event-data-skills",
+    "image": "upload/health-research-analytics-1.webp",
+    "imageAlt": "Training on Data Analytics and Data Presentation for Health Research - Sep 17–18, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-problems-to-purpose",
@@ -418,7 +503,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-problems-to-purpose"
+    "url": "news-events.html#event-problems-to-purpose",
+    "image": "upload/colloquium-1.webp",
+    "imageAlt": "General Education Department &amp; RDC: Research Colloquium &amp; Capacity Building - Dr. Ryan C. Fontanilla and Ms. Rio Frances C. Callores",
+    "imageFit": "cover"
   },
   {
     "id": "event-leading-through-inquiry",
@@ -432,7 +520,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-leading-through-inquiry"
+    "url": "news-events.html#event-leading-through-inquiry",
+    "image": "upload/proposal-defense-sep16-1.webp",
+    "imageAlt": "MCNP-ISAP Academic Heads Research Proposal Defense - Sep 16, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-numbers-to-narratives",
@@ -447,7 +538,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-numbers-to-narratives"
+    "url": "news-events.html#event-numbers-to-narratives",
+    "image": "upload/stat-seminar-1.webp",
+    "imageAlt": "Stat. Month Data Appreciation Seminar - Sep 15, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-research-leadership",
@@ -461,7 +555,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-research-leadership"
+    "url": "news-events.html#event-research-leadership",
+    "image": "upload/proposal-defense-sep9-1.webp",
+    "imageAlt": "MCNP-ISAP Academic Heads Research Proposal Defense - Sep 09, 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-innovation-to-opportunity",
@@ -477,7 +574,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-innovation-to-opportunity"
+    "url": "news-events.html#event-innovation-to-opportunity",
+    "image": "upload/sti-week-1.webp",
+    "imageAlt": "2026 Cagayan Valley Regional Science, Technology, and Innovation Week - DOST Regional STI Week",
+    "imageFit": "cover"
   },
   {
     "id": "event-research-sees-everyone",
@@ -492,7 +592,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-research-sees-everyone"
+    "url": "news-events.html#event-research-sees-everyone",
+    "image": "upload/gender-research-1.webp",
+    "imageAlt": "Research That Sees Everyone: Advancing Knowledge through a Gender-Responsive Lens - CSU Andrews Campus",
+    "imageFit": "cover"
   },
   {
     "id": "event-samples-to-statistics",
@@ -506,7 +609,10 @@ window.RDC_CONTENT = [
       9,
       17
     ],
-    "url": "news-events.html#event-samples-to-statistics"
+    "url": "news-events.html#event-samples-to-statistics",
+    "image": "upload/research-summit-1.webp",
+    "imageAlt": "ISAP High School Research Summit - Episode 2: From Samples to Statistics",
+    "imageFit": "cover"
   },
   {
     "id": "event-equipping-students",
@@ -520,7 +626,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-equipping-students"
+    "url": "news-events.html#event-equipping-students",
+    "image": "upload/community-ext-1.webp",
+    "imageAlt": "Listening to the Community: Qualitative Data Gathering for Community Needs Analysis - Dr. Ryan C. Fontanilla",
+    "imageFit": "cover"
   },
   {
     "id": "event-general-assembly",
@@ -535,7 +644,10 @@ window.RDC_CONTENT = [
       16,
       17
     ],
-    "url": "news-events.html#event-general-assembly"
+    "url": "news-events.html#event-general-assembly",
+    "image": "upload/assembly-1.webp",
+    "imageAlt": "Strengthening Research Through Shared Direction - MCNP-ISAP RDC General Assembly 2026",
+    "imageFit": "cover"
   },
   {
     "id": "event-health-research-collaboration",
@@ -548,7 +660,10 @@ window.RDC_CONTENT = [
       4,
       17
     ],
-    "url": "news-events.html#event-health-research-collaboration"
+    "url": "news-events.html#event-health-research-collaboration",
+    "image": "upload/health-research-1.webp",
+    "imageAlt": "Advancing Health Research Through Collaboration - DOST CVHRDC RRF Technical Review",
+    "imageFit": "cover"
   },
   {
     "id": "event-icir-2026",
@@ -563,7 +678,10 @@ window.RDC_CONTENT = [
       11,
       17
     ],
-    "url": "news-events.html#event-icir-2026"
+    "url": "news-events.html#event-icir-2026",
+    "image": "upload/icir-1.webp",
+    "imageAlt": "1st ISAP-K Conference on Interdisciplinary Research (ICIR 2026) - Keynote Speaker Dr. Ryan C. Fontanilla",
+    "imageFit": "cover"
   },
   {
     "id": "event-stats-color-fun-run",
@@ -577,7 +695,10 @@ window.RDC_CONTENT = [
       4,
       17
     ],
-    "url": "news-events.html#event-stats-color-fun-run"
+    "url": "news-events.html#event-stats-color-fun-run",
+    "image": "upload/stats-colorrun-1.webp",
+    "imageAlt": "School Statisticians Join the 35th National Statistics Month Color Fun Run",
+    "imageFit": "cover"
   },
   {
     "id": "article-project-relief-flagship-2026",
@@ -590,7 +711,10 @@ window.RDC_CONTENT = [
       3,
       4
     ],
-    "url": "utilization.html#article-project-relief-flagship-2026"
+    "url": "utilization.html#article-project-relief-flagship-2026",
+    "image": "upload/project-relief-session1-awarding.jpg",
+    "imageAlt": "MCNP–ISAP RDC & College of Criminal Justice Education (CoCJE) — Project RELIEF: Let It Out, Lift It Up! Flagship Research Utilization Program",
+    "imageFit": "cover"
   },
   {
     "id": "article-project-relief-session1-2026",
@@ -603,7 +727,10 @@ window.RDC_CONTENT = [
       3,
       4
     ],
-    "url": "utilization.html#article-project-relief-session1-2026"
+    "url": "utilization.html#article-project-relief-session1-2026",
+    "image": "upload/project-relief-session1-awarding.jpg",
+    "imageAlt": "ISAP College of Criminal Justice Education (CoCJE) — Project RELIEF: Let It Out, Lift It Up! (Session 1: Awarding of Certificate of Appreciation to Resource Speaker Ms. Jeline Flor T. Eugenio, RPm at ISAP AVR 1)",
+    "imageFit": "cover"
   },
   {
     "id": "article-project-relief-session2-2026",
@@ -616,7 +743,10 @@ window.RDC_CONTENT = [
       3,
       4
     ],
-    "url": "utilization.html#article-project-relief-session2-2026"
+    "url": "utilization.html#article-project-relief-session2-2026",
+    "image": "upload/project-relief-session2-group-photo.jpg",
+    "imageAlt": "ISAP College of Criminal Justice Education (CoCJE) — Project RELIEF: Let It Out, Lift It Up! (Session 2: Group photo with CoCJE Dean Dr. Rizza C. Concha, Guidance Head Mr. Jhony C. Benedicta, Research Focal Person Ms. Pia Nathattia A. Cuaresma, student leaders, and Level 3 & 4 BS Criminology participants at ISAP AVR 1)",
+    "imageFit": "cover"
   },
   {
     "id": "article-project-relief-session3-2026",
@@ -629,7 +759,10 @@ window.RDC_CONTENT = [
       3,
       4
     ],
-    "url": "utilization.html#article-project-relief-session3-2026"
+    "url": "utilization.html#article-project-relief-session3-2026",
+    "image": "upload/project-relief-session3-group-photo.jpg",
+    "imageAlt": "ISAP College of Criminal Justice Education (CoCJE) — Project RELIEF: Let It Out, Lift It Up! (Culminating Session 3: Group photo with Dean Dr. Rizza C. Concha, Guidance Head Mr. Jhony C. Benedicta, Research Focal Person Ms. Pia Nathattia A. Cuaresma, student leaders, and Level 3 & 4 BS Criminology participants at ISAP AVR 1)",
+    "imageFit": "cover"
   },
   {
     "d": "—",

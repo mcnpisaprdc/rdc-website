@@ -257,6 +257,21 @@
       box-shadow: 0 10px 24px rgba(0,0,0,0.1);
       transform: translateY(-3px);
     }
+    .un-ev-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 8 / 5;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 8px;
+      background: #f1f5f9;
+      margin-bottom: 1.25rem;
+    }
+    .un-ev-image-contain {
+      object-fit: contain;
+      object-position: center;
+    }
     .un-day {
       font: 700 2.2rem/1 var(--oswald);
       color: #0f172a;

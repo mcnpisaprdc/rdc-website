@@ -28,13 +28,17 @@ function newsRecords(html) {
     if (!id) throw new Error('News card requires a stable id');
     const goals = [...(attrs.match(/data-sdgs="([^"]*)"/) || ['', ''])[1].split(/\s+/).map(Number), ...[...body.matchAll(/sdg-overview\.html\?goal=(\d+)/g)].map(m => Number(m[1]))].filter(n => n >= 1 && n <= 17);
     const date = field(body, 'news-date-badge') || field(body, 'article-meta-date');
-    return { id, t: field(body, 'news-title') || field(body, 'article-accordion-title'), r: date, d: '—', m: date, topic: field(body, 'badge-editorial-topic') || field(body, 'dropdown-badge'), g: [...new Set(goals)].sort((a,b) => a-b), url: 'news-events.html#' + id };
+    const imageTag = (body.match(/<img\b[^>]*>/) || [''])[0];
+    const image = (imageTag.match(/\bsrc="([^"]+)"/) || [])[1];
+    const imageAlt = (imageTag.match(/\balt="([^"]*)"/) || [])[1];
+    const imageFit = /object-fit:\s*contain/.test(imageTag) ? 'contain' : 'cover';
+    return { id, t: field(body, 'news-title') || field(body, 'article-accordion-title'), r: date, d: '—', m: date, topic: field(body, 'badge-editorial-topic') || field(body, 'dropdown-badge'), g: [...new Set(goals)].sort((a,b) => a-b), url: 'news-events.html#' + id, image, imageAlt, imageFit };
   });
 }
 function projectRecords(source) {
   const literal = source.match(/var OFFICIAL_UTILIZATION_ARTICLES = (\[[\s\S]*?\n    \]);/);
   if (!literal) throw new Error('Published utilization data not found');
-  return vm.runInNewContext('(' + literal[1] + ')', {}, { timeout: 1000 }).filter(a => a.isPublished).map(a => ({ id: a.id, t: a.title, r: a.date, d: '—', m: 'Research utilization', topic: a.topic, g: a.sdgs.map(s => Number(s.goal)), url: 'utilization.html#' + a.id }));
+  return vm.runInNewContext('(' + literal[1] + ')', {}, { timeout: 1000 }).filter(a => a.isPublished).map(a => ({ id: a.id, t: a.title, r: a.date, d: '—', m: 'Research utilization', topic: a.topic, g: a.sdgs.map(s => Number(s.goal)), url: 'utilization.html#' + a.id, image: a.heroImage, imageAlt: a.imageCaption || a.title, imageFit: 'cover' }));
 }
 function updateAdvocacyCounts(records) {
   const file = 'adg-advocacy.html';

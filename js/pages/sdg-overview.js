@@ -33,6 +33,13 @@
       '</span>';
     }
     function eventUrl(item){ return item.url; }
+    function imageAttribute(value){ return String(value).replace(/"/g, '&quot;').replace(/</g, '&lt;'); }
+    function eventImage(item, goal){
+      var src = item.image || ('assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-' + pad(goal) + '.png');
+      var alt = item.image ? (item.imageAlt || item.t) : ('SDG ' + goal + ': ' + G[goal - 1][0]);
+      var fit = !item.image || item.imageFit === 'contain' ? ' un-ev-image-contain' : '';
+      return '<img class="un-ev-image' + fit + '" src="' + imageAttribute(src) + '" alt="' + imageAttribute(alt) + '" width="640" height="400" loading="lazy" decoding="async">';
+    }
 
     // Render Goal Selector Bar
     $("un-goalbar").firstElementChild.innerHTML = G.map(function(goal, i){
@@ -74,18 +81,14 @@
       // Overview
       $("un-ov").innerHTML = '<p style="font-weight: 500; font-size: 1.15rem; color: #0f172a; margin-bottom: 1.25rem;">' + goal[3] + '</p><p>' + common + '</p>';
 
-      // Filter events & topics
+      // Filter events
       var list = E.filter(function(item){ return item.g.indexOf(n) > -1; });
       if ($("un-ev-count-badge")) {
         $("un-ev-count-badge").textContent = list.length + (list.length === 1 ? " Item" : " Items");
       }
 
-      $("un-topic").innerHTML = list.length ? list.map(function(item){
-        return '<li><a href="' + eventUrl(item) + '"><span class="un-related-date">' + item.topic + '</span><span class="un-related-title">' + item.t + '</span></a></li>';
-      }).join("") : '<li><p class="un-related-empty">No related stories are tagged with this goal yet. <a href="news-events.html">Browse all news &amp; events </a></p></li>';
-
       $("un-events").innerHTML = list.length ? list.map(function(item){
-        return '<a class="un-ev" href="' + eventUrl(item) + '"><div class="un-day">' + item.d + '</div><div class="un-mon">' + item.m + '</div>' + (item.topic ? '<div class="un-ev-topic">' + item.topic + '</div>' : '') + '<h3>' + item.t + '</h3><div class="un-range">' + item.r + (item.sourceNote ? '<br>' + item.sourceNote : '') + '</div><div class="un-ev-link">View source </div><div class="un-ev-goals"><small>Related Goals</small><div class="un-ev-goals-strip">' + item.g.map(badge).join("") + '</div></div></a>';
+        return '<a class="un-ev" href="' + eventUrl(item) + '">' + eventImage(item, n) + '<div class="un-day">' + item.d + '</div><div class="un-mon">' + item.m + '</div>' + (item.topic ? '<div class="un-ev-topic">' + item.topic + '</div>' : '') + '<h3>' + item.t + '</h3><div class="un-range">' + item.r + (item.sourceNote ? '<br>' + item.sourceNote : '') + '</div><div class="un-ev-link">View source </div><div class="un-ev-goals"><small>Related Goals</small><div class="un-ev-goals-strip">' + item.g.map(badge).join("") + '</div></div></a>';
       }).join("") : '<p class="un-empty">No items are documented on this website for this goal yet. <a href="news-events.html">Browse all news &amp; events </a></p>';
 
       // Update Active state in goalbar
