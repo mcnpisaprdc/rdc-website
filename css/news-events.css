@@ -1639,7 +1639,7 @@
         margin: 1.75rem 0 0.85rem !important;
       }
 
-      /* Clean mobile typography: prevent awkward word gaps & hyphenation rivers */
+      /* Justify mobile article text while keeping long words within the screen. */
       .article-narrative-p,
       .article-lead-text,
       .article-content-body p,
@@ -1650,9 +1650,9 @@
       .news-excerpt,
       .event-page-news-only p,
       .article-accordion-snippet {
-        text-align: left !important;
-        text-justify: auto !important;
-        hyphens: manual !important;
+        text-align: justify !important;
+        text-justify: inter-word !important;
+        hyphens: auto !important;
         word-break: normal;
         overflow-wrap: break-word;
       }
