@@ -2102,6 +2102,30 @@
     }
 
     /* ===== PUBLICATION & MEDIA PRINT STYLES ===== */
+    @media screen {
+      #articleModalContent .ched-announcement-hero {
+        margin-left: -5rem !important;
+        margin-right: -5rem !important;
+        margin-top: -3.25rem !important;
+        border-radius: 0 !important;
+      }
+
+      #articleModalContent .ched-announcement-hero img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #articleModalContent .ched-announcement-hero {
+        margin-left: -2rem !important;
+        margin-right: -2rem !important;
+        margin-top: -1.5rem !important;
+      }
+    }
+
     @media print {
       @page {
         size: A4 portrait;
