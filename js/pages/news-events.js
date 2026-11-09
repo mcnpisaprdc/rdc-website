@@ -395,6 +395,39 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+      "article-bs-nursing-3-proposal-defense-2026": {
+  "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; BS Nursing 3 Proposal Defense",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research &amp; Colloquiums · MCNP–ISAP",
+  "date": "November 7, 2026",
+  "readTime": "4 min read",
+  "title": "MCNP BS Nursing 3 Students Strengthen Research Engagement Through Proposal Defense",
+  "bodyId": "body-article-bs-nursing-3-proposal-defense-2026",
+  "sdgs": [
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education (Primary Alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "3",
+      "title": "SDG 3 – Good Health and Well-Being (Potential Alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE – Research Culture and Capability",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "strengthen",
+      "title": "STRENGTHEN – Education and Institutional Performance",
+      "icon": "assets/agenda/agenda-9-strengthen.webp"
+    }
+  ]
+},
       "article-criminology-profession-week-2026": {
   "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; 3rd Criminology Profession Week",
   "badge": "OFFICIAL ARTICLE",
