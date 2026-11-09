@@ -395,6 +395,49 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+      "article-stillbirth-codac-scopus": {
+  "breadcrumb": "News &amp; Events &gt; Research &amp; Publications &gt; Scopus-Indexed Article Acceptance",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research &amp; Publications",
+  "date": "Acceptance date not specified",
+  "readTime": "6 min read",
+  "title": "MCNP Research Director Co-Authors Research Article Accepted for Publication in Scopus-Indexed Journal",
+  "bodyId": "body-article-stillbirth-codac-scopus",
+  "sdgs": [
+    {
+      "goal": "3",
+      "title": "SDG 3 – Good Health and Well-Being (Primary Alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp"
+    },
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "17",
+      "title": "SDG 17 – Partnerships for the Goals (Potential Alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE – Research Culture and Capability",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "expand",
+      "title": "EXPAND – Partnerships and Global Research",
+      "icon": "assets/agenda/agenda-8-expand.webp"
+    },
+    {
+      "pillar": "strengthen",
+      "title": "STRENGTHEN – Education and Institutional Performance",
+      "icon": "assets/agenda/agenda-9-strengthen.webp"
+    }
+  ]
+},
       "article-bs-nursing-3-proposal-defense-2026": {
   "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; BS Nursing 3 Proposal Defense",
   "badge": "OFFICIAL ARTICLE",
@@ -1231,6 +1274,9 @@
     }
 
     function compareEventDates(a, b) {
+      var aFeatured = a.dataset.featured === 'true';
+      var bFeatured = b.dataset.featured === 'true';
+      if (aFeatured !== bFeatured) return aFeatured ? -1 : 1;
       var aDate = eventDateSortValue(a);
       var bDate = eventDateSortValue(b);
       if (!aDate && bDate) return 1;
