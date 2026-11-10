@@ -1,3 +1,70 @@
+    .sdg-hero {
+      padding-block: clamp(2rem, 5vw, 4rem);
+    }
+    .sdg-hero .breadcrumbs {
+      margin-bottom: 2rem;
+    }
+    .sdg-hero-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+    .sdg-hero h1 {
+      font-size: clamp(2rem, 3.8vw, 3.4rem);
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.25rem;
+    }
+    .sdg-hero h1 span {
+      display: block;
+      color: #ffdf70;
+    }
+    .sdg-hero .sdg-hero-tagline {
+      font-size: clamp(1rem, 1.6vw, 1.2rem);
+      line-height: 1.65;
+      max-width: 34ch;
+    }
+    .sdg-hero .sdg-hero-alignment {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      font-size: 0.82rem;
+      line-height: 1.8;
+      color: #cbd5e1;
+    }
+    .sdg-hero-commitment {
+      padding: clamp(1.25rem, 3vw, 2.25rem);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.07);
+    }
+    .sdg-hero-commitment h2 {
+      color: #ffffff;
+      font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+    .page-hero .sdg-hero-commitment p {
+      max-width: none;
+      font-size: 0.95rem;
+      line-height: 1.85;
+    }
+    .sdg-hero-commitment p strong {
+      color: #ffdf70;
+      font-size: 0.88rem;
+    }
+    .sdg-hero-commitment p + p {
+      margin-top: 1rem;
+    }
+    @media (max-width: 800px) {
+      .sdg-hero-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .sdg-hero .sdg-hero-tagline {
+        max-width: none;
+      }
+    }
+
     /* =========================================================
        17 SDG ICONS GRID
        ========================================================= */
