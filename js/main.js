@@ -2860,23 +2860,6 @@ window.pastCalendarEvents = [
     "isPastEvent": true
   },
   {
-    "id": 116,
-    "dates": [
-      "2026-11-04"
-    ],
-    "displayDate": "November 4, 2026",
-    "pillText": "MCNP Health Sciences",
-    "pillClass": "cal-pill-mcnp",
-    "shortTag": "BSN 3K Proposal",
-    "title": "BSN 3K Proposal Defense",
-    "desc": "Proposal Defense for BSN 3K, completed as posted on the November schedule board.",
-    "participants": "BSN 3K",
-    "venue": "To be confirmed",
-    "lead": "To be confirmed",
-    "category": "mcnp",
-    "isPastEvent": true
-  },
-  {
     "id": 117,
     "dates": [
       "2026-11-06"
@@ -3615,17 +3598,6 @@ window.selectCalendarDate = function(dateStr, directMatchingEvents) {
       </div>
       <div class="inspector-event-desc">
         ${event.desc}
-      </div>
-      <div class="inspector-meta-item">
-        <strong> Target:</strong>
-        <span>${event.participants || 'MCNP & ISAP Academic Community'}</span>
-      </div>
-      <div class="inspector-meta-item">
-        <strong> Venue &amp; Lead:</strong>
-        <div>
-          <div>${event.venue || 'MCNP & ISAP Campus'}</div>
-          <div style="font-size: 0.8rem; color: #64748b; margin-top: 0.2rem;">${event.lead || 'RDC Secretariat'}</div>
-        </div>
       </div>
       ${actionsHTML}
     `;
