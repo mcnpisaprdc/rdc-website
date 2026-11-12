@@ -96,6 +96,12 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-it-final-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-it-final-defense-2026.html"
   },
+  "article-bs-psychology-4th-year-proposal-defense-2026": {
+    "title": "ISAP 4th Year BS Psychology Students Strengthen Research Competence Through Proposal Defense",
+    "description": "ISAP conducted the 4th Year BS Psychology Research Proposal Defense on October 28–29, 2026, strengthening research communication, critical inquiry, and scholarly engagement among psychology students.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-psychology-4th-year-proposal-defense-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-psychology-4th-year-proposal-defense-2026.html"
+  },
   "article-project-relief-flagship-2026": {
     "title": "PROJECT RELIEF: Let It Out, Lift It Up! — Project RELIEF Turns Research into Action, Strengthens Student Resilience Through Three-Session Mental Wellness Program",
     "description": "The College of Criminal Justice Education (CoCJE), in collaboration with the Research and Development Center (RDC), concluded Project RELIEF: Let It Out, Lift It Up!, a three-session research-utilization initiative that transformed student wellness concerns into a structured program for emotional awareness, stress management, self-care, and psychological resilience.",

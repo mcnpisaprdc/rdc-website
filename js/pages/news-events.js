@@ -395,6 +395,40 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-bs-psychology-4th-year-proposal-defense-2026": {
+  "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BS Psychology Proposal Defense",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research &amp; Colloquiums",
+  "date": "October 28–29, 2026",
+  "readTime": "4 min read",
+  "title": "ISAP 4th Year BS Psychology Students Strengthen Research Competence Through Proposal Defense",
+  "bodyId": "body-article-bs-psychology-4th-year-proposal-defense-2026",
+  "sdgs": [
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "3",
+      "title": "SDG 3 – Good Health and Well-Being (Supporting alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE – Research Culture and Capability",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "strengthen",
+      "title": "STRENGTHEN – Education and Institutional Performance",
+      "icon": "assets/agenda/agenda-9-strengthen.webp"
+    }
+  ]
+},
+
 "article-bs-nursing-proposal-defense-nov9-2026": {
   "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BS Nursing Proposal Defense",
   "badge": "OFFICIAL ARTICLE",

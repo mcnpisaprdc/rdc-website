@@ -134,6 +134,22 @@ window.RDC_CONTENT = [
     "imageFit": "contain"
   },
   {
+    "id": "article-bs-psychology-4th-year-proposal-defense-2026",
+    "t": "ISAP 4th Year BS Psychology Students Strengthen Research Competence Through Proposal Defense",
+    "r": "October 28–29, 2026",
+    "d": "—",
+    "m": "October 28–29, 2026",
+    "topic": "Research &amp; Colloquiums",
+    "g": [
+      3,
+      4
+    ],
+    "url": "news-events.html#article-bs-psychology-4th-year-proposal-defense-2026",
+    "image": "upload/bs-psychology-4th-year-proposal-defense-2026/photo-06.webp",
+    "imageAlt": "ISAP fourth-year BS Psychology students during the research proposal defense",
+    "imageFit": "contain"
+  },
+  {
     "id": "article-annual-health-research-forum-2026",
     "t": "MCNP–ISAP Showcases Health Research at Annual Health Research Forum 2026, Earns Student Recognition",
     "r": "October 26–27, 2026",
