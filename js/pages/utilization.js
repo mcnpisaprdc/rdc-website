@@ -1933,8 +1933,8 @@
     }
   ],
   "summary": "A collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School, the November 13, 2026 HIV awareness webinar promoted informed health decisions, responsible behavior, and a stigma-free academic community.",
-  "impact": "HIV, AIDS, and STI awareness through two scheduled health education sessions and question-and-answer forums.",
-  "impactLabel": "Program Focus",
+  "impact": "Average pre-test: 9.43 (Knowledgeable). Average post-test: 13.4 (Very Knowledgeable). Increase: 3.97 points.",
+  "impactLabel": "Knowledge Assessment Results",
   "pillarKey": "inspire",
   "pillarName": "INSPIRE",
   "pillarFullName": "INSPIRE: Culture, Capability, and Engagement",
@@ -1949,10 +1949,10 @@
     "The official program included two health education sessions addressing HIV awareness and dissemination, with scheduled question-and-answer forums intended to provide participants with opportunities to engage in discussions and seek clarification on health-related concerns.",
     "The activity also highlighted the involvement of the College of Medical Laboratory Science in promoting health education within the academic community. Jeric B. Tuazon, RMT, DTA, COMLS Program Coordinator, was designated to deliver the opening remarks, while Heartdwick L. Cuarteros, RMT, LPT, MPH, COMLS Academic Coordinator, was assigned to present the program rationale. Their scheduled participation reflected the College's role in organizing an educational initiative addressing an important public health concern.",
     "Highlighting the involvement of the Research and Development Center (RDC), Dr. Ryan C. Fontanilla, Research Director of MCNP–ISAP, was included in the official program to deliver the closing remarks. His scheduled participation connected the activity with the institution's broader commitment to academic engagement, health education, and the promotion of knowledge-informed practices.",
-    "The webinar primarily supports Sustainable Development Goal 3 – Good Health and Well-Being by promoting HIV awareness, health education, and responsible health behavior. It also aligns with SDG 4 – Quality Education through the dissemination of health information and the provision of learning opportunities beyond regular classroom instruction. The collaboration among the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School also supports SDG 17 ? Partnerships for the Goals through shared public health expertise, academic engagement, and student health education.",
+    "The webinar primarily supports Sustainable Development Goal 3 – Good Health and Well-Being by promoting HIV awareness, health education, and responsible health behavior. It also aligns with SDG 4 – Quality Education through the dissemination of health information and the provision of learning opportunities beyond regular classroom instruction. The collaboration among the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School also supports SDG 17 &ndash; Partnerships for the Goals through shared public health expertise, academic engagement, and student health education.",
     "The activity also demonstrates WURI-relevant educational practices by connecting public health knowledge with student learning through expert-led presentations, academic discussion, and question-and-answer forums. Its focus on HIV awareness, responsible health behavior, and stigma reduction addresses a practical health education need and encourages students to relate classroom learning to real-world health concerns.",
     "The initiative also relates to the MCNP–ISAP RDC INNOVATES Research Agenda, particularly INSPIRE – Culture, Capability, and Engagement, by encouraging student participation in health education and awareness activities; NURTURE – Ethics, Quality, and Accountability, through its emphasis on informed and respectful health-related attitudes; and EXPAND – Partnerships and Global Research, through engagement with a regional public health representative.",
-    "The available documentation confirms the webinar's official program and the presentation of HIV, AIDS, and STI awareness content through Zoom. While the activity was intended to promote knowledge and responsible health behavior, the total number of participants, evaluation results, and measurable improvements in awareness or behavior have not been provided.",
+    "The pre-test recorded an average score of <strong>9.43</strong>, categorized as <strong>Knowledgeable</strong>. After the lecture, the post-test average increased to <strong>13.4</strong>, categorized as <strong>Very Knowledgeable</strong>. The average score increased by <strong>3.97 points</strong>, reflecting higher knowledge scores following the health education session.",
     "The program offers a potential foundation for continued health education and awareness initiatives within the institution. Further activities and documented follow-up measures would be necessary to establish its long-term outcomes and sustainability.",
     "Through “Bridging Knowledge and Behavior,” MCNP–ISAP highlights the importance of health education in supporting informed choices, responsible behavior, and a respectful academic environment. The initiative reflects the College of Medical Laboratory Science's efforts to connect students with relevant public health information while contributing to the institution's broader commitment to quality education and student well-being."
   ],
@@ -1967,6 +1967,16 @@
         "Collaborating Units: College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School"
       ],
       "desc": "Two health education sessions with scheduled question-and-answer forums."
+    },
+    {
+      "title": "Pre-Test and Post-Test Results",
+      "date": "Knowledge Assessment",
+      "items": [
+        "<strong>Pre-test average:</strong> 9.43 - Knowledgeable",
+        "<strong>Post-test average:</strong> 13.4 - Very Knowledgeable",
+        "<strong>Average score increase:</strong> 3.97 points"
+      ],
+      "desc": "The post-test results showed higher average knowledge scores after the lecture."
     }
   ],
   "sdgs": [
@@ -1989,7 +1999,7 @@
       "desc": "Reflects collaboration among the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School in delivering public health information and student learning opportunities."
     }
   ],
-  "wuri": "The collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School demonstrates an application-based approach to health education by connecting students with public health expertise. Expert-led presentations and question-and-answer forums provide opportunities to discuss HIV, AIDS, and STI awareness, clarify health-related concerns, and connect accurate information with responsible decision-making and respectful attitudes.",
+  "wuri": "The collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School demonstrates an application-based approach to health education by connecting students with public health expertise. Expert-led presentations and question-and-answer forums provide opportunities to discuss HIV, AIDS, and STI awareness, clarify health-related concerns, and connect accurate information with responsible decision-making and respectful attitudes. Pre-test and post-test assessment recorded an increase in the average knowledge score from 9.43 (Knowledgeable) to 13.4 (Very Knowledgeable), providing a documented measure of student learning following the lecture.",
   "innovates": [
     {
       "pillar": "inspire",
