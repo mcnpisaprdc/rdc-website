@@ -109,8 +109,8 @@ window.RDC_SOCIAL = {
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-psychology-4th-year-proposal-defense-2026.html"
   },
   "article-mls-hiv-awareness-webinar-2026": {
-    "title": "MCNP–ISAP Strengthens HIV Awareness and Promotes Responsible Health Behavior Through Student Webinar",
-    "description": "MCNP–ISAP, through the College of Medical Laboratory Science, organized an HIV awareness and dissemination webinar on November 13, 2026, promoting informed health decisions, responsible behavior, and a stigma-free academic community.",
+    "title": "Medical Laboratory Science, Research and Development Center, DOH, and High School Collaborate to Strengthen HIV Awareness and Promote Responsible Health Behavior",
+    "description": "A collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School, the November 13, 2026 HIV awareness webinar promoted informed health decisions, responsible behavior, and a stigma-free academic community.",
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-mls-hiv-awareness-webinar-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-mls-hiv-awareness-webinar-2026.html"
   },

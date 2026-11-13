@@ -1889,11 +1889,11 @@
   "isPublished": true,
   "badgeText": "PUBLISHED OFFICIAL ARTICLE",
   "topic": "HIV Awareness & Health Education",
-  "title": "MCNP–ISAP Strengthens HIV Awareness and Promotes Responsible Health Behavior Through Student Webinar",
+  "title": "Medical Laboratory Science, Research and Development Center, DOH, and High School Collaborate to Strengthen HIV Awareness and Promote Responsible Health Behavior",
   "subtitle": "Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP–ISAP Students",
   "dept": "College of Medical Laboratory Science (COMLS)",
-  "partner": "Neo D. Corotan, Regional Program Officer, SHIP/CVHD, DOH Region II",
-  "partnerLabel": "Resource Speaker",
+  "partner": "Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School",
+  "partnerLabel": "Collaborating Partners",
   "facilitator": "Neo D. Corotan",
   "date": "November 13, 2026",
   "readTime": "6 min read",
@@ -1932,7 +1932,7 @@
       "caption": "Webinar screenshot of the HIV statistics presentation."
     }
   ],
-  "summary": "MCNP–ISAP, through the College of Medical Laboratory Science, organized an HIV awareness and dissemination webinar on November 13, 2026, promoting informed health decisions, responsible behavior, and a stigma-free academic community.",
+  "summary": "A collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School, the November 13, 2026 HIV awareness webinar promoted informed health decisions, responsible behavior, and a stigma-free academic community.",
   "impact": "HIV, AIDS, and STI awareness through two scheduled health education sessions and question-and-answer forums.",
   "impactLabel": "Program Focus",
   "pillarKey": "inspire",
@@ -1943,13 +1943,13 @@
   "beneficiaries": "MCNP–ISAP students",
   "coreFormats": "Online health education sessions and question-and-answer forums",
   "paragraphs": [
-    "The Medical Colleges of Northern Philippines (MCNP) and the International School of Asia and the Pacific (ISAP), through the College of Medical Laboratory Science (COMLS), organized an HIV awareness and dissemination webinar on November 13, 2026, titled “Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP–ISAP Students.” The activity was designed to promote informed health decisions, responsible behavior, and a stigma-free academic community.",
+    "The Medical Colleges of Northern Philippines (MCNP) and the International School of Asia and the Pacific (ISAP), through a collaboration among the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School, organized an HIV awareness and dissemination webinar on November 13, 2026, titled “Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP–ISAP Students.” The activity was designed to promote informed health decisions, responsible behavior, and a stigma-free academic community.",
     "Conducted through an online platform, the program focused on strengthening students' awareness of Human Immunodeficiency Virus (HIV), Acquired Immunodeficiency Syndrome (AIDS), and sexually transmitted infections (STIs). It emphasized the importance of accurate health information, responsible decision-making, and respectful attitudes toward individuals affected by HIV.",
     "A key component of the webinar was the participation of Neo D. Corotan, Regional Program Officer of SHIP/CVHD, representing the Department of Health (DOH) Regional Office II. The documented presentation, titled “Understanding HIV, AIDS, Sexually Transmitted Infections (STIs),” provided a health education component supporting the program's objective of increasing awareness and encouraging informed choices among students.",
     "The official program included two health education sessions addressing HIV awareness and dissemination, with scheduled question-and-answer forums intended to provide participants with opportunities to engage in discussions and seek clarification on health-related concerns.",
     "The activity also highlighted the involvement of the College of Medical Laboratory Science in promoting health education within the academic community. Jeric B. Tuazon, RMT, DTA, COMLS Program Coordinator, was designated to deliver the opening remarks, while Heartdwick L. Cuarteros, RMT, LPT, MPH, COMLS Academic Coordinator, was assigned to present the program rationale. Their scheduled participation reflected the College's role in organizing an educational initiative addressing an important public health concern.",
     "Highlighting the involvement of the Research and Development Center (RDC), Dr. Ryan C. Fontanilla, Research Director of MCNP–ISAP, was included in the official program to deliver the closing remarks. His scheduled participation connected the activity with the institution's broader commitment to academic engagement, health education, and the promotion of knowledge-informed practices.",
-    "The webinar primarily supports Sustainable Development Goal 3 – Good Health and Well-Being by promoting HIV awareness, health education, and responsible health behavior. It also aligns with SDG 4 – Quality Education through the dissemination of health information and the provision of learning opportunities beyond regular classroom instruction. The involvement of a DOH Regional Office II representative suggests potential relevance to SDG 17 – Partnerships for the Goals, reflecting engagement between the academic and public health sectors, although no formal partnership agreement was documented.",
+    "The webinar primarily supports Sustainable Development Goal 3 – Good Health and Well-Being by promoting HIV awareness, health education, and responsible health behavior. It also aligns with SDG 4 – Quality Education through the dissemination of health information and the provision of learning opportunities beyond regular classroom instruction. The collaboration among the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School also supports SDG 17 ? Partnerships for the Goals through shared public health expertise, academic engagement, and student health education.",
     "The activity also demonstrates WURI-relevant educational practices by connecting public health knowledge with student learning through expert-led presentations, academic discussion, and question-and-answer forums. Its focus on HIV awareness, responsible health behavior, and stigma reduction addresses a practical health education need and encourages students to relate classroom learning to real-world health concerns.",
     "The initiative also relates to the MCNP–ISAP RDC INNOVATES Research Agenda, particularly INSPIRE – Culture, Capability, and Engagement, by encouraging student participation in health education and awareness activities; NURTURE – Ethics, Quality, and Accountability, through its emphasis on informed and respectful health-related attitudes; and EXPAND – Partnerships and Global Research, through engagement with a regional public health representative.",
     "The available documentation confirms the webinar's official program and the presentation of HIV, AIDS, and STI awareness content through Zoom. While the activity was intended to promote knowledge and responsible health behavior, the total number of participants, evaluation results, and measurable improvements in awareness or behavior have not been provided.",
@@ -1963,7 +1963,8 @@
       "items": [
         "Theme: Promoting informed choices, responsible health behavior, and a stigma-free community.",
         "Implementing Unit: College of Medical Laboratory Science (COMLS)",
-        "Resource Speaker: Neo D. Corotan, Regional Program Officer, SHIP/CVHD, DOH Region II"
+        "Resource Speaker: Neo D. Corotan, Regional Program Officer, SHIP/CVHD, DOH Region II",
+        "Collaborating Units: College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School"
       ],
       "desc": "Two health education sessions with scheduled question-and-answer forums."
     }
@@ -1985,10 +1986,10 @@
       "goal": "17",
       "title": "SDG 17 – Partnerships for the Goals",
       "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp",
-      "desc": "Reflects knowledge exchange involving MCNP–ISAP and a representative of DOH Regional Office II. A formal institutional partnership has not been established by the available documentation."
+      "desc": "Reflects collaboration among the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School in delivering public health information and student learning opportunities."
     }
   ],
-  "wuri": "The webinar demonstrates an application-based approach to health education by connecting MCNP-ISAP students with public health expertise from DOH Regional Office II. Expert-led presentations and question-and-answer forums provide opportunities to discuss HIV, AIDS, and STI awareness, clarify health-related concerns, and connect accurate information with responsible decision-making and respectful attitudes.",
+  "wuri": "The collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School demonstrates an application-based approach to health education by connecting students with public health expertise. Expert-led presentations and question-and-answer forums provide opportunities to discuss HIV, AIDS, and STI awareness, clarify health-related concerns, and connect accurate information with responsible decision-making and respectful attitudes.",
   "innovates": [
     {
       "pillar": "inspire",
@@ -2006,7 +2007,7 @@
       "pillar": "expand",
       "name": "EXPAND – Partnerships and Global Research",
       "thumb": "assets/agenda/agenda-8-expand.webp",
-      "desc": "Reflects engagement with a DOH regional representative in disseminating public health information to students."
+      "desc": "Strengthens collaboration among the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School through public health knowledge exchange and student engagement."
     }
   ],
   "links": [],
@@ -3436,7 +3437,7 @@
       var metaEl = document.getElementById('utilArticleModalMeta');
       if (metaEl) {
         metaEl.innerHTML = '<span>🏛️ <strong>Proponent:</strong> ' + a.dept + '</span>' +
-          '<span>&bull; 🤝 <strong>Partner:</strong> <strong style="color: #ffdf70;">' + a.partner + '</strong></span>' +
+          '<span>🤝 <strong>' + (a.partnerLabel || 'Partner') + ':</strong> <strong style="color: #ffdf70;">' + a.partner + '</strong></span>' +
           '<span>&bull; 📅 ' + (a.date || 'Date to be announced') + '</span>';
       }
 

@@ -803,7 +803,7 @@ window.RDC_CONTENT = [
   },
   {
     "id": "article-mls-hiv-awareness-webinar-2026",
-    "t": "MCNP–ISAP Strengthens HIV Awareness and Promotes Responsible Health Behavior Through Student Webinar",
+    "t": "Medical Laboratory Science, Research and Development Center, DOH, and High School Collaborate to Strengthen HIV Awareness and Promote Responsible Health Behavior",
     "r": "November 13, 2026",
     "d": "—",
     "m": "Research utilization",
