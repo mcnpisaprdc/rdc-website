@@ -802,6 +802,23 @@ window.RDC_CONTENT = [
     "imageFit": "cover"
   },
   {
+    "id": "article-mls-hiv-awareness-webinar-2026",
+    "t": "MCNP–ISAP Strengthens HIV Awareness and Promotes Responsible Health Behavior Through Student Webinar",
+    "r": "November 13, 2026",
+    "d": "—",
+    "m": "Research utilization",
+    "topic": "HIV Awareness & Health Education",
+    "g": [
+      3,
+      4,
+      17
+    ],
+    "url": "utilization.html#article-mls-hiv-awareness-webinar-2026",
+    "image": "upload/mls-hiv-awareness-webinar-2026/documentation-03.webp",
+    "imageAlt": "Official invitation poster for Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP-ISAP Students.",
+    "imageFit": "cover"
+  },
+  {
     "id": "article-project-relief-flagship-2026",
     "t": "PROJECT RELIEF: Let It Out, Lift It Up! — Project RELIEF Turns Research into Action, Strengthens Student Resilience Through Three-Session Mental Wellness Program",
     "r": "September 12 and 26, and October 3, 2026",

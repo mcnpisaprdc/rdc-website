@@ -1879,6 +1879,139 @@
     };
 
         var OFFICIAL_UTILIZATION_ARTICLES = [
+{
+  "id": "article-mls-hiv-awareness-webinar-2026",
+  "altIds": [
+    "mls-hiv-awareness-2026"
+  ],
+  "wing": "mcnp",
+  "course": "mls",
+  "isPublished": true,
+  "badgeText": "PUBLISHED OFFICIAL ARTICLE",
+  "topic": "HIV Awareness & Health Education",
+  "title": "MCNP–ISAP Strengthens HIV Awareness and Promotes Responsible Health Behavior Through Student Webinar",
+  "subtitle": "Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP–ISAP Students",
+  "dept": "College of Medical Laboratory Science (COMLS)",
+  "partner": "Neo D. Corotan, Regional Program Officer, SHIP/CVHD, DOH Region II",
+  "partnerLabel": "Resource Speaker",
+  "facilitator": "Neo D. Corotan",
+  "date": "November 13, 2026",
+  "readTime": "6 min read",
+  "status": "#MLS-HIV-AWARENESS-2026",
+  "recordLabel": "Article ID",
+  "verificationLabel": "Official Article",
+  "heroImage": "upload/mls-hiv-awareness-webinar-2026/documentation-03.webp",
+  "imageCaption": "Official invitation poster for Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP-ISAP Students.",
+  "gallery": [
+    {
+      "src": "upload/mls-hiv-awareness-webinar-2026/documentation-01.webp",
+      "caption": "Webinar screenshot of the Treatment as Prevention presentation."
+    },
+    {
+      "src": "upload/mls-hiv-awareness-webinar-2026/documentation-02.webp",
+      "caption": "Online seminar screen for Bridging Knowledge and Behavior, organized by the College of Medical Laboratory Science."
+    },
+    {
+      "src": "upload/mls-hiv-awareness-webinar-2026/documentation-03.webp",
+      "caption": "Official invitation poster for Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP-ISAP Students."
+    },
+    {
+      "src": "upload/mls-hiv-awareness-webinar-2026/documentation-04.webp",
+      "caption": "Neo D. Corotan presenting Understanding HIV, AIDS, Sexually Transmitted Infections (STIs) during the webinar."
+    },
+    {
+      "src": "upload/mls-hiv-awareness-webinar-2026/documentation-05.webp",
+      "caption": "Webinar screenshot showing the HIV surveillance and diagnosis presentation."
+    },
+    {
+      "src": "upload/mls-hiv-awareness-webinar-2026/documentation-06.webp",
+      "caption": "Official webinar program for Bridging Knowledge and Behavior, November 13, 2026."
+    },
+    {
+      "src": "upload/mls-hiv-awareness-webinar-2026/documentation-07.webp",
+      "caption": "Webinar screenshot of the HIV statistics presentation."
+    }
+  ],
+  "summary": "MCNP–ISAP, through the College of Medical Laboratory Science, organized an HIV awareness and dissemination webinar on November 13, 2026, promoting informed health decisions, responsible behavior, and a stigma-free academic community.",
+  "impact": "HIV, AIDS, and STI awareness through two scheduled health education sessions and question-and-answer forums.",
+  "impactLabel": "Program Focus",
+  "pillarKey": "inspire",
+  "pillarName": "INSPIRE",
+  "pillarFullName": "INSPIRE: Culture, Capability, and Engagement",
+  "pathwayBadge": "Public Health Knowledge Dissemination",
+  "pathwayDesc": "Connecting students with public health expertise through an HIV awareness and dissemination webinar.",
+  "beneficiaries": "MCNP–ISAP students",
+  "coreFormats": "Online health education sessions and question-and-answer forums",
+  "paragraphs": [
+    "The Medical Colleges of Northern Philippines (MCNP) and the International School of Asia and the Pacific (ISAP), through the College of Medical Laboratory Science (COMLS), organized an HIV awareness and dissemination webinar on November 13, 2026, titled “Bridging Knowledge and Behavior: A Comprehensive HIV Awareness and Dissemination Program for MCNP–ISAP Students.” The activity was designed to promote informed health decisions, responsible behavior, and a stigma-free academic community.",
+    "Conducted through an online platform, the program focused on strengthening students' awareness of Human Immunodeficiency Virus (HIV), Acquired Immunodeficiency Syndrome (AIDS), and sexually transmitted infections (STIs). It emphasized the importance of accurate health information, responsible decision-making, and respectful attitudes toward individuals affected by HIV.",
+    "A key component of the webinar was the participation of Neo D. Corotan, Regional Program Officer of SHIP/CVHD, representing the Department of Health (DOH) Regional Office II. The documented presentation, titled “Understanding HIV, AIDS, Sexually Transmitted Infections (STIs),” provided a health education component supporting the program's objective of increasing awareness and encouraging informed choices among students.",
+    "The official program included two health education sessions addressing HIV awareness and dissemination, with scheduled question-and-answer forums intended to provide participants with opportunities to engage in discussions and seek clarification on health-related concerns.",
+    "The activity also highlighted the involvement of the College of Medical Laboratory Science in promoting health education within the academic community. Jeric B. Tuazon, RMT, DTA, COMLS Program Coordinator, was designated to deliver the opening remarks, while Heartdwick L. Cuarteros, RMT, LPT, MPH, COMLS Academic Coordinator, was assigned to present the program rationale. Their scheduled participation reflected the College's role in organizing an educational initiative addressing an important public health concern.",
+    "Highlighting the involvement of the Research and Development Center (RDC), Dr. Ryan C. Fontanilla, Research Director of MCNP–ISAP, was included in the official program to deliver the closing remarks. His scheduled participation connected the activity with the institution's broader commitment to academic engagement, health education, and the promotion of knowledge-informed practices.",
+    "The webinar primarily supports Sustainable Development Goal 3 – Good Health and Well-Being by promoting HIV awareness, health education, and responsible health behavior. It also aligns with SDG 4 – Quality Education through the dissemination of health information and the provision of learning opportunities beyond regular classroom instruction. The involvement of a DOH Regional Office II representative suggests potential relevance to SDG 17 – Partnerships for the Goals, reflecting engagement between the academic and public health sectors, although no formal partnership agreement was documented.",
+    "The activity also demonstrates WURI-relevant educational practices by connecting public health knowledge with student learning through expert-led presentations, academic discussion, and question-and-answer forums. Its focus on HIV awareness, responsible health behavior, and stigma reduction addresses a practical health education need and encourages students to relate classroom learning to real-world health concerns.",
+    "The initiative also relates to the MCNP–ISAP RDC INNOVATES Research Agenda, particularly INSPIRE – Culture, Capability, and Engagement, by encouraging student participation in health education and awareness activities; NURTURE – Ethics, Quality, and Accountability, through its emphasis on informed and respectful health-related attitudes; and EXPAND – Partnerships and Global Research, through engagement with a regional public health representative.",
+    "The available documentation confirms the webinar's official program and the presentation of HIV, AIDS, and STI awareness content through Zoom. While the activity was intended to promote knowledge and responsible health behavior, the total number of participants, evaluation results, and measurable improvements in awareness or behavior have not been provided.",
+    "The program offers a potential foundation for continued health education and awareness initiatives within the institution. Further activities and documented follow-up measures would be necessary to establish its long-term outcomes and sustainability.",
+    "Through “Bridging Knowledge and Behavior,” MCNP–ISAP highlights the importance of health education in supporting informed choices, responsible behavior, and a respectful academic environment. The initiative reflects the College of Medical Laboratory Science's efforts to connect students with relevant public health information while contributing to the institution's broader commitment to quality education and student well-being."
+  ],
+  "highlights": [
+    {
+      "title": "Program Overview",
+      "date": "November 13, 2026 · Online via Zoom",
+      "items": [
+        "Theme: Promoting informed choices, responsible health behavior, and a stigma-free community.",
+        "Implementing Unit: College of Medical Laboratory Science (COMLS)",
+        "Resource Speaker: Neo D. Corotan, Regional Program Officer, SHIP/CVHD, DOH Region II"
+      ],
+      "desc": "Two health education sessions with scheduled question-and-answer forums."
+    }
+  ],
+  "sdgs": [
+    {
+      "goal": "3",
+      "title": "SDG 3 – Good Health and Well-Being",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp",
+      "desc": "Promotes HIV, AIDS, and STI awareness, informed health decisions, and responsible health behavior among students."
+    },
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp",
+      "desc": "Supports student learning through public health education, expert-led presentations, and opportunities for discussion."
+    },
+    {
+      "goal": "17",
+      "title": "SDG 17 – Partnerships for the Goals",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp",
+      "desc": "Reflects knowledge exchange involving MCNP–ISAP and a representative of DOH Regional Office II. A formal institutional partnership has not been established by the available documentation."
+    }
+  ],
+  "wuri": "The webinar demonstrates an application-based approach to health education by connecting MCNP-ISAP students with public health expertise from DOH Regional Office II. Expert-led presentations and question-and-answer forums provide opportunities to discuss HIV, AIDS, and STI awareness, clarify health-related concerns, and connect accurate information with responsible decision-making and respectful attitudes.",
+  "innovates": [
+    {
+      "pillar": "inspire",
+      "name": "INSPIRE – Culture, Capability, and Engagement",
+      "thumb": "assets/agenda/agenda-1-inspire.webp",
+      "desc": "Encourages student engagement in health education and opportunities for learning beyond classroom instruction."
+    },
+    {
+      "pillar": "nurture",
+      "name": "NURTURE – Ethics, Quality, and Accountability",
+      "thumb": "assets/agenda/agenda-2-nurture.webp",
+      "desc": "Relates to the program's emphasis on informed, respectful, and stigma-free attitudes toward health concerns."
+    },
+    {
+      "pillar": "expand",
+      "name": "EXPAND – Partnerships and Global Research",
+      "thumb": "assets/agenda/agenda-8-expand.webp",
+      "desc": "Reflects engagement with a DOH regional representative in disseminating public health information to students."
+    }
+  ],
+  "links": [],
+  "galleryIntro": "Official invitation, webinar program, and screenshots documenting the online HIV awareness sessions for MCNP-ISAP students on November 13, 2026. Select an image to view it at full size."
+},
       {
         id: 'article-project-relief-flagship-2026',
         altIds: ['article-project-relief', 'article-project-relief-comprehensive', 'project-relief', 'relief-flagship', 'relief', 'util-crim-2026-relief'],
@@ -2901,14 +3034,14 @@
         galleryHtml = '<section class="article-narrative-section" style="margin-top: 2rem;">' +
           '<h4 class="article-section-heading"><span>📸 Official Session Photo Documentation</span></h4>' +
           '<p style="font-size: 0.88rem; color: #64748b; margin-bottom: 1.15rem;">' +
-            'Official photographic documentation of the workshop activities, speaker presentations, and student interaction at ISAP AVR 1:' +
+            (a.galleryIntro || 'Official photographic documentation of the workshop activities, speaker presentations, and student interaction at ISAP AVR 1:') +
           '</p>' +
           '<div class="util-photo-gallery">' +
           a.gallery.map(function(g) {
             return '<figure style="margin: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display: flex; flex-direction: column;">' +
-              '<div style="width: 100%; background: #0f172a;">' +
+              '<a href="' + g.src + '" target="_blank" rel="noopener" aria-label="View full-size documentation: ' + g.caption.replace(/"/g, '&quot;') + '" style="display: block; width: 100%; background: #0f172a;">' +
                 '<img src="' + g.src + '" alt="' + g.caption.replace(/"/g, '&quot;') + '" loading="lazy" decoding="async">' +
-              '</div>' +
+              '</a>' +
               '<figcaption style="padding: 0.75rem 0.95rem; font-size: 0.8rem; color: #475569; background: #f8fafc; border-top: 1px solid #e2e8f0; line-height: 1.5; flex: 1; text-align: justify; text-justify: inter-word;">' +
                 g.caption +
               '</figcaption>' +
@@ -2922,7 +3055,7 @@
         '<figure class="article-featured-hero" style="margin: 0 0 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 16px rgba(0,0,0,0.06); background: #0f172a;">' +
           '<img src="' + a.heroImage + '" alt="' + a.title + '" style="width: 100%; height: auto; max-height: 560px; object-fit: contain; margin: 0 auto; display: block;" loading="lazy" decoding="async">' +
           '<figcaption style="padding: 0.85rem 1.35rem; font-size: 0.86rem; color: #475569; background: #f8fafc; border-top: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.65rem;">' +
-            '<span>⚖️ <strong>' + a.title + '</strong> &bull; ' + (a.subtitle || '') + '</span>' +
+            '<span>' + (coursesMap[a.course] ? coursesMap[a.course].icon : '') + ' <strong>' + a.title + '</strong> &bull; ' + (a.subtitle || '') + '</span>' +
             '<span style="font-weight: 700; color: #0b3c5d;">' + a.dept + '</span>' +
           '</figcaption>' +
         '</figure>' +
@@ -3106,7 +3239,7 @@
                 ${a.subtitle ? '<div class="article-accordion-subtitle" style="font-size: 0.88rem; font-weight: 700; color: #0b3c5d; margin-top: 0.2rem; margin-bottom: 0.35rem;">' + a.subtitle + '</div>' : ''}
 
                 <div style="font-size: 0.82rem; color: #64748b; margin-top: 0.25rem; margin-bottom: 0.45rem;">
-                  <strong>Proponent:</strong> ${a.dept} &bull; <strong>Adopting Partner:</strong> <span style="color: #0f172a; font-weight: 700;">${a.partner}</span>
+                  <strong>Proponent:</strong> ${a.dept} &bull; <strong>${a.partnerLabel || 'Adopting Partner'}:</strong> <span style="color: #0f172a; font-weight: 700;">${a.partner}</span>
                 </div>
 
                 <p class="article-accordion-snippet">
@@ -3114,7 +3247,7 @@
                 </p>
 
                 <div class="util-impact-box" style="margin-top: 0.55rem; margin-bottom: 0.65rem;">
-                  <strong>📈 Measurable Impact:</strong> ${a.impact}
+                  <strong>📈 ${a.impactLabel || 'Measurable Impact'}:</strong> ${a.impact}
                 </div>
 
                 <!-- Aligned UN SDGs and INNOVATES Focus (Matching news-events.html) -->
@@ -3395,8 +3528,8 @@
               </div>
             </div>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <span style="font-size: 0.74rem; font-weight: 800; background: #ffffff; border: 1px solid #e2e8f0; color: #334155; padding: 0.25rem 0.65rem; border-radius: 8px;">Registry ID: ${a.status}</span>
-              <span style="font-size: 0.74rem; font-weight: 800; background: #16a34a; color: #ffffff; padding: 0.25rem 0.65rem; border-radius: 8px;">Institutional Seal Verified</span>
+              <span style="font-size: 0.74rem; font-weight: 800; background: #ffffff; border: 1px solid #e2e8f0; color: #334155; padding: 0.25rem 0.65rem; border-radius: 8px;">${a.recordLabel || 'Registry ID'}: ${a.status}</span>
+              <span style="font-size: 0.74rem; font-weight: 800; background: #16a34a; color: #ffffff; padding: 0.25rem 0.65rem; border-radius: 8px;">${a.verificationLabel || 'Institutional Seal Verified'}</span>
             </div>
           </div>
 

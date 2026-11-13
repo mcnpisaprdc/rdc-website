@@ -108,6 +108,12 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-psychology-4th-year-proposal-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-psychology-4th-year-proposal-defense-2026.html"
   },
+  "article-mls-hiv-awareness-webinar-2026": {
+    "title": "MCNP–ISAP Strengthens HIV Awareness and Promotes Responsible Health Behavior Through Student Webinar",
+    "description": "MCNP–ISAP, through the College of Medical Laboratory Science, organized an HIV awareness and dissemination webinar on November 13, 2026, promoting informed health decisions, responsible behavior, and a stigma-free academic community.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-mls-hiv-awareness-webinar-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-mls-hiv-awareness-webinar-2026.html"
+  },
   "article-project-relief-flagship-2026": {
     "title": "PROJECT RELIEF: Let It Out, Lift It Up! — Project RELIEF Turns Research into Action, Strengthens Student Resilience Through Three-Session Mental Wellness Program",
     "description": "The College of Criminal Justice Education (CoCJE), in collaboration with the Research and Development Center (RDC), concluded Project RELIEF: Let It Out, Lift It Up!, a three-session research-utilization initiative that transformed student wellness concerns into a structured program for emotional awareness, stress management, self-care, and psychological resilience.",
