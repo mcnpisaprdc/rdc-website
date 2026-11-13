@@ -395,6 +395,25 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-isap-high-school-faculty-proposal-defense-2026": {
+  "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; ISAP High School Faculty Proposal Defense",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research &amp; Colloquiums",
+  "date": "November 13, 2026",
+  "readTime": "6 min read",
+  "title": "ISAP High School Faculty Strengthen Research Culture Through Research Proposal Defense",
+  "bodyId": "body-article-isap-high-school-faculty-proposal-defense-2026",
+  "sdgs": [
+    {"goal": "4", "title": "SDG 4 – Quality Education", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"},
+    {"goal": "9", "title": "SDG 9 – Industry, Innovation and Infrastructure (Potential Research Alignment)", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp"},
+    {"goal": "17", "title": "SDG 17 – Partnerships for the Goals (Potential Research Alignment)", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"}
+  ],
+  "agendas": [
+    {"pillar": "inspire", "title": "INSPIRE – Culture, Capability, and Engagement", "icon": "assets/agenda/agenda-1-inspire.webp"},
+    {"pillar": "nurture", "title": "NURTURE – Ethics, Quality, and Accountability", "icon": "assets/agenda/agenda-2-nurture.webp"},
+    {"pillar": "operationalize", "title": "OPERATIONALIZE – Knowledge Utilization, Innovation, and Improvement", "icon": "assets/agenda/agenda-4-operationalize.webp"}
+  ]
+},
 "article-bs-psychology-4th-year-proposal-defense-2026": {
   "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BS Psychology Proposal Defense",
   "badge": "OFFICIAL ARTICLE",
@@ -1379,14 +1398,19 @@
     }
 
     function compareEventDates(a, b) {
-      var aFeatured = a.dataset.featured === 'true';
-      var bFeatured = b.dataset.featured === 'true';
-      if (aFeatured !== bFeatured) return aFeatured ? -1 : 1;
+      var aOrder = Number(a.dataset.displayOrder) || Infinity;
+      var bOrder = Number(b.dataset.displayOrder) || Infinity;
+      if (aOrder !== bOrder) return aOrder - bOrder;
       var aDate = eventDateSortValue(a);
       var bDate = eventDateSortValue(b);
       if (!aDate && bDate) return 1;
       if (aDate && !bDate) return -1;
-      return bDate.localeCompare(aDate) || sourceEventOrder.indexOf(a) - sourceEventOrder.indexOf(b);
+      var dateOrder = bDate.localeCompare(aDate);
+      if (dateOrder) return dateOrder;
+      var aFeatured = a.dataset.featured === 'true';
+      var bFeatured = b.dataset.featured === 'true';
+      if (aFeatured !== bFeatured) return aFeatured ? -1 : 1;
+      return sourceEventOrder.indexOf(a) - sourceEventOrder.indexOf(b);
     }
 
     eventCards.sort(compareEventDates);
