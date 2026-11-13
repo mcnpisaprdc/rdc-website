@@ -218,6 +218,22 @@ window.RDC_CONTENT = [
     "imageFit": "cover"
   },
   {
+    "id": "article-bsmls-level4-final-defense-2026",
+    "t": "MCNP BSMLS Level 4 Students Advance Research Excellence Through Final Defense",
+    "r": "October 12, 13 &amp; 16, 2026",
+    "d": "—",
+    "m": "October 12, 13 &amp; 16, 2026",
+    "topic": "Research &amp; Colloquiums",
+    "g": [
+      3,
+      4
+    ],
+    "url": "news-events.html#article-bsmls-level4-final-defense-2026",
+    "image": "upload/bsmls-level4-final-defense-2026/bsmls-final-defense-14.webp",
+    "imageAlt": "MCNP BSMLS Level 4 research final defense, October 12, 2026 – documentation screenshot 14",
+    "imageFit": "contain"
+  },
+  {
     "id": "article-37th-statistics-month-celebration",
     "t": "MCNP–ISAP Advances Statistical Literacy through Month-Long 37th Statistics Month Celebration",
     "r": "October 05, 2026",

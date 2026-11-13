@@ -395,6 +395,24 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-bsmls-level4-final-defense-2026": {
+  "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BSMLS Level 4 Final Defense",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research &amp; Colloquiums",
+  "date": "October 12, 13 & 16, 2026",
+  "readTime": "5 min read",
+  "title": "MCNP BSMLS Level 4 Students Advance Research Excellence Through Final Defense",
+  "bodyId": "body-article-bsmls-level4-final-defense-2026",
+  "sdgs": [
+    {"goal": "4", "title": "SDG 4 – Quality Education", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"},
+    {"goal": "3", "title": "SDG 3 – Good Health and Well-Being (Supporting alignment)", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp"}
+  ],
+  "agendas": [
+    {"pillar": "inspire", "title": "INSPIRE – Culture, Capability, and Engagement", "icon": "assets/agenda/agenda-1-inspire.webp"},
+    {"pillar": "nurture", "title": "NURTURE – Ethics, Quality, and Accountability", "icon": "assets/agenda/agenda-2-nurture.webp"},
+    {"pillar": "operationalize", "title": "OPERATIONALIZE – Knowledge Utilization, Innovation, and Improvement", "icon": "assets/agenda/agenda-4-operationalize.webp"}
+  ]
+},
 "article-isap-high-school-faculty-proposal-defense-2026": {
   "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; ISAP High School Faculty Proposal Defense",
   "badge": "OFFICIAL ARTICLE",

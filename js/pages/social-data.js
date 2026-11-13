@@ -108,6 +108,12 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-psychology-4th-year-proposal-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-psychology-4th-year-proposal-defense-2026.html"
   },
+  "article-bsmls-level4-final-defense-2026": {
+    "title": "MCNP BSMLS Level 4 Students Advance Research Excellence Through Final Defense",
+    "description": "MCNP BSMLS Level 4 students presented and defended their research studies on October 12, 13, and 16, 2026, strengthening scientific inquiry, research communication, and scholarly preparation in medical laboratory science.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bsmls-level4-final-defense-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bsmls-level4-final-defense-2026.html"
+  },
   "article-mls-hiv-awareness-webinar-2026": {
     "title": "Medical Laboratory Science, Research and Development Center, DOH, and High School Collaborate to Strengthen HIV Awareness and Promote Responsible Health Behavior",
     "description": "A collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School, the November 13, 2026 HIV awareness webinar promoted informed health decisions, responsible behavior, and a stigma-free academic community.",
