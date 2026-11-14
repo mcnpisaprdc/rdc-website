@@ -2477,55 +2477,6 @@ window.searchCalendar = function(query) {
 // --- Interactive Monthly Date Calendar & Event Inspector ---
 window.trainingCalendarEvents = [
   {
-    "id": 121,
-    "dates": [
-      "2026-11-11",
-      "2026-11-12"
-    ],
-    "displayDate": "November 11–12, 2026",
-    "pillText": "MCNP Health Sciences",
-    "pillClass": "cal-pill-mcnp",
-    "shortTag": "BSN 3F Proposal",
-    "title": "BSN 3F Proposal Defense",
-    "desc": "Proposal Defense for BSN 3F, as posted on the November schedule board. Time and venue to be confirmed.",
-    "participants": "BSN 3F",
-    "venue": "To be confirmed",
-    "lead": "To be confirmed",
-    "category": "mcnp"
-  },
-  {
-    "id": 122,
-    "dates": [
-      "2026-11-12"
-    ],
-    "displayDate": "November 12, 2026",
-    "pillText": "ISAP Multidisciplinary",
-    "pillClass": "cal-pill-isap",
-    "shortTag": "BSCRIM Final",
-    "title": "BSCRIM Final Defense",
-    "desc": "Final Defense for BSCRIM, as posted on the November schedule board. Time and venue to be confirmed.",
-    "participants": "BSCRIM",
-    "venue": "To be confirmed",
-    "lead": "To be confirmed",
-    "category": "isap"
-  },
-  {
-    "id": 123,
-    "dates": [
-      "2026-11-13"
-    ],
-    "displayDate": "November 13, 2026",
-    "pillText": "Institutional Unified",
-    "pillClass": "cal-pill-unified",
-    "shortTag": "HS Faculty Proposal",
-    "title": "HS Faculty Proposal Defense",
-    "desc": "Proposal Defense for HS Faculty, as posted on the November schedule board. Time and venue to be confirmed.",
-    "participants": "HS Faculty",
-    "venue": "To be confirmed",
-    "lead": "To be confirmed",
-    "category": "mcnp isap"
-  },
-  {
     "id": 124,
     "dates": [
       "2026-11-16",
@@ -3410,6 +3361,58 @@ window.pastCalendarEvents = [
     "lead": "RDC & Partner Academic Departments",
     "category": "past",
     "img": "upload/lapus-rdafest-1.jpg"
+  },
+  {
+    "id": 121,
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "displayDate": "November 11–12, 2026",
+    "pillText": "MCNP Health Sciences",
+    "pillClass": "cal-pill-mcnp",
+    "shortTag": "BSN 3F Proposal",
+    "title": "BSN 3F Proposal Defense",
+    "desc": "Proposal Defense for BSN 3F, completed as posted on the November schedule board.",
+    "participants": "BSN 3F",
+    "venue": "To be confirmed",
+    "lead": "To be confirmed",
+    "category": "mcnp",
+    "isPastEvent": true
+  },
+  {
+    "id": 122,
+    "dates": [
+      "2026-11-12"
+    ],
+    "displayDate": "November 12, 2026",
+    "pillText": "ISAP Multidisciplinary",
+    "pillClass": "cal-pill-isap",
+    "shortTag": "BSCRIM Final",
+    "title": "BSCRIM Final Defense",
+    "desc": "Final Defense for BSCRIM, completed as posted on the November schedule board.",
+    "participants": "BSCRIM",
+    "venue": "To be confirmed",
+    "lead": "To be confirmed",
+    "category": "isap",
+    "isPastEvent": true
+  },
+  {
+    "id": 123,
+    "dates": [
+      "2026-11-13"
+    ],
+    "displayDate": "November 13, 2026",
+    "pillText": "Institutional Unified",
+    "pillClass": "cal-pill-unified",
+    "shortTag": "HS Faculty Proposal",
+    "title": "HS Faculty Proposal Defense",
+    "desc": "Proposal Defense for HS Faculty, completed as posted on the November schedule board.",
+    "participants": "HS Faculty",
+    "venue": "To be confirmed",
+    "lead": "To be confirmed",
+    "category": "mcnp isap",
+    "isPastEvent": true
   }
 ];
 
