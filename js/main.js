@@ -2477,23 +2477,6 @@ window.searchCalendar = function(query) {
 // --- Interactive Monthly Date Calendar & Event Inspector ---
 window.trainingCalendarEvents = [
   {
-    "id": 124,
-    "dates": [
-      "2026-11-16",
-      "2026-11-17"
-    ],
-    "displayDate": "November 16–17, 2026",
-    "pillText": "MCNP Health Sciences",
-    "pillClass": "cal-pill-mcnp",
-    "shortTag": "BSN 3I Proposal",
-    "title": "BSN 3I Proposal Defense",
-    "desc": "Proposal Defense for BSN 3I, as posted on the November schedule board. Time and venue to be confirmed.",
-    "participants": "BSN 3I",
-    "venue": "To be confirmed",
-    "lead": "To be confirmed",
-    "category": "mcnp"
-  },
-  {
     "id": 125,
     "dates": [
       "2026-11-19"
@@ -2510,6 +2493,22 @@ window.trainingCalendarEvents = [
     "category": "mcnp"
   },
   {
+    "id": 128,
+    "dates": [
+      "2026-11-20"
+    ],
+    "displayDate": "November 20, 2026",
+    "pillText": "Institutional Unified",
+    "pillClass": "cal-pill-unified",
+    "shortTag": "HS Faculty Proposal",
+    "title": "HS Faculty Proposal Defense",
+    "desc": "Proposal Defense for HS Faculty, as posted on the November schedule board. Time and venue to be confirmed.",
+    "participants": "HS Faculty",
+    "venue": "To be confirmed",
+    "lead": "To be confirmed",
+    "category": "mcnp isap"
+  },
+  {
     "id": 126,
     "dates": [
       "2026-11-23"
@@ -2524,23 +2523,6 @@ window.trainingCalendarEvents = [
     "venue": "To be confirmed",
     "lead": "To be confirmed",
     "category": "mcnp isap"
-  },
-  {
-    "id": 127,
-    "dates": [
-      "2026-11-23",
-      "2026-11-24"
-    ],
-    "displayDate": "November 23–24, 2026",
-    "pillText": "MCNP Health Sciences",
-    "pillClass": "cal-pill-mcnp",
-    "shortTag": "BSN 3L Proposal",
-    "title": "BSN 3L Proposal Defense",
-    "desc": "Proposal Defense for BSN 3L, as posted on the November schedule board. Time and venue to be confirmed.",
-    "participants": "BSN 3L",
-    "venue": "To be confirmed",
-    "lead": "To be confirmed",
-    "category": "mcnp"
   }
 ];
 
@@ -2850,15 +2832,15 @@ window.pastCalendarEvents = [
       "2026-11-09"
     ],
     "displayDate": "November 9, 2026",
-    "pillText": "ISAP Multidisciplinary",
-    "pillClass": "cal-pill-isap",
-    "shortTag": "BSTM 3 Proposal",
-    "title": "BSTM 3 Proposal Defense",
-    "desc": "Proposal Defense for BSTM 3, completed as posted on the November schedule board.",
-    "participants": "BSTM 3",
+    "pillText": "MCNP Health Sciences",
+    "pillClass": "cal-pill-mcnp",
+    "shortTag": "BSN 3 Proposal",
+    "title": "BSN 3 Proposal Defense",
+    "desc": "Proposal Defense for BSN 3, as posted on the November schedule board. Section, time and venue to be confirmed.",
+    "participants": "BSN 3 (section to be confirmed)",
     "venue": "To be confirmed",
     "lead": "To be confirmed",
-    "category": "isap",
+    "category": "mcnp",
     "isPastEvent": true
   },
   {
@@ -3412,6 +3394,40 @@ window.pastCalendarEvents = [
     "venue": "To be confirmed",
     "lead": "To be confirmed",
     "category": "mcnp isap",
+    "isPastEvent": true
+  },
+  {
+    "id": 116,
+    "dates": [
+      "2026-11-04"
+    ],
+    "displayDate": "November 4, 2026",
+    "pillText": "MCNP Health Sciences",
+    "pillClass": "cal-pill-mcnp",
+    "shortTag": "BSN 3R Proposal",
+    "title": "BSN 3R Proposal Defense",
+    "desc": "Proposal Defense for BSN 3R, as posted on the November schedule board. Time and venue to be confirmed.",
+    "participants": "BSN 3R",
+    "venue": "To be confirmed",
+    "lead": "To be confirmed",
+    "category": "mcnp",
+    "isPastEvent": true
+  },
+  {
+    "id": 124,
+    "dates": [
+      "2026-11-16"
+    ],
+    "displayDate": "November 16, 2026",
+    "pillText": "MCNP Health Sciences",
+    "pillClass": "cal-pill-mcnp",
+    "shortTag": "BSN 3I Proposal",
+    "title": "BSN 3I Proposal Defense",
+    "desc": "Proposal Defense for BSN 3I, completed on November 16, 2026.",
+    "participants": "BSN 3I",
+    "venue": "To be confirmed",
+    "lead": "To be confirmed",
+    "category": "mcnp",
     "isPastEvent": true
   }
 ];
