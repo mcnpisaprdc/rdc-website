@@ -395,6 +395,44 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-cagayan-prdic-pre-convening-meeting-2026": {
+  "breadcrumb": "News &amp; Events &gt; Research Engagement &amp; Institutional Partnerships &gt; Cagayan PRDIC Pre-Convening Meeting",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research Engagement &amp; Institutional Partnerships",
+  "date": "November 18, 2026",
+  "readTime": "5 min read",
+  "title": "MCNP–ISAP Research Director Dr. Ryan C. Fontanilla Participates in Cagayan Provincial Research and Innovation Committee Pre-Convening Meeting",
+  "bodyId": "body-article-cagayan-prdic-pre-convening-meeting-2026",
+  "sdgs": [
+    {
+      "goal": "17",
+      "title": "SDG 17 – Partnerships for the Goals",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"
+    },
+    {
+      "goal": "9",
+      "title": "SDG 9 – Industry, Innovation and Infrastructure",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp"
+    },
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE – Culture, Capability, and Engagement",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "operationalize",
+      "title": "OPERATIONALIZE – Knowledge Utilization, Innovation, and Improvement",
+      "icon": "assets/agenda/agenda-4-operationalize.webp"
+    }
+  ]
+},
 "article-bsmls-level4-final-defense-2026": {
   "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BSMLS Level 4 Final Defense",
   "badge": "OFFICIAL ARTICLE",
