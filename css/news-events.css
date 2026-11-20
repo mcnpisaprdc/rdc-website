@@ -2454,3 +2454,56 @@
         overflow: visible !important;
       }
     }
+/* November 20 faculty defense: curated photo documentation. */
+.faculty-defense-hero {
+  margin: 0 0 2rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+.faculty-defense-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.faculty-defense-hero figcaption,
+.faculty-defense-photo-grid figcaption {
+  padding: 0.8rem 1rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.faculty-defense-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.faculty-defense-photo-grid figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+.faculty-defense-photo-grid a {
+  display: block;
+  background: #0f172a;
+}
+.faculty-defense-photo-grid a:focus-visible {
+  outline: 3px solid #c59d46;
+  outline-offset: -3px;
+}
+.faculty-defense-photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+@media (max-width: 680px) {
+  .faculty-defense-photo-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

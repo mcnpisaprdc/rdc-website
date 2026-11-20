@@ -395,6 +395,44 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-isap-high-school-faculty-proposal-defense-nov20-2026": {
+  "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; ISAP High School Faculty Proposal Defense &gt; November 20, 2026",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research &amp; Colloquiums",
+  "date": "November 20, 2026",
+  "readTime": "6 min read",
+  "title": "ISAP High School Faculty Strengthens Research Engagement Through Proposal Defense",
+  "bodyId": "body-article-isap-high-school-faculty-proposal-defense-nov20-2026",
+  "sdgs": [
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education (Primary Alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "9",
+      "title": "SDG 9 – Industry, Innovation and Infrastructure (Potential Alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE – Culture, Capability, and Engagement",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "nurture",
+      "title": "NURTURE – Ethics, Quality, and Accountability",
+      "icon": "assets/agenda/agenda-2-nurture.webp"
+    },
+    {
+      "pillar": "operationalize",
+      "title": "OPERATIONALIZE – Knowledge Utilization, Innovation, and Improvement",
+      "icon": "assets/agenda/agenda-4-operationalize.webp"
+    }
+  ]
+},
 "article-cagayan-prdic-pre-convening-meeting-2026": {
   "breadcrumb": "News &amp; Events &gt; Research Engagement &amp; Institutional Partnerships &gt; Cagayan PRDIC Pre-Convening Meeting",
   "badge": "OFFICIAL ARTICLE",
