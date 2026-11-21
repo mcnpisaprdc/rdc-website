@@ -38,7 +38,7 @@ window.RDC_SOCIAL = {
   },
   "article-bs-nursing-3-proposal-defense-2026": {
     "title": "MCNP BS Nursing 3 Students Strengthen Research Engagement Through Proposal Defense",
-    "description": "MCNP conducted the BS Nursing 3 Research Proposal Defense on November 7, 2026, providing third-year nursing students with an academic platform to present proposed research studies and engage in research-related discussions.",
+    "description": "MCNP conducted the BS Nursing 3 Research Proposal Defense on November 6, 2026, providing third-year nursing students with an academic platform to present proposed research studies and engage in research-related discussions.",
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-3-proposal-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-3-proposal-defense-2026.html"
   },

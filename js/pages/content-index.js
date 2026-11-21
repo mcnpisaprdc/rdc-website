@@ -103,9 +103,9 @@ window.RDC_CONTENT = [
   {
     "id": "article-bs-nursing-3-proposal-defense-2026",
     "t": "MCNP BS Nursing 3 Students Strengthen Research Engagement Through Proposal Defense",
-    "r": "November 7, 2026",
+    "r": "November 6, 2026",
     "d": "—",
-    "m": "November 7, 2026",
+    "m": "November 6, 2026",
     "topic": "Research &amp; Colloquiums",
     "g": [
       3,
