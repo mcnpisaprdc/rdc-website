@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search | MCNP & ISAP RDC</title>
+  <link rel="stylesheet" href="css/style.min.css?v=9110475f">
+  <style>
+    .search-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .search-box {
+      margin-bottom: 2rem;
+    }
+    .search-input-wrapper {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .search-input {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      transition: border-color 0.3s;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: #1e5ea8;
+    }
+    .search-btn {
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #1e5ea8 0%, #7a1f2d 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .search-btn:hover {
+      transform: translateY(-2px);
+    }
+    .search-filters {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .filter-btn {
+      padding: 0.5rem 1rem;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn.active {
+      background: #1e5ea8;
+      color: #fff;
+      border-color: #1e5ea8;
+    }
+    .search-results {
+      margin-top: 2rem;
+    }
+    .search-result-item {
+      padding: 1.5rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.3s;
+    }
+    .search-result-item:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .result-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .result-meta {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-bottom: 0.5rem;
+    }
+    .result-excerpt {
+      color: #475569;
+      line-height: 1.6;
+    }
+    .no-results {
+      text-align: center;
+      padding: 3rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Include header -->
+  
+  <main class="search-container">
+    <h1 style="font-size: 2rem; margin-bottom: 1.5rem;">Search Research & Resources</h1>
+    
+    <div class="search-box">
+      <div class="search-input-wrapper">
+        <input type="search" class="search-input" id="searchInput" placeholder="Search articles, journals, resources, events..." aria-label="Search">
+        <button class="search-btn" onclick="performSearch()">Search</button>
+      </div>
+      
+      <div class="search-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="articles">Articles</button>
+        <button class="filter-btn" data-filter="journals">Journals</button>
+        <button class="filter-btn" data-filter="resources">Resources</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+    </div>
+    
+    <div class="search-results" id="searchResults">
+      <div class="no-results">
+        <p style="font-size: 1.1rem;">Enter a search term to find research articles, resources, and events.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentFilter = 'all';
+    
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        currentFilter = this.dataset.filter;
+      });
+    });
+    
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+    
+    async function performSearch() {
+      const query = document.getElementById('searchInput').value.trim();
+      const resultsContainer = document.getElementById('searchResults');
+      
+      if (!query) {
+        resultsContainer.innerHTML = '<div class="no-results"><p>Please enter a search term.</p></div>';
+        return;
+      }
+      
+      resultsContainer.innerHTML = '<div class="no-results"><p>Searching...</p></div>';
+      
+      // Simulated search results (in production, this would be a real search API)
+      const mockResults = [
+        {
+          type: 'article',
+          title: 'Project RELIEF: Mental Health Support Initiative',
+          url: 'news-events.html?article=article-project-relief-flagship-2026',
+          excerpt: 'A comprehensive mental health and psychosocial support program providing relief to communities in need.',
+          meta: 'October 2026 • Utilization'
+        },
+        {
+          type: 'article',
+          title: 'MCNP-ISAP Statistical Month Celebration',
+          url: 'news-events.html?article=article-37th-statistics-month-celebration',
+          excerpt: 'Month-long celebration engaging all 17 academic departments in statistical literacy activities.',
+          meta: 'October 2026 • Event'
+        },
+        {
+          type: 'resource',
+          title: 'Research Ethics Guidelines',
+          url: 'resources-mcnp.html',
+          excerpt: 'Official IERC guidelines for research ethics and protocol submissions.',
+          meta: 'MCNP Resources'
+        },
+        {
+          type: 'journal',
+          title: 'MCNP-ISAP Research Journal',
+          url: 'journal.html',
+          excerpt: 'Official research publications from MCNP and ISAP faculty and students.',
+          meta: 'Academic Journal'
+        }
+      ];
+      
+      // Filter results
+      const filteredResults = mockResults.filter(result => {
+        if (currentFilter === 'all') return true;
+        return result.type === currentFilter;
+      });
+      
+      // Display results
+      if (filteredResults.length > 0) {
+        resultsContainer.innerHTML = filteredResults.map(result => `
+          <a href="${result.url}" class="search-result-item" style="display: block; text-decoration: none; color: inherit;">
+            <div class="result-title">${result.title}</div>
+            <div class="result-meta">${result.meta}</div>
+            <div class="result-excerpt">${result.excerpt}</div>
+          </a>
+        `).join('');
+      } else {
+        resultsContainer.innerHTML = '<div class="no-results"><p>No results found for "' + query + '"</p></div>';
+      }
+    }
+  </script>
+</body>
+</html>

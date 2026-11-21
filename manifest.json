@@ -1,0 +1,27 @@
+{
+  "name": "MCNP & ISAP Research & Development Center",
+  "short_name": "RDC",
+  "description": "Official Research and Development Center of Medical Colleges of Northern Philippines and International School of Asia and the Pacific",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e5ea8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/rdc-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/rdc-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "research"],
+  "lang": "en",
+  "dir": "ltr"
+}

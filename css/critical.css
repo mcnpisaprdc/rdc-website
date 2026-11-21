@@ -1,0 +1,49 @@
+/* Critical CSS for Above-the-Fold Content */
+/* This file should be inlined in the <head> for faster rendering */
+
+.topbar {
+  background: linear-gradient(90deg, #0d3b73 0%, #4b0d1b 100%);
+  color: #e2e8f0;
+  font-size: 0.84rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-header {
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0b2545 0%, #1e5ea8 50%, #0d3b73 100%);
+  color: #fff;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background: #111;
+  border: 2px solid #d4af37;
+  border-radius: 6px;
+  font-weight: 700;
+  transform: translateY(calc(-100% - 1rem));
+  transition: transform 0.2s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
