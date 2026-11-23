@@ -17,6 +17,22 @@ window.RDC_CONTENT = [
     "imageFit": "cover"
   },
   {
+    "id": "article-bs-pharmacy-final-defense-nov19-2026",
+    "t": "MCNP Pharmacy Students Strengthen Scientific Inquiry Through Final Research Defense",
+    "r": "November 19, 2026",
+    "d": "—",
+    "m": "November 19, 2026",
+    "topic": "Research &amp; Colloquiums",
+    "g": [
+      3,
+      4
+    ],
+    "url": "news-events.html#article-bs-pharmacy-final-defense-nov19-2026",
+    "image": "upload/bs-pharmacy-final-defense-nov19-2026/img_3389.webp",
+    "imageAlt": "MCNP BS Pharmacy final research defense, November 19, 2026 · Documentation photo 1",
+    "imageFit": "contain"
+  },
+  {
     "id": "article-cagayan-prdic-pre-convening-meeting-2026",
     "t": "MCNP–ISAP Research Director Dr. Ryan C. Fontanilla Participates in Cagayan Provincial Research and Innovation Committee Pre-Convening Meeting",
     "r": "November 18, 2026",
@@ -31,6 +47,22 @@ window.RDC_CONTENT = [
     "url": "news-events.html#article-cagayan-prdic-pre-convening-meeting-2026",
     "image": "upload/cagayan-prdic-pre-convening-meeting-2026/photo-06.webp",
     "imageAlt": "Cagayan PRDIC pre-convening meeting at Villa Blanca Hotel, November 18, 2026 – documentation photo 6",
+    "imageFit": "contain"
+  },
+  {
+    "id": "article-bs-nursing-proposal-defense-nov16-2026",
+    "t": "MCNP BS Nursing Students Strengthen Research Competencies Through Proposal Defense",
+    "r": "November 16, 2026",
+    "d": "—",
+    "m": "November 16, 2026",
+    "topic": "Research &amp; Colloquiums",
+    "g": [
+      3,
+      4
+    ],
+    "url": "news-events.html#article-bs-nursing-proposal-defense-nov16-2026",
+    "image": "upload/bs-nursing-proposal-defense-nov16-2026/documentation-01.webp",
+    "imageAlt": "Nursing students holding certificates beside their research presentation",
     "imageFit": "contain"
   },
   {
@@ -81,22 +113,6 @@ window.RDC_CONTENT = [
     "url": "news-events.html#article-bs-nursing-proposal-defense-nov11-12-2026",
     "image": "upload/bs-nursing-proposal-defense-nov11-12-2026/documentation-01.webp",
     "imageAlt": "Nursing students beside their research proposal presentation",
-    "imageFit": "contain"
-  },
-  {
-    "id": "article-bs-nursing-proposal-defense-nov16-2026",
-    "t": "MCNP BS Nursing Students Strengthen Research Competencies Through Proposal Defense",
-    "r": "November 16, 2026",
-    "d": "—",
-    "m": "November 16, 2026",
-    "topic": "Research &amp; Colloquiums",
-    "g": [
-      3,
-      4
-    ],
-    "url": "news-events.html#article-bs-nursing-proposal-defense-nov16-2026",
-    "image": "upload/bs-nursing-proposal-defense-nov16-2026/documentation-01.webp",
-    "imageAlt": "Nursing students holding certificates beside their research presentation",
     "imageFit": "contain"
   },
   {

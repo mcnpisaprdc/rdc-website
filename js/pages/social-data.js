@@ -138,6 +138,12 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov16-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov16-2026.html"
   },
+  "article-bs-pharmacy-final-defense-nov19-2026": {
+    "title": "MCNP Pharmacy Students Strengthen Scientific Inquiry Through Final Research Defense",
+    "description": "MCNP conducted the BS Pharmacy Final Research Defense on November 19, 2026, strengthening students’ scientific inquiry, research communication, and understanding of evidence-based pharmaceutical practices.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-pharmacy-final-defense-nov19-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-pharmacy-final-defense-nov19-2026.html"
+  },
   "article-mls-hiv-awareness-webinar-2026": {
     "title": "Medical Laboratory Science, Research and Development Center, DOH, and High School Collaborate to Strengthen HIV Awareness and Promote Responsible Health Behavior",
     "description": "A collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School, the November 13, 2026 HIV awareness webinar promoted informed health decisions, responsible behavior, and a stigma-free academic community.",

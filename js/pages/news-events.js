@@ -395,6 +395,44 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+"article-bs-pharmacy-final-defense-nov19-2026": {
+  "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BS Pharmacy Final Research Defense · November 19, 2026",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Research &amp; Colloquiums · MCNP–ISAP",
+  "date": "November 19, 2026",
+  "readTime": "4 min read",
+  "title": "MCNP Pharmacy Students Strengthen Scientific Inquiry Through Final Research Defense",
+  "bodyId": "body-article-bs-pharmacy-final-defense-nov19-2026",
+  "sdgs": [
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education (Primary)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    },
+    {
+      "goal": "3",
+      "title": "SDG 3 – Good Health and Well-Being (Supporting)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-03.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "inspire",
+      "title": "INSPIRE – Culture, Capability, and Engagement",
+      "icon": "assets/agenda/agenda-1-inspire.webp"
+    },
+    {
+      "pillar": "nurture",
+      "title": "NURTURE – Ethics, Quality, and Accountability",
+      "icon": "assets/agenda/agenda-2-nurture.webp"
+    },
+    {
+      "pillar": "operationalize",
+      "title": "OPERATIONALIZE – Knowledge Utilization, Innovation, and Improvement",
+      "icon": "assets/agenda/agenda-4-operationalize.webp"
+    }
+  ]
+},
 "article-bs-nursing-proposal-defense-nov16-2026": {
   "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BS Nursing Proposal Defense · November 16, 2026",
   "badge": "OFFICIAL ARTICLE",
