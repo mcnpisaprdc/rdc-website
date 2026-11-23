@@ -68,6 +68,38 @@ window.RDC_CONTENT = [
     "imageFit": "contain"
   },
   {
+    "id": "article-bs-nursing-proposal-defense-nov11-12-2026",
+    "t": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
+    "r": "November 11–12, 2026",
+    "d": "—",
+    "m": "November 11–12, 2026",
+    "topic": "Research &amp; Colloquiums",
+    "g": [
+      3,
+      4
+    ],
+    "url": "news-events.html#article-bs-nursing-proposal-defense-nov11-12-2026",
+    "image": "upload/bs-nursing-proposal-defense-nov11-12-2026/documentation-01.webp",
+    "imageAlt": "Nursing students beside their research proposal presentation",
+    "imageFit": "contain"
+  },
+  {
+    "id": "article-bs-nursing-proposal-defense-nov16-2026",
+    "t": "MCNP BS Nursing Students Strengthen Research Competencies Through Proposal Defense",
+    "r": "November 16, 2026",
+    "d": "—",
+    "m": "November 16, 2026",
+    "topic": "Research &amp; Colloquiums",
+    "g": [
+      3,
+      4
+    ],
+    "url": "news-events.html#article-bs-nursing-proposal-defense-nov16-2026",
+    "image": "upload/bs-nursing-proposal-defense-nov16-2026/documentation-01.webp",
+    "imageAlt": "Nursing students holding certificates beside their research presentation",
+    "imageFit": "contain"
+  },
+  {
     "id": "article-bs-nursing-proposal-defense-nov9-2026",
     "t": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
     "r": "November 9, 2026",

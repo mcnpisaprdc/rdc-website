@@ -126,6 +126,18 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bsmls-level4-final-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bsmls-level4-final-defense-2026.html"
   },
+  "article-bs-nursing-proposal-defense-nov11-12-2026": {
+    "title": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
+    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 11–12, 2026, supporting student research engagement, critical thinking, and evidence-based healthcare learning.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov11-12-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov11-12-2026.html"
+  },
+  "article-bs-nursing-proposal-defense-nov16-2026": {
+    "title": "MCNP BS Nursing Students Strengthen Research Competencies Through Proposal Defense",
+    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 16, 2026, strengthening nursing students’ research competencies, scholarly inquiry, and understanding of evidence-based healthcare practice.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov16-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov16-2026.html"
+  },
   "article-mls-hiv-awareness-webinar-2026": {
     "title": "Medical Laboratory Science, Research and Development Center, DOH, and High School Collaborate to Strengthen HIV Awareness and Promote Responsible Health Behavior",
     "description": "A collaborative initiative of the College of Medical Laboratory Science (COMLS), Research and Development Center (RDC), Department of Health (DOH) Regional Office II, and High School, the November 13, 2026 HIV awareness webinar promoted informed health decisions, responsible behavior, and a stigma-free academic community.",
