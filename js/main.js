@@ -2475,7 +2475,9 @@ window.searchCalendar = function(query) {
 };
 
 // --- Interactive Monthly Date Calendar & Event Inspector ---
-window.trainingCalendarEvents = [
+window.trainingCalendarEvents = [];
+
+window.pastCalendarEvents = [
   {
     "id": 125,
     "dates": [
@@ -2486,11 +2488,12 @@ window.trainingCalendarEvents = [
     "pillClass": "cal-pill-mcnp",
     "shortTag": "BSPH Final",
     "title": "BSPH Final Defense",
-    "desc": "Final Defense for BSPH, as posted on the November schedule board. Time and venue to be confirmed.",
+    "desc": "Final Defense for BSPH, completed on November 19, 2026.",
     "participants": "BSPH",
     "venue": "To be confirmed",
     "lead": "To be confirmed",
-    "category": "mcnp"
+    "category": "mcnp",
+    "isPastEvent": true
   },
   {
     "id": 128,
@@ -2502,11 +2505,12 @@ window.trainingCalendarEvents = [
     "pillClass": "cal-pill-unified",
     "shortTag": "HS Faculty Proposal",
     "title": "HS Faculty Proposal Defense",
-    "desc": "Proposal Defense for HS Faculty, as posted on the November schedule board. Time and venue to be confirmed.",
+    "desc": "Proposal Defense for HS Faculty, completed on November 20, 2026.",
     "participants": "HS Faculty",
     "venue": "To be confirmed",
     "lead": "To be confirmed",
-    "category": "mcnp isap"
+    "category": "mcnp isap",
+    "isPastEvent": true
   },
   {
     "id": 126,
@@ -2518,15 +2522,13 @@ window.trainingCalendarEvents = [
     "pillClass": "cal-pill-unified",
     "shortTag": "Catch Up Plan Report",
     "title": "Catch Up Plan Report",
-    "desc": "Catch Up Plan Report, as posted on the November schedule board. Time and venue to be confirmed.",
+    "desc": "Catch Up Plan Report, completed on November 23, 2026.",
     "participants": "To be confirmed",
     "venue": "To be confirmed",
     "lead": "To be confirmed",
-    "category": "mcnp isap"
-  }
-];
-
-window.pastCalendarEvents = [
+    "category": "mcnp isap",
+    "isPastEvent": true
+  },
   {
     "id": 101,
     "dates": [
