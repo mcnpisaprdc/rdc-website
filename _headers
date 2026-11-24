@@ -1,43 +1,54 @@
-# Security and Performance Headers for MCNP-ISAP RDC Website
-# For Apache servers - add to .htaccess or server configuration
+# Cloudflare response headers. Apache configuration remains in .htaccess.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'self';
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
 
-# Content Security Policy
-Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'self';"
+/*.ico
+  Cache-Control: public, max-age=31536000
 
-# HTTP Strict Transport Security (HSTS)
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+/*.pdf
+  Cache-Control: public, max-age=31536000
 
-# X-Content-Type-Options
-Header always set X-Content-Type-Options "nosniff"
+/*.flv
+  Cache-Control: public, max-age=31536000
 
-# X-Frame-Options
-Header always set X-Frame-Options "SAMEORIGIN"
+/*.jpg
+  Cache-Control: public, max-age=31536000
 
-# X-XSS-Protection
-Header always set X-XSS-Protection "1; mode=block"
+/*.jpeg
+  Cache-Control: public, max-age=31536000
 
-# Referrer-Policy
-Header always set Referrer-Policy "strict-origin-when-cross-origin"
+/*.png
+  Cache-Control: public, max-age=31536000
 
-# Permissions-Policy
-Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+/*.gif
+  Cache-Control: public, max-age=31536000
 
-# Cache Control for static assets
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|webp|svg|js|css|swf)$">
-    Header set Cache-Control "public, max-age=31536000"
-</FilesMatch>
+/*.webp
+  Cache-Control: public, max-age=31536000
 
-# Cache Control for HTML
-<FilesMatch "\.(html|htm)$">
-    Header set Cache-Control "public, max-age=3600"
-</FilesMatch>
+/*.svg
+  Cache-Control: public, max-age=31536000
 
-# Enable GZIP Compression
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
-</IfModule>
+/*.js
+  Cache-Control: public, max-age=31536000
 
-# Enable Brotli Compression (if available)
-<IfModule mod_brotli.c>
-    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/json
-</IfModule>
+/*.css
+  Cache-Control: public, max-age=31536000
+
+/*.swf
+  Cache-Control: public, max-age=31536000
+
+/
+  Cache-Control: public, max-age=3600
+
+/*.html
+  Cache-Control: public, max-age=3600
+
+/*.htm
+  Cache-Control: public, max-age=3600
