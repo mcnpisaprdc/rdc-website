@@ -18,6 +18,18 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-isap-high-school-faculty-proposal-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-isap-high-school-faculty-proposal-defense-2026.html"
   },
+  "article-bs-nursing-proposal-defense-nov16-2026": {
+    "title": "MCNP BS Nursing Students Strengthen Research Competencies Through Proposal Defense",
+    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 16, 2026, strengthening nursing students’ research competencies, scholarly inquiry, and understanding of evidence-based healthcare practice.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov16-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov16-2026.html"
+  },
+  "article-bs-nursing-proposal-defense-nov11-12-2026": {
+    "title": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
+    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 11–12, 2026, supporting student research engagement, critical thinking, and evidence-based healthcare learning.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov11-12-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov11-12-2026.html"
+  },
   "article-bs-nursing-proposal-defense-nov9-2026": {
     "title": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
     "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 9, 2026, supporting nursing students’ research communication, scholarly inquiry, and engagement with healthcare-related concerns.",
@@ -125,6 +137,18 @@ window.RDC_SOCIAL = {
     "description": "MCNP BSMLS Level 4 students presented and defended their research studies on October 12, 13, and 16, 2026, strengthening scientific inquiry, research communication, and scholarly preparation in medical laboratory science.",
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bsmls-level4-final-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bsmls-level4-final-defense-2026.html"
+  },
+  "article-bs-pharmacy-final-defense-nov19-2026": {
+    "title": "MCNP Pharmacy Students Strengthen Scientific Inquiry Through Final Research Defense",
+    "description": "MCNP conducted the BS Pharmacy Final Research Defense on November 19, 2026, strengthening students’ scientific inquiry, research communication, and understanding of evidence-based pharmaceutical practices.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-pharmacy-final-defense-nov19-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-pharmacy-final-defense-nov19-2026.html"
+  },
+  "article-isap-grade12-stem-capstone-title-defense-nov17-18-2026": {
+    "title": "ISAP Grade 12 STEM Learners Advance Scientific Inquiry Through Capstone Title Defense",
+    "description": "ISAP conducted the Grade 12 STEM Capstone Title Defense on November 17–18, 2026, at AVR 2, helping learners refine their research ideas through scientific inquiry, academic evaluation, and constructive feedback.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-isap-grade12-stem-capstone-title-defense-nov17-18-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-isap-grade12-stem-capstone-title-defense-nov17-18-2026.html"
   },
   "article-mls-hiv-awareness-webinar-2026": {
     "title": "Medical Laboratory Science, Research and Development Center, DOH, and High School Collaborate to Strengthen HIV Awareness and Promote Responsible Health Behavior",
