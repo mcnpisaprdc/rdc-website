@@ -18,18 +18,6 @@ window.RDC_SOCIAL = {
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-isap-high-school-faculty-proposal-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-isap-high-school-faculty-proposal-defense-2026.html"
   },
-  "article-bs-nursing-proposal-defense-nov16-2026": {
-    "title": "MCNP BS Nursing Students Strengthen Research Competencies Through Proposal Defense",
-    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 16, 2026, strengthening nursing students’ research competencies, scholarly inquiry, and understanding of evidence-based healthcare practice.",
-    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov16-2026.jpg",
-    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov16-2026.html"
-  },
-  "article-bs-nursing-proposal-defense-nov11-12-2026": {
-    "title": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
-    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 11–12, 2026, supporting student research engagement, critical thinking, and evidence-based healthcare learning.",
-    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov11-12-2026.jpg",
-    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov11-12-2026.html"
-  },
   "article-bs-nursing-proposal-defense-nov9-2026": {
     "title": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
     "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 9, 2026, supporting nursing students’ research communication, scholarly inquiry, and engagement with healthcare-related concerns.",
@@ -50,7 +38,7 @@ window.RDC_SOCIAL = {
   },
   "article-bs-nursing-3-proposal-defense-2026": {
     "title": "MCNP BS Nursing 3 Students Strengthen Research Engagement Through Proposal Defense",
-    "description": "MCNP conducted the BS Nursing 3 Research Proposal Defense on November 7, 2026, providing third-year nursing students with an academic platform to present proposed research studies and engage in research-related discussions.",
+    "description": "MCNP conducted the BS Nursing 3 Research Proposal Defense on November 6, 2026, providing third-year nursing students with an academic platform to present proposed research studies and engage in research-related discussions.",
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-3-proposal-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-3-proposal-defense-2026.html"
   },
@@ -137,6 +125,18 @@ window.RDC_SOCIAL = {
     "description": "MCNP BSMLS Level 4 students presented and defended their research studies on October 12, 13, and 16, 2026, strengthening scientific inquiry, research communication, and scholarly preparation in medical laboratory science.",
     "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bsmls-level4-final-defense-2026.jpg",
     "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bsmls-level4-final-defense-2026.html"
+  },
+  "article-bs-nursing-proposal-defense-nov11-12-2026": {
+    "title": "MCNP BS Nursing Students Strengthen Research Engagement Through Proposal Defense",
+    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 11–12, 2026, supporting student research engagement, critical thinking, and evidence-based healthcare learning.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov11-12-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov11-12-2026.html"
+  },
+  "article-bs-nursing-proposal-defense-nov16-2026": {
+    "title": "MCNP BS Nursing Students Strengthen Research Competencies Through Proposal Defense",
+    "description": "MCNP conducted the BS Nursing Research Proposal Defense on November 16, 2026, strengthening nursing students’ research competencies, scholarly inquiry, and understanding of evidence-based healthcare practice.",
+    "image": "https://mcnpisaprdc.github.io/rdc-website/assets/social/article-bs-nursing-proposal-defense-nov16-2026.jpg",
+    "url": "https://mcnpisaprdc.github.io/rdc-website/share/article-bs-nursing-proposal-defense-nov16-2026.html"
   },
   "article-bs-pharmacy-final-defense-nov19-2026": {
     "title": "MCNP Pharmacy Students Strengthen Scientific Inquiry Through Final Research Defense",
