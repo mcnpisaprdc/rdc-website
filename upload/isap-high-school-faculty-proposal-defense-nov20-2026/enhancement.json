@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "original": "IMG_20261120_121703.jpg",
+  "display": "group-photo-enhanced.webp",
+  "unalteredWebCopy": "group-photo.webp",
+  "prompt": "Conservatively improve exposure, white balance, shadow visibility, mild noise reduction and restrained sharpening; preserve identities, people, certificates, text, background and composition.",
+  "note": "AI-enhanced display is labeled and links to the original photo; gallery uses original photography."
+}

@@ -215,6 +215,23 @@ window.RDC_CONTENT = [
     "imageFit": "cover"
   },
   {
+    "id": "article-bs-tourism-final-research-defense-nov3-5-2026",
+    "t": "ISAP Tourism Management Students Demonstrate Research Excellence Through Final Defense",
+    "r": "November 3–5, 2026",
+    "d": "—",
+    "m": "November 3–5, 2026",
+    "topic": "Research &amp; Colloquiums",
+    "g": [
+      4,
+      8,
+      11
+    ],
+    "url": "news-events.html#article-bs-tourism-final-research-defense-nov3-5-2026",
+    "image": "upload/bs-tourism-final-defense-nov3-5-2026/photo-01.webp",
+    "imageAlt": "ISAP BSTM students at the Final Research Defense, November 3–5, 2026",
+    "imageFit": "contain"
+  },
+  {
     "id": "article-zero-plastic-initiative-2026",
     "t": "RDC Supports MCNP–ISAP Zero-Plastic Initiative, Calls for Shared Responsibility and Sustained Action",
     "r": "October 30, 2026",

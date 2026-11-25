@@ -395,6 +395,25 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+      "article-bs-tourism-final-research-defense-nov3-5-2026": {
+        "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BSTM Final Defense · November 3–5, 2026",
+        "badge": "OFFICIAL ARTICLE",
+        "topic": "Research &amp; Colloquiums · ISAP",
+        "date": "November 3–5, 2026",
+        "readTime": "3 min read",
+        "title": "ISAP Tourism Management Students Demonstrate Research Excellence Through Final Defense",
+        "bodyId": "body-article-bs-tourism-final-research-defense-nov3-5-2026",
+        "sdgs": [
+          { "goal": "4", "title": "SDG 4 – Quality Education (Primary Alignment)", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp" },
+          { "goal": "8", "title": "SDG 8 – Decent Work and Economic Growth (Potential Related)", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-08.webp" },
+          { "goal": "11", "title": "SDG 11 – Sustainable Cities and Communities (Potential Related)", "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-11.webp" }
+        ],
+        "agendas": [
+          { "pillar": "inspire", "title": "INSPIRE – Culture, Capability, and Engagement", "icon": "assets/agenda/agenda-1-inspire.webp" },
+          { "pillar": "nurture", "title": "NURTURE – Ethics, Quality, and Accountability", "icon": "assets/agenda/agenda-2-nurture.webp" },
+          { "pillar": "operationalize", "title": "OPERATIONALIZE – Knowledge Utilization, Innovation, and Improvement", "icon": "assets/agenda/agenda-4-operationalize.webp" }
+        ]
+      },
 "article-isap-grade12-stem-capstone-title-defense-nov17-18-2026": {
   "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; Grade 12 STEM Capstone Title Defense · November 17–18, 2026",
   "badge": "OFFICIAL ARTICLE",

@@ -21,7 +21,7 @@ The site provides institutional information, research agendas, journals, researc
    cd rdc-website
    npm ci
    ```
-
+ 
 3. Build the site:
 
    ```sh
