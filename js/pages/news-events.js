@@ -395,6 +395,34 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+      "article-international-exploratory-meeting-nov26-2026": {
+  "breadcrumb": "News &amp; Events &gt; Articles &amp; Editorials &gt; International Research Collaboration",
+  "badge": "OFFICIAL ARTICLE",
+  "topic": "Internationalization · Research Collaboration · MCNP–ISAP",
+  "date": "November 26, 2026",
+  "readTime": "5 min read",
+  "title": "MCNP–ISAP RDC Opens Pathways for International Research Collaboration Through Exploratory Meeting",
+  "bodyId": "body-article-international-exploratory-meeting-nov26-2026",
+  "sdgs": [
+    {
+      "goal": "17",
+      "title": "SDG 17 – Partnerships for the Goals (Primary Alignment)",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp"
+    },
+    {
+      "goal": "4",
+      "title": "SDG 4 – Quality Education",
+      "icon": "assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp"
+    }
+  ],
+  "agendas": [
+    {
+      "pillar": "expand",
+      "title": "EXPAND – Partnerships, Networks, and Global Engagement",
+      "icon": "assets/agenda/agenda-8-expand.webp"
+    }
+  ]
+},
       'article-ched-innovation-blueprint-workshop-nov26-2026': {
         breadcrumb: 'News &amp; Events &gt; Articles &amp; Editorials &gt; CHED Innovation Blueprint Workshop',
         badge: 'OFFICIAL ARTICLE',
