@@ -395,6 +395,25 @@
     var currentActiveArticleId = 'article-rdc-digital-platform';
 
     var ARTICLES_METADATA = {
+      'article-ched-innovation-blueprint-workshop-nov26-2026': {
+        breadcrumb: 'News &amp; Events &gt; Articles &amp; Editorials &gt; CHED Innovation Blueprint Workshop',
+        badge: 'OFFICIAL ARTICLE',
+        topic: 'Research &amp; Development &bull; Institutional Engagement &bull; MCNP&ndash;ISAP',
+        date: 'November 26, 2026',
+        readTime: '4 min read',
+        title: 'MCNP and ISAP Join CHED Consultative Workshop to Shape the Future of Innovation in Philippine Higher Education',
+        bodyId: 'body-article-ched-innovation-blueprint-workshop-nov26-2026',
+        sdgs: [
+          { goal: '4', title: 'SDG 4: Quality Education', icon: 'assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-04.webp' },
+          { goal: '9', title: 'SDG 9: Industry, Innovation and Infrastructure', icon: 'assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-09.webp' },
+          { goal: '17', title: 'SDG 17: Partnerships for the Goals', icon: 'assets/E%20SDG%20Icons%20WEB/E-WEB-Goal-17.webp' }
+        ],
+        agendas: [
+          { pillar: 'inspire', title: 'INSPIRE: Culture, Capability, and Engagement', icon: 'assets/agenda/agenda-1-inspire.webp' },
+          { pillar: 'navigate', title: 'NAVIGATE: Digital Transformation and Infrastructure', icon: 'assets/agenda/agenda-3-navigate.webp' },
+          { pillar: 'operationalize', title: 'OPERATIONALIZE: Knowledge Utilization, Innovation, and Improvement', icon: 'assets/agenda/agenda-4-operationalize.webp' }
+        ]
+      },
       "article-bs-tourism-final-research-defense-nov3-5-2026": {
         "breadcrumb": "News &amp; Events &gt; Research &amp; Colloquiums &gt; BSTM Final Defense · November 3–5, 2026",
         "badge": "OFFICIAL ARTICLE",
