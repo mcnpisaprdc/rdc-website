@@ -12,8 +12,8 @@ window.RDC_CONTENT = [
       17
     ],
     "url": "news-events.html#article-international-exploratory-meeting-nov26-2026",
-    "image": "upload/international-exploratory-meeting-nov26-2026/cover-participants.webp",
-    "imageAlt": "Participants in the international exploratory research collaboration meeting via Zoom",
+    "image": "upload/international-exploratory-meeting-nov26-2026/cover-presentation.webp",
+    "imageAlt": "Presentation during the international exploratory research collaboration meeting via Zoom",
     "imageFit": "contain"
   },
   {
