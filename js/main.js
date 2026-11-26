@@ -2475,27 +2475,26 @@ window.searchCalendar = function(query) {
 };
 
 // --- Interactive Monthly Date Calendar & Event Inspector ---
-window.trainingCalendarEvents = [
-  {
-    "id": 130,
-    "dates": [
-      "2026-11-25"
-    ],
-    "displayDate": "November 25, 2026",
-    "pillText": "ISAP Multidisciplinary",
-    "pillClass": "cal-pill-isap",
-    "shortTag": "BSCRIM Final",
-    "title": "BSCRIM Final Defense",
-    "desc": "Final Defense for BS Criminology (BSCRIM), scheduled on November 25, 2026.",
-    "participants": "BS Criminology (BSCRIM)",
-    "venue": "To be confirmed",
-    "lead": "To be confirmed",
-    "category": "isap",
-    "isPastEvent": false
-  }
-];
+window.trainingCalendarEvents = [];
 
 window.pastCalendarEvents = [
+{
+  "id": 130,
+  "dates": [
+    "2026-11-25"
+  ],
+  "displayDate": "November 25, 2026",
+  "pillText": "ISAP Multidisciplinary",
+  "pillClass": "cal-pill-isap",
+  "shortTag": "BSCRIM Final",
+  "title": "BSCRIM Final Defense",
+  "desc": "Final Defense for BS Criminology (BSCRIM), completed on November 25, 2026.",
+  "participants": "BS Criminology (BSCRIM)",
+  "venue": "To be confirmed",
+  "lead": "To be confirmed",
+  "category": "isap",
+  "isPastEvent": true
+},
 {
   "id": 129,
   "dates": [
