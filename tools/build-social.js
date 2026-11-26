@@ -5,7 +5,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const sharp = require('sharp');
 const root = path.resolve(__dirname, '..');
-const base = 'https://mcnpisaprdc.github.io/rdc-website/';
+const base = 'https://mcnpisaprdc.org/';
 const read = f => fs.readFileSync(path.join(root, f), 'utf8');
 const write = (f, s) => { if (!fs.existsSync(path.join(root, f)) || read(f) !== s) fs.writeFileSync(path.join(root, f), s); };
 const decode = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');

@@ -3364,10 +3364,10 @@
     function updateUtilArticleOgMeta(article) {
       if (!article) return;
       if (window.applyArticleSocialMeta && window.applyArticleSocialMeta(article.id)) return;
-      var image = article.heroImage || 'https://mcnpisaprdc.github.io/rdc-website/assets/rdc-logo.png';
+      var image = article.heroImage || 'https://mcnpisaprdc.org/assets/rdc-logo.png';
       var title = article.title || 'Research Utilization & Community Impact';
       var description = article.summary || article.impact || 'Research utilization story from MCNP & ISAP Research and Development Center.';
-      var url = 'https://mcnpisaprdc.github.io/rdc-website/utilization.html?article=' + encodeURIComponent(article.id || article.status || title);
+      var url = 'https://mcnpisaprdc.org/utilization.html?article=' + encodeURIComponent(article.id || article.status || title);
 
       var setters = [
         { selector: 'meta[property="og:url"]', attr: 'content', value: url },

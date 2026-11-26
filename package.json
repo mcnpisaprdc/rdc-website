@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/mcnpisaprdc/rdc-website/issues"
   },
-  "homepage": "https://github.com/mcnpisaprdc/rdc-website#readme",
+  "homepage": "https://mcnpisaprdc.org/",
   "devDependencies": {
     "esbuild": "^0.28.2",
     "heic-convert": "^2.1.0",

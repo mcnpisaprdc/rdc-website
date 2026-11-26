@@ -1218,12 +1218,12 @@
 
     function updateArticleOgMeta(articleId, data, imageSrc) {
       if (window.applyArticleSocialMeta && window.applyArticleSocialMeta(articleId)) return;
-      var image = imageSrc || 'https://mcnpisaprdc.github.io/rdc-website/upload/rdc-website-platform.png';
+      var image = imageSrc || 'https://mcnpisaprdc.org/upload/rdc-website-platform.png';
       var title = (data && data.title) ? data.title : 'News & Events | MCNP & ISAP RDC';
       var description = (data && data.title)
         ? data.title + ' by MCNP & ISAP Research and Development Center.'
         : 'Explore research colloquiums, scholarly defenses, student statistics achievements, health trainings, and SDG initiatives from MCNP & ISAP RDC.';
-      var url = 'https://mcnpisaprdc.github.io/rdc-website/news-events.html?article=' + encodeURIComponent(articleId);
+      var url = 'https://mcnpisaprdc.org/news-events.html?article=' + encodeURIComponent(articleId);
 
       var setters = [
         { selector: 'meta[property="og:url"]', attr: 'content', value: url },
